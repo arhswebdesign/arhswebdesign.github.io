@@ -1,0 +1,173 @@
+/*this is the style sheet for my new home page 2 14 07*/
+
+body
+{
+background-color: #071871; /*313186;*/
+/*background-image: url(images/marble.gif);*/
+color: #89b0ee;/*#000; #8B0000;*/
+font-family: Verdana, Helvetica, Arial, sans-serif;
+font-size: 1em;
+margin: 0px;
+}
+
+#head
+{
+position: relative;
+width: 950px;
+border: solid 1px #000000;
+margin-right: px;
+}
+
+#header {
+margin: 20px 45px 0px 240px;
+        
+background-color: #31438c;
+padding: 15px;
+border: solid 2px #000000;
+
+}
+
+#content {
+position: relative;
+width: 760px;
+border: solid 2px #000000;
+padding:25px  70px;
+margin: 25px 45px;
+background-color: #31438c;
+
+
+}
+
+#navbar 
+{
+position: absolute;
+top: 40;
+left:5px;
+width: 20px;
+        /*#F0E68C;         #8FBC8F;*/
+margin-left: 5px;
+margin-top: 5px;
+font-size: 1em;
+/*border: solid 1px #000000;*/
+
+}
+
+#main-text 
+{
+/*border: outset 5px red;*/
+margin: 30px 30px 0px 125px;
+line-height: 1.5em;
+color: #000;
+padding: 0px 5px 25px;
+font-size: 1.5em;
+background-color: #91B9EC;/*#4682B4; */  
+border: solid 2px #000000;
+}
+
+img.home
+{
+align: center;
+margin-left:150px;
+}
+script
+{
+text-align: right;
+padding-right: 5px;
+font-variant: small-caps;
+font-weight: bold;
+color: #000; /*#8B0000;*/
+}
+
+#dates
+{margin: 20px 50px 0px 50px;
+line-height: 2em;
+padding: 0px 15px 15px 15px;
+font-size: 1.3em;
+color: #000;
+background-color: #91B9EC;/*#4682B4; */   
+border: solid 2px #000000;
+}
+h1
+{
+font-size: 1.8em;
+text-align: right;
+font-style: italic;
+letter-spacing: 5px;
+padding: 0px 5px;
+Margin: 0px;
+}
+
+h2
+{
+font-size: 1.1em;
+text-decoration: underline;
+padding: 5px;
+}
+
+h4
+{
+font-size: 1em;
+text-align: right;
+font-style: normal;
+letter-spacing: 5px;
+padding: 0px 5px;
+font-variant: small-caps;
+}
+p.header
+{
+text-align: right;
+padding-right: 5px;
+font-variant: small-caps;
+font-weight: bold;
+color:#89b0ee; /*#000; #8B0000;*/
+margin: 0px;
+}
+p.nav
+{
+text-align: left;
+margin-top: 1px;
+}
+p
+{
+font-size: .8em;
+text-align: justify;
+line-height: 1.7em;
+}
+
+
+p.footer 
+{
+font-size: .8em;
+font-weight: bold;
+/*text-align: center;*/
+}
+
+a:link
+{
+color: #000;
+/*background-color: #95b7cd;*/
+/*text-decoration: none;*/
+}
+a:visited
+{
+color:#000;
+/*text-decoration: none;*/
+/*background-color: #95b7cd;*/
+}
+a:hover
+{
+background-color:  #038cff; /*#778899 ; #B0C4DE;*/
+padding: 1px
+color: #000;
+}
+
+a:active
+{
+/*text-decoration: none;*/
+/*background-color: #3cc7f0;*/
+}
+
+ul.source
+{font-size: .7em;
+list-style-type: none;
+}

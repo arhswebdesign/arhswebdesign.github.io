@@ -1,0 +1,157 @@
+/*this is the style sheet for my new home page 2 14 07*/
+
+body
+{
+background-color:   #071871;/*#31438c;  #326D95;*/
+/*background-image: url(images/marble.gif);*/
+color: #89b0ee;/*#000; #8B0000;*/
+font-family: Verdana, Helvetica,  Arial, sans-serif;
+font-size: medium;
+margin: 0;
+}
+
+#header {
+margin: 15px 50px 0px 30px;
+/*border: solid 1px #000000;*/
+
+}
+
+#content {
+position: relative;
+width: 950px;
+margin-left: 20px;
+margin-top: 40px;
+/*border: solid 1px #000000;*/
+
+
+}
+.background
+{background-color:  #91B9EC;        /*#8FBC8F;*/
+color: #000;
+margin-left: 2px;
+margin-top: 2px;
+font-size: 1em;
+border: solid 2px #000000
+}
+
+
+#navbar 
+{
+position: absolute;
+top: 22px;
+left: 10px;
+width: 300px;
+line-height: 1.5em;
+background-color:   #91B9EC;#4682B4; */           /*#8FBC8F;*/
+color: #000;
+margin-left: 5px;
+margin-top: 3px;
+font-size: 1.5em;
+border: solid 2px #000000
+}
+
+#main-text 
+{
+/*border: solid 2.5px #000000;*/
+margin-left: 325px;
+margin-right: 24px;
+padding: 2px 10px;
+padding-bottom: 25px;
+font-size: 1em;
+}
+
+img.home
+{
+align: center;
+margin-left: 10px;
+margin-right: 50px;
+margin-top: 20px;
+/*border: solid 2.5px #000000;*/
+padding: 0px;
+}
+
+
+h1
+{
+font-size: 1.8em;
+text-align: right;
+font-style: italic;
+letter-spacing: 3px;
+padding: 5px 5px;
+Margin: 0px;
+
+
+}
+
+h2
+{
+font-size: 1.1em;
+text-decoration: underline;
+padding: 10px;
+}
+
+h4
+{
+font-size: 1em;
+text-align: right;
+font-style: normal;
+letter-spacing: 3px;
+padding: 0px 5px;
+font-variant: small-caps;
+}
+p.header
+{
+text-align: right;
+padding-right: 10px;
+font-variant: small-caps;
+font-weight: bold;
+color: #89b0ee;/*#000; #8B0000;*/
+margin: 0px;
+}
+p
+{
+font-size: .8em;
+/*text-align: justify;*/
+line-height: 1.7em;
+}
+
+
+p.footer 
+{
+margin-left: 315px;
+margin-right: 20px;
+margin-top:10px;
+padding: 0 10px;
+color: #91B9EC;
+font-size: 1em;
+font-weight: bold;
+/*background-color:  #31438c; #91B9EC;#4682B4; */  
+/*border: solid 2px #000000;*/
+/*text-align: center;*/
+}
+
+ul{list-style-type: none;
+}
+a:link
+{
+color:#000; #8B0000;*/
+/*background-color: #95b7cd;*/
+text-decoration: none;
+}
+a:visited
+{
+color:#000; #8B0000;*/
+text-decoration: none;
+/*background-color: #95b7cd;*/
+}
+a:hover
+{
+background-color: #038cff;/*#D3D3D3; #B0C4DE; */
+padding: 3px
+}
+
+a:active
+{
+text-decoration: none;
+/*background-color: #3cc7f0;*/
+}
