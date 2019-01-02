@@ -1,0 +1,26 @@
+/*this file is ready to go to begin the inheritance demonstration. It should only have these few style rules to begin.*/ 
+/*See p. 304 of the Head First html with css and xhtml*/
+
+
+
+
+/*body{font-family: verdana, arial, sans-serif;}*/
+
+h1, h2
+{
+color: gray;
+
+}
+
+h1
+{
+border-bottom: 1px solid black;
+
+}
+P
+{
+color:maroon;
+/*font-family: Arial, Verdana, Sans-serif;*/
+}
+
+/*em{font-family: times new roman, times, serif;}*/

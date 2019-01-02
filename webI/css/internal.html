@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="../tutorial.css">
+
+<title>Web Design I: Internal Style</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+</head>
+
+<body>
+
+<div id="header">
+
+<h1>Web Design I: Internal Style</h1>
+<div class="navbar">
+
+
+<script src="../nav.js">
+</script>
+
+
+
+</div>
+</div>
+<div id="content">
+
+
+
+<div id="main-text">
+
+<!--ADD CONTENT HERE-->
+<h4>Here is the general format for creating internal cascading styles</h4>
+
+<Ul>
+<li>Write the style tags in the head section of the code .</li>
+</ul>
+
+<p>
+&lt;head&gt;
+</p>
+<p>
+&lt;style &gt;
+</p>
+<p>
+
+hr {color: sienna;}
+</p>
+<p>
+p {font-family: Arial, Verdana, sans-serif;
+color: #00008B;}
+</p>
+<p>
+body {background-color: #5F9EA0;}
+</p>
+<p>
+&lt;/style&gt;
+</p>
+<p>
+&lt;/head&gt;
+</p>
+
+<h4> How to write a style rule: CSS Syntax</h4>
+<ul>
+	<li>The CSS syntax is made up of three parts: a selector, a property and a value
+		<ul style="font-weight: 600;">
+		<li>selector {property: value}</li>
+		<li>body {background-color: #5F9EA0;}</li>
+		</ul>
+	</li>
+
+	<li>The selector is normally the HTML element/tag you wish to style. Example: body.</li> 
+	<li>The property is the attribute you wish to change. Example: Background-color:</li>
+	<li>Each property can take a value. Example: #5F9EA0</li>
+	<li>Think about people. Hair{color: white;}
+	<li>The property and value are separated by a colon, and surrounded by curly braces. End each style 	rule with a semi-colon; to keep rules seperate from one another.</li>
+    </ul>
+
+<p><img src="../images/selector.gif" alt="" width="569" height="119" /></p>
+<h4>I write my style rules like this to help me better organize them. I can easily find a rule to revise it when the rules are written like this:</h4>
+<p>
+h4 { <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 1em; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: left; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-style: normal; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;letter-spacing: 4px; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding: 0px 5px 0px 10px; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-variant: small-caps; <br />
+}
+</p>
+
+<h4>We can group various html elements together to give them the same style</h4>
+
+<p>
+p, li, dl { <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: .8em; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: justify; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line-height: 1.2em; <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin: 10px 35px 0px 60px;<br />
+
+}
+</p>
+
+
+
+</div>
+
+
+</div>
+
+<div class ="navbarfooter">
+
+
+<script src="../nav.js">
+</script>
+
+
+
+</div>
+
+</body>
+
+</html>

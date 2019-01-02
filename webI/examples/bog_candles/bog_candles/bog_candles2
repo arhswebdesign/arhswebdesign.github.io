@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>bog candles</title>
+    <style> 
+        body 
+        {
+            background-image: url("beige.jpg");
+        }
+        h2
+        {
+            color:firebrick;
+        }
+  </style>
+  </head>
+  <body>
+    <h1 id="top">Rare and endangered flowers of Cape Cod </h1>
+    <h2>Introduction </h2>
+    <p>There are many flowers on Cape Cod that are in danger of becoming
+      extinct.</p>
+    <h2>The flowers </h2>
+    <hr>
+    <h3>1.&nbsp; Bog Candles (aka Leafy White Orchis)</h3>
+    <img src="orchis.jpg" height="100" alt="cluster of orchid flowers" title =" pretty white orchid"> <br=""><br>
+      <h4>Latin name:</h4>
+      <h5>Plantathera dilata</h5>
+      <h4>Blooms:</h4>
+      <h5>June-July</h5>
+      <h4>Habitat:</h4>
+      <h5>Spring Seeps</h5>
+      <h4>MESA* Listing:</h4>
+      <h5>Threatened</h5>
+      <h6>* Massachussets Endangered Species Act, <br>
+        <a
+href="http://www.mass.gov/eea/agencies/dfg/dfw/natural-heritage/species-information-and-conservation/mesa-list/list-of-rare-species-in-massachusetts.html#MESAplant">
+          http://www.mass.gov/eea/agencies/dfg/dfw/natural-heritage/species-information-and-conservation/mesa-list/list-of-rare-species-in-massachusetts.html#MESAplant
+
+
+
+
+
+        </a> </h6>
+      <h4>Description:</h4>
+      <p>A first-time sighting of the bog-candle in full flower leaves
+        the beholder impressed by its beauty and size. Decorating a
+        three to four foot high, leafy spike are dozens of snow white
+        flowers. Their outstretched lateral sepals give the flowers a
+        curious look resembling little Caspar the Friendly Ghosts or
+        flying nuns. These odd blossoms are a delight from an olfactory
+        aspect as well, exuding the spicy fragrance of cloves. This
+        feature gives it the name "scent bottle' in the northern
+        Maritimes.<br>
+        <br>
+        There is but one colony of bog candles on Cape Cod, an historic
+        site in East Sandwich which has been watched closely by
+        botanists for many years. The habitat is thick muck formed by
+        spring seeps from a clay bank. There may be a buffering agent or
+        calcium depost, (perhaps from shells in an ancient Indian
+        midden) to explain how this plant became established in so
+        acidic and otherwise hostile an environment as Cape Cod.<br>
+        <br>
+        This species is rare throughout the state, with only four
+        recorded sites presently known in Massachusetts*.<br>
+      </p>
+      <h6>*quoted from DiGregorio, Mario J. and Jeff Walker. 1989. Cape
+        Cod Wildflowers. <br>
+        
+
+
+
+
+        </a> </h6>
+      <hr> </br><a href="gentian.html">Plymouth
+      gentian</a><br>
+    <a href="mailto:youngn@arps.org?Subject=Cape%20Cod%20Wildflowers"
+      target="_top">e-mail me if you have questions or comments about
+      this site</a> <br>
+    <a href="#top">Jump to Top</a><br>
+  </body>
+</html>
