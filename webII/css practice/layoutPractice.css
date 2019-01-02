@@ -1,0 +1,33 @@
+body {
+
+/*background-color: #95b7cd;*/
+color: #666666;
+font-family: Verdana, Helvetica, Arial, sans-serif;
+font-size: 1em;
+background-image: url(images/pageBack.gif);
+}
+
+h1 {
+
+font-size: 1.2em;
+text-align: right;
+font-style: italic;
+letter-spacing: 5px;
+
+}
+
+h2 {
+
+font-size: 1.1em;
+text-decoration: underline;
+
+}
+
+p {
+
+font-size: .8em;
+text-align: justify;
+line-height: 1.7em;
+
+}
+

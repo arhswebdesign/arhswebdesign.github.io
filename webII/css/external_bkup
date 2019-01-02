@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--this template validates to xhtml 1.0 Strict standards, before any additional code-->
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../tutorial.css">
+    <title>External Style</title>
+    <meta http-equiv="Content-Type" content="text/html;
+      charset=windows-1252">
+  </head>
+  <body>
+    <div id="header">
+      <h1>Creating and Using External Style Sheets</h1>
+      <div class="navbar">
+        <script src="../nav.js">
+</script></div>
+    </div>
+    <div id="content">
+      <div id="main-text">
+        <!--ADD CONTENT HERE-->
+        <h4 class="assign"> Tuesday, 2/6/18: </h4>
+        <h4>Once you have determined the style for a website using the
+          template page and internal style, create an external style
+          sheet and move the style code into it.</h4>
+        <p>Create some organizational/layout structure using a layout table and different headings on the page. Use all three of the following forms of style sheets in 3 html pages: External style sheet, Internal style sheet/s, Inline style sheet.
+
+In at least 1 of the pages, use all 3 kinds of style so that you can see how they cascade, which style is applied when 2 or more are giving different style directions.
+
+Link all 3 pages to the external style sheet.
+
+Demonstrate that you know how to use classes effectively
+</p>
+        <ul>
+          <li><a href="http://www.w3schools.com/css/css_howto.asp">Create
+              an external style sheet in notepad</a></li>
+          <li>Remember to save it with a .css file extension</li>
+          <li> Link all pages that will use that style sheet to it using
+            this link: <br>
+            <br>
+            &lt;link rel="stylesheet" type="text/css"
+            href="tutorial.css" / &gt;</li>
+        </ul>
+        <h4>
+          In the style sheet set the code for the following:
+        </h4>
+        <ul>
+          <li>Background: image or color</li>
+          <li>Text: color, alignment, background-color and line-height</li>
+          <li>Font: family, size, style, variant and boldness </li>
+          <li>Border: look at all border properties, but learn bottom
+            border in particular</li>
+          <li>Margin: left, right, top and bottom </li>
+          <li>Padding: left, right, top and bottom </li>
+          <li>Lists: different markers in ordered and unordered lists;
+            set an image as the list-item marker</li>
+          <li>Pseudo-classes: set the color for these states of
+            hyperlinks: link, visited, hover</li>
+        </ul>
+      </div>
+    </div>
+    <div class="navbarfooter">
+      <script src="../nav.js">
+</script></div>
+  </body>
+</html>
