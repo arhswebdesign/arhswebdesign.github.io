@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../tutorial.css">
+    <title>HTML Tutorial 3: tables</title>
+    <meta http-equiv="Content-Type" content="text/html;
+      charset=windows-1252">
+  </head>
+    <style>
+
+       #table1 {border-collapse: collapse; font-size: 60%;}
+       #table2 {font-size: 60%;}
+
+       #table1, #titles1, #cells1, #rows1 {font-family: "verdana"; border: 5px solid purple; padding: 10px;}
+
+       td {font-family: "verdana"; padding: 10px;}
+
+       #titles2 {font-family: "verdana"; size: 60%;}
+
+       caption {font-family: "verdana"; color: purple;}
+
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>HTML 3: tables</h1>
+      <div class="navbar">
+        <script src="../nav.js">
+</script></div>
+    </div>
+    <div id="content">
+      <div id="main-text">
+        <h4> 1. Tables are defined with the &lt;table&gt; tag. A table
+          is divided into rows (with the &lt;tr&gt; tag), and each row
+          is divided into data cells (with the &lt;td&gt; tag).</h4>
+        <p> The letters td stands for "table data," which is the content
+          of a data cell. A data cell can contain text, images, lists,
+          paragraphs, forms, horizontal rules, tables, etc.”<br>
+          - www.w3schools.com </p>
+        <p>Notice that the tags are nested. The &lt;table&gt; tags
+          enclose both other sets of tags:</p>
+
+        <p> &lt;table&gt;</p>
+        <blockquote>
+
+          <p> &lt;tr&gt;</p>
+          <blockquote>
+            <p> &lt;td&gt;row 1, cell 1&lt;/td&gt;<br>
+              &lt;td&gt;row 1, cell 2&lt;/td&gt;</p>
+          </blockquote>
+          <p>&lt;/tr&gt;</p>
+          <p> &lt;tr&gt;</p>
+          <blockquote>
+            <p> &lt;td&gt;row 2, cell 1&lt;/td&gt;<br>
+              &lt;td&gt;row 2, cell 2&lt;/td&gt;</p>
+          </blockquote>
+          <p>&lt;/tr&gt;</p>
+        </blockquote>
+        <p> &lt;/table&gt;</p>
+        <p>&nbsp;</p> 
+		<p>You would need to style it like this:</p>
+		<p>&nbsp;</p>
+		<pre>
+		&lt;style&gt;
+		table, td { border-style: solid;
+			    border-width: thin;
+		}
+		&lt;/style&gt;
+		</pre>
+		 <p>&nbsp;</p>
+        <p> How it looks in a browser: </p>
+        <p><br>
+        </p>
+        <table border="3">
+          <tbody>
+            <tr>
+              <td>row 1,cell 1</td>
+              <td> row 1, cell 2</td>
+            </tr>
+            <tr>
+              <td>row 2, cell 1</td>
+              <td> row 2, cell 2</td>
+            </tr>
+          </tbody>
+        </table>
+        <h4> 2. It is very important to understand that one builds a
+          table with rows and cells.</h4>
+        <h4> 3. For borders, <a href="http://www.w3schools.com/cssref/pr_border-width.asp">read this</a> and <a href="http://www.w3schools.com/css/css_border.asp">this</a>. For the other properties, study the examples in the <a
+            href="http://www.w3schools.com/html/html_tables.asp">Tables
+            section</a> of the w3schools tutorials.</h4>
+        <p> Practice working with tables. As you develop your skill with
+          tables, your skill to layout well-designed web pages will also
+          grow. Pay particular attention to working with the examples
+          listed on the web site.</p>
+        <h4> </h4>
+        <h4 class="assign"> 4. ASSIGNMENT 4 Due Date: Wednesday, 3/7/18: Create multiple tables with the following qualities:</h4>
+        Plan to make more than one table to meet all of the criteria in
+        the assignment.
+        <p>It will actually be easier to work that way. <br>
+        </p>
+        <p>Please do all of the following:<br>
+        </p>
+        <h4>
+          <ul>
+            <li>A table with no border</li>
+            <li>A table with a border</li>
+            <li>Headings (th) in a table</li>
+           
+            <li>A table with a caption</li>
+            <li>A table with cells that span more than one row </li>
+            <li>A table with cells that span more than one column </li>
+            <li>A whole element inside a table cell</li>
+          </ul>
+          <p>Don't submit yet. Wait until you've added the style
+            mentioned in the next list, below.</p>
+        </h4>
+        <h4><a href="http://www.w3schools.com/css/css_table.asp"> Study
+            this section of the W3schools CSS tutorials to learn how to
+            style tables.</a> </h4>
+        <h4>Style the tables, using internal style.&nbsp; Make sure the
+          following are done in at least one of your tables:</h4>
+        <ul>
+          <li>Border-collapse</li>
+          <li>Table width and height</li>
+          <li>Table text alignment</li>
+          <li>Table padding</li>
+          <li>Table and cell color </li>
+        </ul>
+        <h4>Be sure to clearly indicate what the table is demonstrating.
+          In other words, simply write a statement in the table
+          indicating what criteria it covers.&nbsp; For example:</h4>
+        <table id="table1">
+          <caption> A Table with a Border, Headings, Empty Cells,
+            Caption, and Cells that Span more than 1 Row </caption> <tbody>
+            <tr id="titles1">
+              <th> Dog Breed </th>
+              <th id="cells1"> Fur Color </th>
+              <th> Cuteness Level </th>
+            </tr>
+            <tr id="rows1">
+              <td rowspan="3"> Lab </td>
+              <td id="cells1"> Sandy </td>
+              <td> 9 </td>
+            </tr>
+            <tr id="rows1">
+              <td id="cells1"> Chocolate </td>
+              <td> 8 </td>
+            </tr>
+            <tr id="rows1">
+              <td id="cells1"> Black </td>
+              <td> 7 </td>
+            </tr>
+            <tr id="rows1">
+              <td id="cells1"> Greyhound </td>
+              <td> <br>
+              </td>
+              <td id="cells1"> 4 </td>
+            </tr>
+            <tr id="rows1">
+              <td> Chiwawa </td>
+              <td id="cells1"> Preferablly Light Brown </td>
+              <td> 6.5 </td>
+            </tr>
+          </tbody>
+        </table>
+        <br>
+        <br>
+        <table id="table2">
+          <caption> A Table with no Border, Headings, Caption, Tags, and
+            Cells that Span more than 1 Column </caption> <tbody>
+            <tr id="titles2">
+              <th> Small Column </th>
+              <th colspan="2"> Large Column </th>
+            </tr>
+            <tr>
+              <td> Tiny </td>
+              <td> Big </td>
+              <td> Huge </td>
+            </tr>
+            <tr>
+              <td> Petit </td>
+              <td> Enormous </td>
+              <td> Immense </td>
+            </tr>
+            <tr>
+              <td> Little </td>
+              <td> Giant
+                <ul>
+                  <li> The BFG </li>
+                  <li> Hagrid </li>
+                  <li> Megaladon </li>
+                </ul>
+              </td>
+              <td> Massive </td>
+            </tr>
+          </tbody>
+        </table>
+        <p id = "a5"><br>
+        </p>
+        <h4 class="assign" id = "a5"> 6. ASSIGNMENT 5 Due Date: Wednesday, 3/14/18: Create a table that is going to be the layout design
+          for a web page.</h4>
+        <p> Create a web page using one big table as a layout template. This
+          table should fill the web page, and it should automatically
+          change size when the page changes size. <a href="layout_adds_up.html">Here
+
+
+
+
+
+
+
+
+
+
+
+            is an example of a table that could be used as a template
+          for a web page.</a> </p>
+        <p>Be creative and make the site an interesting place to visit. Use the skills you have learned. Think about colors. Impress me. Style the table,  the text, and other things that will appear on the page.          </p>
+        <p><a href="https://www.granneman.com/webdev/coding/formatting-and-indenting-your-html/">Indentation guide.</a></p>
+      </div>
+    </div>
+    <div class="navbarfooter">
+      <script src="../nav.js">
+</script></div>
+  </body>
+</html>
