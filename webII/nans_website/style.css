@@ -1,0 +1,556 @@
+/*Stylesheet for Nan's Website*/
+
+
+#navbar1 {
+   border: 1px solid #000000;
+   background-color: #B22222 ;
+   margin-top: 20px;
+}
+
+#navbar1 ul {
+   list-style-type: none;
+   margin-top: 0;
+   padding-left: 0;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   text-align: center;
+   width: 100%;
+   
+}
+
+#navbar1 ul li {
+   display: inline;
+   background-color: #FF8C00;
+   border: 1px solid #FFD700; 
+   padding: 10px;
+   margin-right: 25px; 
+   
+}
+
+#navbar1 ul li a {
+   text-decoration: none;
+   padding: 10px;
+   color: #FFD700;
+   font-weight: bold;
+  
+}
+
+#navbar1 ul li a:visited {
+   color: #FFD700;
+}
+
+#navbar1 ul li a:hover {
+   background-color: #B22222;
+}
+
+body {background-color: #FF8C00}
+
+#content {
+   position: absolute;
+   top: 160px;
+   left: 250px;
+}
+
+#content img {
+   border-left: solid 1px #2F4F4F;
+   border-top: solid 1px #2F4F4F;
+   border-right: solid 2px;
+   border-bottom: solid 2px;
+}
+
+#image img {
+   position: absolute;
+   top: 180px;
+   left: 270px;
+}
+
+/*#title { 
+   padding-right: 20px;
+   padding-top: 65px;
+}
+
+#title h1 {
+   font-family: Jokerman;
+   background-color: #FF4500; 
+   border-left: solid 1px #2F4F4F;
+   border-top: solid 1px #2F4F4F;
+   border-right: solid 2px;
+   border-bottom: solid 2px;
+   float: right;
+   width: 200px;
+   padding: 5px;
+   text-align: center;
+}
+
+#caption {
+   position: absolute; 
+   top: 140px;
+   left: 240px;
+   font-size: 25px;
+   font-family: Freestyle Script;
+   
+}*/
+
+
+
+#navbar2 {
+   border: 1px solid #000000;
+   background-color: #B22222 ;
+   margin-top: 450px;
+}
+
+#navbar2 ul {
+   list-style-type: none;
+   margin-top: 0;
+   padding-left: 0;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   text-align: center;
+   width: 100%;
+   
+}
+
+#navbar2 ul li {
+   display: inline;
+   background-color: #FF8C00;
+   border: 1px solid #FFD700; 
+   padding: 10px;
+   margin-right: 25px; 
+   
+}
+
+#navbar2 ul li a {
+   text-decoration: none;
+   padding: 10px;
+   color: #FFD700;
+   font-weight: bold;
+  
+}
+
+#navbar2 ul li a:visited {
+   color: #FFD700;
+}
+
+#navbar2 ul li a:hover {
+   background-color: #B22222;
+}
+
+
+#bugs img {
+   position: absolute;
+   left: 50px;
+   top: 110px;
+   background-color: #FF4500;
+   padding: 15px;
+   padding-bottom: 38px;
+   border: solid 1px;
+}
+
+#bugs p {
+   position: absolute; 
+   top: 335px;
+   left: 150px;
+   font-size: 20px;
+   font-family: courier;
+}
+
+#bugs a:link p {
+   background-color: #FF8C00;
+   color: #FFD700;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+#bugs a:visited p {
+   background-color: #FF8C00;
+   color: #FFD700;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+#bugs a:hover p {
+   background-color: #B22222;
+   cursor: hand;
+}
+
+#seasons img {
+   position: absolute;
+   left: 490px;
+   top: 110px;
+   background-color: #FF4500;
+   padding: 15px;
+   padding-bottom: 38px;
+   border: solid 1px;
+}
+
+#seasons p {
+   position: absolute; 
+   top: 335px;
+   left: 650px;
+   font-size: 20px;
+   font-family: courier;
+}
+
+#seasons a:link p {
+   background-color: #FF8C00;
+   color: #FFD700;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+#seasons a:visited p {
+   background-color: #FF8C00;
+   color: #FFD700;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+#seasons a:hover p {
+   background-color: #B22222;
+   cursor: hand;
+}
+
+#printemps img {
+   position: absolute;
+   left: 50px;
+   top: 410px;
+   background-color: #FF4500;
+   padding: 15px;
+   padding-bottom: 38px;
+   border: solid 1px;
+}
+
+#printemps p {
+   position: absolute; 
+   top: 635px;
+   left: 180px;
+   font-size: 20px;
+   font-family: courier;
+}
+
+#printemps a:link p {
+   background-color: #FF8C00;
+   color: #FFD700;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+#printemps a:visited p {
+   background-color: #FF8C00;
+   color: #FFD700;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+#printemps a:hover p {
+   background-color: #B22222;
+   cursor: hand;
+}
+
+#matchbook img {
+   position: absolute;
+   left: 580px;
+   top: 410px;
+   background-color: #FF4500;
+   padding: 15px;
+   padding-bottom: 38px;
+   border: solid 1px;
+}
+
+#matchbook p {
+   position: absolute; 
+   top: 635px;
+   left: 680px;
+   font-size: 20px;
+   font-family: courier;
+}
+
+#matchbook a:link p {
+   background-color: #FF8C00;
+   color: #FFD700;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+#matchbook a:visited p {
+   background-color: #FF8C00;
+   color: #FFD700;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+#matchbook a:hover p {
+   background-color: #B22222;
+   cursor: hand;
+}
+
+   
+#bird img {
+   position: absolute;
+   left: 50px;
+   top: 710px;
+   background-color: #FF4500;
+   padding: 15px;
+   padding-bottom: 38px;
+   border: solid 1px;
+}
+
+#bird p {
+   position: absolute; 
+   top: 935px;
+   left: 140px;
+   font-size: 20px;
+   font-family: courier;
+}
+
+#bird a:link p {
+   background-color: #FF8C00;
+   color: #FFD700;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+#bird a:visited p {
+    background-color: #FF8C00;
+   color: #FFD700;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+#bird a:hover p {
+   background-color: #B22222;
+   cursor: hand;
+}
+
+
+#paint img {
+   position: absolute;
+   left: 480px;
+   top: 710px;
+   background-color: #FF4500;
+   padding: 15px;
+   padding-bottom: 38px;
+   border: solid 1px;
+}
+
+#paint p {
+   position: absolute; 
+   top: 935px;
+   left: 620px;
+   font-size: 20px;
+   font-family: courier;
+}
+
+#paint a:link p {
+   background-color: #FF8C00;
+   color: #FFD700;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+#paint a:visited p {
+     background-color: #FF8C00;
+   color: #FFD700;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+#paint a:hover p {
+   background-color: #B22222;
+   cursor: hand;
+}
+
+#small img {
+   position: absolute;
+   left: 50px;
+   top: 1010px;
+   background-color: #FF4500;
+   padding: 15px;
+   padding-bottom: 38px;
+   border: solid 1px;
+}   
+
+#small p {
+   position: absolute; 
+   top: 1235px;
+   left: 115px;
+   font-size: 20px;
+   font-family: courier;
+}
+
+#small a:link p {
+   background-color: #FF8C00;
+   color: #FFD700;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+#small a:visited p {
+     background-color: #FF8C00;
+   color: #FFD700;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+#small a:hover p {
+   background-color: #B22222;
+   cursor: hand;
+}
+
+#broken img {
+   position: absolute;
+   left: 540px;
+   top: 1010px;
+   background-color: #FF4500;
+   padding: 15px;
+   padding-bottom: 38px;
+   border: solid 1px;
+}
+ 
+#broken p {
+   position: absolute; 
+   top: 1235px;
+   left: 640px;
+   font-size: 20px;
+   font-family: courier;
+}
+
+#broken a:link p {
+   background-color: #FF8C00;
+   color: #FFD700;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+#broken a:visited p {
+    background-color: #FF8C00;
+   color: #FFD700;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+#broken a:hover p {
+   background-color: #B22222;
+   cursor: hand;
+}
+
+#palette img {
+   position: absolute;
+   left: 50px;
+   top: 1310px;
+   background-color: #FF4500;
+   padding: 15px;
+   padding-bottom: 38px;
+   border: solid 1px; 
+} 
+
+#palette p {
+   position: absolute; 
+   top: 1535px;
+   left: 170px;
+   font-size: 20px;
+   font-family: courier;
+}
+
+#palette a:link p {
+   background-color: #FF8C00;
+   color: #FFD700;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+#palette a:visited p {
+   background-color: #FF8C00;
+   color: #FFD700;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+#palette a:hover p {
+   background-color: #B22222;
+   cursor: hand;
+}
+   
+
+#urchins img {
+   position: absolute;
+   left: 650px;
+   top: 1310px;
+   background-color: #FF4500;
+   padding: 15px;
+   padding-bottom: 38px;
+   border: solid 1px;
+}
+
+#urchins p {
+   position: absolute; 
+   top: 1625px;
+   left: 720px;
+   font-size: 20px;
+   font-family: courier;
+}
+
+#urchins a:link p {
+   background-color: #FF8C00;
+   color: #FFD700;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+#urchins a:visited p {
+   color: #FFD700;
+   font-weight: bold;
+   background-color: #FF8C00;
+   text-decoration: none;   
+}
+
+#urchins a:hover p {
+   background-color: #B22222;
+   cursor: hand;
+}
+ 
+
+#navbar3 {
+   border: 1px solid #000000;
+   background-color: #B22222 ;
+   margin-top: 1650px;
+}
+
+#navbar3 ul {
+   list-style-type: none;
+   margin-top: 0;
+   padding-left: 0;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   text-align: center;
+   width: 100%;
+}
+
+
+#navbar3 ul li {
+   display: inline;
+   background-color: #FF8C00;
+   border: 1px solid #FFD700; 
+   padding: 10px;
+   margin-right: 25px; 
+   
+}
+
+#navbar3 ul li a {
+   text-decoration: none;
+   padding: 10px;
+   color: #FFD700;
+   font-weight: bold;
+  
+}
+
+#navbar3 ul li a:visited {
+   color: #FFD700;
+}
+
+#navbar3 ul li a:hover {
+   background-color: #B22222;
+}
+
+/*possible background colors: dark orange: #FF8C00  redorange: #FF4500  sienna: #A0522D */
+/*background content: goldenrod: #FFA500 darkorange: red: #FF0000*/

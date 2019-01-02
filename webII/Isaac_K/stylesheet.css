@@ -1,0 +1,96 @@
+* {
+margin: 0;
+padding: 0;
+}
+/*this applies to absolutely everything in the html code unless specified otherwise*/
+
+body {
+font-family: times-new-roman, georgia, serif;
+text-align: top;
+background-color: #A4A4A4;
+} /*This also applies to everything, since all the code is in the body*/
+
+p {
+line-height: 140%;
+}
+
+a:visited {
+color: #0000ee;
+}
+
+a:hover {
+color: #E60000;
+}
+
+#container {
+background-color: #A4A4A4;
+margin: 0;
+padding: 12px;
+/*border: 2px solid navy;*/
+}
+
+#background {
+background-color: #D9D9D9;
+margin: 8px 14px;
+padding-top: 0px;
+padding-bottom: 4px;
+padding-right: 8px;
+padding-left: 8px;
+max-width: 900px;
+min-width: 700px;
+margin-left: auto;
+margin-right: auto;
+}
+/*The margins set here are used over the ones at the very beginning, because a div is more specific than the whole code. All margins set after the first thing saying margin: 0; habe priority because their elements are more specific.*/
+
+#header {
+padding: 2px;
+font-size: 35px;
+text-align: center;
+/*background-color: #ff0000;*/
+}
+
+#navbar {
+background-color: #f2f2f2;
+margin: 8px 8px 12px 8px;
+}
+
+#navbar ul {
+padding-top: 5px;
+padding-bottom: 4px;
+padding-left: 10px;
+padding-right: 0px;
+font-size: 17px;
+}
+
+#navbar ul li {
+list-style-type: underline;
+display: inline;
+padding-right: 32px;
+}
+
+#content {
+background-color: #ffffff;
+color: #000000;
+margin: 0px 8px 18px 8px;
+padding: 6px 10px 4px 10px;
+}
+
+#content ul {
+margin: 16px;
+margin-top: 6px;
+margin-bottom: 5px;
+}
+
+#contact {
+background-color: #ffffff;
+margin: 0px 8px 12px 8px;
+padding: 6px 10px 4px 10px;
+}
+
+#backtop {
+background-color: #f2f2f2;
+margin: 0px 8px 8px 8px;
+padding: 6px 10px 4px 10px;
+}
+
