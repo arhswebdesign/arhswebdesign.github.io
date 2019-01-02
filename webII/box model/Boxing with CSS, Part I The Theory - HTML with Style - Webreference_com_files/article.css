@@ -1,0 +1,123 @@
+DIV.leftad {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; FLOAT: right; PADDING-BOTTOM: 6px; WIDTH: 128px; PADDING-TOP: 6px
+}
+BODY {
+	COLOR: black; BACKGROUND-COLOR: #ffffff
+}
+PRE.listing {
+	BORDER-RIGHT: #003000 2px solid; BORDER-TOP: #003000 2px solid; MARGIN-LEFT: 0.5cm; BORDER-LEFT: #003000 2px solid; WIDTH: 500px; MARGIN-RIGHT: 0.5cm; BORDER-BOTTOM: #003000 2px solid
+}
+DIV.example {
+	BORDER-RIGHT: #003000 2px solid; BORDER-TOP: #003000 2px solid; MARGIN-LEFT: 0.5cm; BORDER-LEFT: #003000 2px solid; WIDTH: 500px; MARGIN-RIGHT: 0.5cm; BORDER-BOTTOM: #003000 2px solid
+}
+A:link {
+	COLOR: #00a000
+}
+A:visited {
+	COLOR: #007000
+}
+A:active {
+	COLOR: #ff0000
+}
+H1 {
+	MARGIN-TOP: 1em; FONT: bold 14pt helvetica, arial, sans-serif
+}
+H2 {
+	FONT: bold 18pt helvetica, arial, sans-serif
+}
+H3 {
+	FONT: bold italic 14pt helvetica, arial, sans-serif
+}
+DIV.wrPath {
+	FONT: bold 14pt helvetica, arial, sans-serif
+}
+PRE.listing {
+	WIDTH: 500px; FONT-FAMILY: monospace; WHITE-SPACE: pre; BACKGROUND-COLOR: #e0e0e0
+}
+CODE {
+	COLOR: #000000; FONT-FAMILY: Courier, fixed
+}
+.element {
+	COLOR: #bb0000; FONT-FAMILY: Courier, fixed
+}
+.attribute {
+	COLOR: #880000; FONT-FAMILY: Courier, fixed
+}
+.syntax {
+	COLOR: #888888; FONT-FAMILY: Courier, fixed
+}
+.value {
+	COLOR: #440000; FONT-FAMILY: Courier, fixed
+}
+.property {
+	COLOR: #880000; FONT-FAMILY: Courier, fixed
+}
+TD.elProperty {
+	BACKGROUND-COLOR: #e0dd06
+}
+TD.elValue {
+	BACKGROUND-COLOR: #00a000
+}
+TD.elAttributeRef {
+	FONT-STYLE: italic; BACKGROUND-COLOR: #00a000
+}
+TD.elAttribute {
+	BACKGROUND-COLOR: #00a000
+}
+TD.elAttType {
+	BACKGROUND-COLOR: #00a000
+}
+TD.elAttMeaning {
+	BACKGROUND-COLOR: #00a000
+}
+TD.propHead {
+	FONT-WEIGHT: bold; BACKGROUND-COLOR: #e0ff08; TEXT-ALIGN: right
+}
+TD.propName {
+	COLOR: #880000; BACKGROUND-COLOR: #e0ff08
+}
+TD.propAttr {
+	BACKGROUND-COLOR: #e0ff08; TEXT-ALIGN: right
+}
+TD.propAttV {
+	BACKGROUND-COLOR: #f0ffb0
+}
+TH.toctit {
+	BACKGROUND-COLOR: #e0dd06
+}
+TH.tocpg {
+	BACKGROUND-COLOR: #e0dd06
+}
+TD.tocsno {
+	BACKGROUND-COLOR: #e0ffe0
+}
+TD.tocsto {
+	BACKGROUND-COLOR: #e0ffe0
+}
+TD.tochto {
+	BACKGROUND-COLOR: #e0ffe0
+}
+TD.tocpno {
+	BACKGROUND-COLOR: #e0ffe0
+}
+TD.tocsne {
+	BACKGROUND-COLOR: #ffffe0
+}
+TD.tocste {
+	BACKGROUND-COLOR: #ffffe0
+}
+TD.tochte {
+	BACKGROUND-COLOR: #ffffe0
+}
+TD.tocpne {
+	BACKGROUND-COLOR: #ffffe0
+}
+TD.tochto {
+	TEXT-INDENT: 1.5cm
+}
+TD.tochte {
+	TEXT-INDENT: 1.5cm
+}
+.wrAd {
+	CLEAR: both; MARGIN: 8px -5%; TEXT-ALIGN: center
+}

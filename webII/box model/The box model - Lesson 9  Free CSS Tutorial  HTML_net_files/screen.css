@@ -1,0 +1,258 @@
+BODY {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 80%; PADDING-BOTTOM: 10px; MARGIN: 0px; PADDING-TOP: 10px; FONT-FAMILY: tahoma, verdana, arial, sans-serif; BACKGROUND-COLOR: #ffffff
+}
+#pagecontainer {
+	BORDER-RIGHT: #336699 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #336699 1px solid; PADDING-LEFT: 4px; MARGIN-BOTTOM: 15px; PADDING-BOTTOM: 4px; BORDER-LEFT: #336699 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #336699 1px solid
+}
+#leaderboardcontainer {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BORDER-BOTTOM: #336699 1px solid; BACKGROUND-COLOR: #ffffff
+}
+#leaderboard {
+	HEIGHT: 90px; TEXT-ALIGN: center
+}
+#searchfieldcontainer {
+	RIGHT: 20px; POSITION: absolute; TOP: 18px
+}
+#searchfieldcontainer #button {
+	FONT-SIZE: 0.8em
+}
+#searchfieldcontainer #query {
+	FONT-SIZE: 0.8em
+}
+#searchfieldcontainer #options {
+	FONT-SIZE: 0.8em
+}
+#breadcrumb {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; LEFT: 176px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; POSITION: absolute; TOP: 190px; BACKGROUND-COLOR: white
+}
+#contentcolumn {
+	BORDER-RIGHT: #336699 1px solid; PADDING-RIGHT: 10px; MARGIN-TOP: 5px; PADDING-LEFT: 10px; MIN-HEIGHT: 650px; PADDING-BOTTOM: 10px; MARGIN-LEFT: 156px; BORDER-LEFT: #336699 1px solid; MARGIN-RIGHT: 175px; PADDING-TOP: 30px; HEIGHT: 650px
+}
+#mainnavi {
+	
+}
+#mainnavi UL {
+	MARGIN-TOP: 0.2em; PADDING-LEFT: 0em; MARGIN-BOTTOM: 0.2em; MARGIN-LEFT: 0.5em; LIST-STYLE-TYPE: none
+}
+#mainnavi UL LI {
+	FONT-WEIGHT: bold; FONT-SIZE: 1em; LINE-HEIGHT: 1.5em
+}
+#mainnavi UL UL {
+	PADDING-LEFT: 0em; MARGIN-LEFT: 1.2em; COLOR: #c0c0c0; LIST-STYLE-TYPE: square
+}
+#mainnavi UL UL LI {
+	PADDING-LEFT: 0.3em; FONT-WEIGHT: normal; FONT-SIZE: 0.83em; MARGIN-LEFT: 0em; LINE-HEIGHT: 1.6em
+}
+#leftcolumn {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; LEFT: 15px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 153px; PADDING-TOP: 0px; POSITION: absolute; TOP: 190px; BACKGROUND-COLOR: #ffffff
+}
+#leftcolumnsponsor {
+	MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; TEXT-ALIGN: center
+}
+.leftcolumnlanguage {
+	MARGIN-TOP: 0.3em; PADDING-LEFT: 0em; FONT-WEIGHT: normal; FONT-SIZE: 0.83em; MARGIN-BOTTOM: 0.3em; PADDING-BOTTOM: 0em; MARGIN-LEFT: 2em; COLOR: #c0c0c0; LINE-HEIGHT: 1.4em; PADDING-TOP: 0em; LIST-STYLE-TYPE: square
+}
+#rightcolumn {
+	RIGHT: 19px; POSITION: absolute; TOP: 223px
+}
+.rightcolumnitemcontent {
+	MARGIN-TOP: 2px
+}
+#headersection {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; COLOR: #ffffff; PADDING-TOP: 3px; BACKGROUND-COLOR: #ffffff
+}
+#headersection H1 {
+	PADDING-LEFT: 3px; FONT-SIZE: 2em; COLOR: #336699
+}
+#headersectionbar {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 0.85em; PADDING-BOTTOM: 0px; COLOR: #ffffff; PADDING-TOP: 2px; FONT-FAMILY: arial; HEIGHT: 18px; BACKGROUND-COLOR: #336699
+}
+#headersectionbar H2 {
+	PADDING-RIGHT: 0em; PADDING-LEFT: 0em; PADDING-BOTTOM: 0em; MARGIN: 0em; COLOR: white; PADDING-TOP: 0em
+}
+#pagefooter {
+	PADDING-RIGHT: 0em; BORDER-TOP: #336699 1px solid; MARGIN-TOP: 5px; PADDING-LEFT: 0em; PADDING-BOTTOM: 0.5em; PADDING-TOP: 0.5em; TEXT-ALIGN: center
+}
+.codebox {
+	BORDER-RIGHT: gray 2px dotted; PADDING-RIGHT: 1em; BORDER-TOP: gray 2px dotted; PADDING-LEFT: 1em; MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 0em; BORDER-LEFT: gray 2px dotted; PADDING-TOP: 0em; BORDER-BOTTOM: gray 2px dotted; BACKGROUND-COLOR: #fcfbc4
+}
+.examplebox {
+	BORDER-RIGHT: gray 2px dotted; PADDING-RIGHT: 1em; BORDER-TOP: gray 2px dotted; PADDING-LEFT: 1em; MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 1em; BORDER-LEFT: gray 2px dotted; PADDING-TOP: 1em; BORDER-BOTTOM: gray 2px dotted
+}
+.codebox STRONG {
+	COLOR: #cc0000
+}
+.examplelinklist {
+	BORDER-TOP-WIDTH: 0px; PADDING-LEFT: 1.6em; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; MARGIN-LEFT: 0em; BORDER-RIGHT-WIDTH: 0px
+}
+.examplelinklist LI {
+	LIST-STYLE-IMAGE: url(/site/gfx/icon.example.gif)
+}
+A#headersectionlogo:link {
+	COLOR: #336699; TEXT-DECORATION: none
+}
+A#headersectionlogo:visited {
+	COLOR: #336699; TEXT-DECORATION: none
+}
+A#headersectionlogo:hover {
+	COLOR: #336699; TEXT-DECORATION: none
+}
+A#headersectionlogo:active {
+	COLOR: #336699; TEXT-DECORATION: none
+}
+A.mainmenulink:link {
+	COLOR: #0000c0; TEXT-DECORATION: none
+}
+A.mainmenulink:visited {
+	COLOR: #0000c0; TEXT-DECORATION: none
+}
+A.mainmenulink:hover {
+	COLOR: #a82030; TEXT-DECORATION: none
+}
+A.mainmenulink:active {
+	COLOR: #0000c0; TEXT-DECORATION: none
+}
+A.mainmenulinkselected:link {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+A.mainmenulinkselected:visited {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+A.mainmenulinkselected:hover {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+A.mainmenulinkselected:active {
+	COLOR: #ff0000; TEXT-DECORATION: none
+}
+A.marked1:link {
+	PADDING-LEFT: 1.7em; BACKGROUND-IMAGE: url(/site/gfx/arrow.green.gif); COLOR: #0000c0; BACKGROUND-REPEAT: no-repeat; HEIGHT: 2em
+}
+A.marked1:visited {
+	PADDING-LEFT: 1.7em; BACKGROUND-IMAGE: url(/site/gfx/arrow.green.gif); COLOR: #0000c0; BACKGROUND-REPEAT: no-repeat; HEIGHT: 2em
+}
+A.marked1:hover {
+	PADDING-LEFT: 1.7em; BACKGROUND-IMAGE: url(/site/gfx/arrow.green.gif); COLOR: #a82030; BACKGROUND-REPEAT: no-repeat; HEIGHT: 2em
+}
+A.marked1:active {
+	PADDING-LEFT: 1.7em; BACKGROUND-IMAGE: url(/site/gfx/arrow.green.gif); COLOR: #a82030; BACKGROUND-REPEAT: no-repeat; HEIGHT: 2em
+}
+H1 A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+H1 A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+H1 A:hover {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+H1 A:active {
+	COLOR: #000000; BACKGROUND-COLOR: #fcfbc4; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #0000c0
+}
+A:visited {
+	COLOR: #0000c0
+}
+A:hover {
+	COLOR: #a82030
+}
+A:active {
+	COLOR: #a82030; BACKGROUND-COLOR: #fcfbc4
+}
+A IMG {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 145%; PADDING-BOTTOM: 0px; MARGIN: 5px 0px; COLOR: #000; LINE-HEIGHT: 130%; PADDING-TOP: 0px; FONT-STYLE: normal
+}
+H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 110%; PADDING-BOTTOM: 0px; MARGIN: 1em 0px 5px; COLOR: #000000; PADDING-TOP: 0px; FONT-STYLE: normal
+}
+H3 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 100%; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 5px; COLOR: #000000; PADDING-TOP: 0px; FONT-STYLE: normal
+}
+H4 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 90%; PADDING-BOTTOM: 0px; MARGIN: 0px; COLOR: #000000; PADDING-TOP: 0px; FONT-STYLE: normal
+}
+P {
+	MARGIN-TOP: 0px; PADDING-TOP: 0px
+}
+TABLE {
+	MARGIN-BOTTOM: 1em
+}
+TH {
+	
+}
+TD {
+	
+}
+DT {
+	FONT-WEIGHT: bold
+}
+.nodisp {
+	DISPLAY: none
+}
+.dnone {
+	DISPLAY: none
+}
+PRE {
+	
+}
+CODE {
+	FONT-SIZE: 1.2em
+}
+.toc LI {
+	MARGIN-BOTTOM: 0.5em; LIST-STYLE-TYPE: square
+}
+.naviprevnext {
+	BORDER-RIGHT: silver 1px solid; PADDING-RIGHT: 1em; BORDER-TOP: silver 1px solid; PADDING-LEFT: 1em; PADDING-BOTTOM: 1em; BORDER-LEFT: silver 1px solid; PADDING-TOP: 1em; BORDER-BOTTOM: silver 1px solid; BACKGROUND-COLOR: #f8f8f8
+}
+.naviprevnext H2 {
+	MARGIN-TOP: 0em; PADDING-TOP: 0em
+}
+.leftcolumnbox {
+	BORDER-RIGHT: #336699 1px solid; BORDER-TOP: #336699 1px solid; MARGIN-BOTTOM: 1em; BORDER-LEFT: #336699 1px solid; BORDER-BOTTOM: #336699 1px solid; BACKGROUND-COLOR: #f8f8f8
+}
+.leftcolumnbox H2 {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 0.85em; BACKGROUND: #336699; PADDING-BOTTOM: 2px; MARGIN: 0em; COLOR: #ffffff; PADDING-TOP: 2px
+}
+#newslettertextbox {
+	FONT-SIZE: 0.85em; WIDTH: 94%
+}
+#newslettertextbutton1 {
+	FONT-SIZE: 0.8em; WIDTH: 45%
+}
+#newslettertextbutton2 {
+	FONT-SIZE: 0.8em; WIDTH: 55%
+}
+#learnhtml {
+	MIN-HEIGHT: 180px; MARGIN-BOTTOM: 1em; BORDER-BOTTOM: silver 1px solid; HEIGHT: 180px
+}
+#learncss {
+	MIN-HEIGHT: 180px; HEIGHT: 180px
+}
+.learnboximage {
+	FLOAT: left; MARGIN-RIGHT: 1em
+}
+.learnboxtext {
+	PADDING-TOP: 2em
+}
+.learnboxlinkcontainer {
+	LINE-HEIGHT: 1.3em; HEIGHT: 3.5em
+}
+.learnboxlinkimage {
+	FLOAT: left; BACKGROUND-IMAGE: url(/site/gfx/arrow.green.gif); WIDTH: 22px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 20px
+}
+.sectionbox {
+	BORDER-RIGHT: silver 1px solid; PADDING-RIGHT: 1em; BORDER-TOP: silver 1px solid; PADDING-LEFT: 1em; MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 1em; BORDER-LEFT: silver 1px solid; PADDING-TOP: 1em; BORDER-BOTTOM: silver 1px solid; BACKGROUND-COLOR: #f8f8f8
+}
+.sectionbox H2 {
+	MARGIN-TOP: 0em; PADDING-TOP: 0em
+}
+.sectionbox2 {
+	BORDER-RIGHT: #ffffff 1px solid; PADDING-RIGHT: 1em; BORDER-TOP: #ffffff 1px solid; PADDING-LEFT: 1em; MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 1em; BORDER-LEFT: #ffffff 1px solid; PADDING-TOP: 1em; BORDER-BOTTOM: #ffffff 1px solid; BACKGROUND-COLOR: #ffffff
+}
+.sectionbox2 H2 {
+	MARGIN-TOP: 0em; PADDING-TOP: 0em
+}

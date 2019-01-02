@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../tutorial.css">
+    <title>Div and Span</title>
+    <meta http-equiv="Content-Type" content="text/html;
+      charset=windows-1252">
+  </head>
+  <body>
+    <div id="header">
+      <h1>Learning to use semantic elements, divs and spans</h1>
+      <div class="navbar">
+        <script src="../nav.js">
+</script></div>
+    </div>
+    <div id="content">
+      <div id="main-text">
+        <!--ADD CONTENT HERE-->
+        <h4 class="assign"> Due Date: Friday, 3/23/18: </h4>
+        <h4>In this assignment you will begin to use the new html5
+          semantic elements, as well as the div and span tags to explore
+          how they work. These tags are used to group and structure a
+          web document. <br>
+        </h4>
+        <p>Until recently, many advanced web pages were mostly made up
+          of &lt;div&gt; elements, and they were distinguished using
+          classes or ids.</p>
+        <p>In html5, new elements have been introduced.&nbsp; This saves
+          typing when styling, but also helps automated search engines
+          learn more about your page's content and structure.</p>
+        <p>In order to see the difference, look at the figures "Listing
+          1" and "Listing 2" in this link:<br>
+          <a href="http://www.ibm.com/developerworks/library/x-html5/">http://www.ibm.com/developerworks/library/x-html5/</a></p>
+        <p>The <a href="https://bradentonwebsitedesign.com/NotePad_Tutorials/Html5.htm">new elements</a> are often called the "html5 semantic
+          elements."&nbsp; To learn why, and to learn about their
+          importance, please&nbsp; read this entire page: <a
+            href="http://www.w3schools.com/html/html5_semantic_elements.asp">http://www.w3schools.com/html/html5_semantic_elements.asp</a></p>
+        <p>New html dog link, this one on sectioning:<br>
+          <a
+            href="http://www.htmldog.com/guides/html/intermediate/sectioning/">http://www.htmldog.com/guides/html/intermediate/sectioning/</a></p>
+        <p>There's a nice flowchart here, to help you decide which of
+          the new semantic elements to use in any given situation.<br>
+          <a href="http://html5doctor.com/lets-talk-about-semantics/">http://html5doctor.com/lets-talk-about-semantics/</a></p>
+        <p>You don't need to read the article, just maybe save or even
+          print out the flowchart.</p>
+        <p>DO ASSIGNMENT, BELOW</p>
+        <p>Since this is new, I'm trying to change the whole Web Design
+          II website to consistently stay loyal to the new html5 way of
+          doing things.&nbsp; please help me out by pointing out things
+          I can change or improve. </p>
+        <p></p>
+        <hr>
+        <ul>
+          <li> Create an html file with latin text </li>
+          <li>Save the file as semantic.html</li>
+          <li>Think about creating logical sections for the web page, as
+            presented in the <a href="../../powerpoint/Div.ppt">slideshow</a></li>
+          <li> header, footer, navigation, wrapper/content, main text
+            are some typical divisions on a web page</li>
+          <li>Use at least <strong>eight</strong> different semantic
+            elements in your web page.</li>
+          <li>One can also set up elements inside other elements as a
+            way of categorizing information</li>
+          <li> Use the span tag at least once in this assignment to
+            create a special, inline section</li>
+          <li>Use an external style sheet to style the semantic
+            elements, divs and spans on the page to learn how valuable
+            these elements are.</li>
+          <li>Remember to validate your code</li>
+          <li> Send me an email informing me that you have completed the
+            assignment</li>
+          <div class="navbarfooter">
+            <script src="../nav.js">
+</script></div>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,462 @@
+A:link {
+	COLOR: #003
+}
+A:visited {
+	COLOR: gray
+}
+A:hover {
+	BACKGROUND: yellow; COLOR: black; TEXT-DECORATION: none
+}
+A:active {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: firebrick
+}
+BODY {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: small; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 5px; MARGIN: 0in; COLOR: black; PADDING-TOP: 0px; FONT-FAMILY: Comic,Georgia, "Lucida Grande", Verdana, "Bitstream Vera Sans", Arial, Helvetica, sans-serif; BORDER-RIGHT-WIDTH: 0px; min-width: 700px
+}
+TD {
+	FONT-SIZE: small; MARGIN: 0in; COLOR: black; FONT-FAMILY: Comic, Georgia, "Bitstream Vera Sans", "Trebuchet MS", "Lucida Grande", lucida, helvetica, sans-serif
+}
+.showme {
+	BORDER-LEFT: #354b62 1px solid
+}
+.showmeall {
+	BORDER-RIGHT: #354b62 1px solid; BORDER-TOP: #354b62 1px solid; BORDER-LEFT: #354b62 1px solid; BORDER-BOTTOM: #354b62 1px solid
+}
+TABLE.showmetable {
+	BORDER-RIGHT: black 0px solid; BORDER-TOP: black 0px solid; BORDER-LEFT: black 0px solid; BORDER-BOTTOM: black 0px solid; BORDER-COLLAPSE: collapse; empty-cells: show
+}
+.topnav {
+	BORDER-TOP: #f5f5f5 2px solid; FONT-WEIGHT: bold; FONT-SIZE: 0.8em; BACKGROUND: #f5f5f5; TEXT-TRANSFORM: uppercase; FONT-FAMILY: system,geneva, Tahoma, "Lucida Grande", "Trebuchet MS", "Bitstream Vera Sans", Verdana, Helvetica, sans-serif; TEXT-ALIGN: center
+}
+.topnav A {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 0.7em; BORDER-TOP: gray 1px solid; PADDING-LEFT: 0.7em; BACKGROUND: white; TEXT-TRANSFORM: uppercase; BORDER-LEFT: silver 1px solid; COLOR: #666; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: Tahoma, "Lucida Grande", "Trebuchet MS", "Bitstream Vera Sans", Verdana, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.topnav A:hover {
+	BACKGROUND: yellowgreen; COLOR: black
+}
+.topnav A:active {
+	BACKGROUND: firebrick; COLOR: black
+}
+A.on {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BACKGROUND: gray; BORDER-LEFT: black 1px solid; COLOR: white
+}
+A.on:visited {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BACKGROUND: gray; BORDER-LEFT: black 1px solid; COLOR: white
+}
+.bottomstuff {
+	BORDER-RIGHT: #ff6600 1px solid; BORDER-TOP: #ff6600 1px solid; FONT-WEIGHT: bold; BORDER-LEFT: #ff6600 1px solid; BORDER-BOTTOM: #ff6600 1px solid; FONT-FAMILY: Tahoma, Georgia, Lucida Sans Unicode; LETTER-SPACING: normal; BACKGROUND-COLOR: black; TEXT-ALIGN: center
+}
+.bar {
+	PADDING-RIGHT: 2px; BORDER-TOP: black 1px solid; PADDING-LEFT: 2px; FONT-WEIGHT: bold; FONT-SIZE: 0.8em; BACKGROUND: white; PADDING-BOTTOM: 2px; TEXT-TRANSFORM: uppercase; BORDER-LEFT: black 0px solid; COLOR: gray; PADDING-TOP: 2px; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: Tahoma,Georgia, Lucida Sans Unicode; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+.bar A {
+	FONT-WEIGHT: bold; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: black; TEXT-DECORATION: none
+}
+.bar A:hover {
+	FONT-WEIGHT: bold; BACKGROUND: orange; COLOR: black; TEXT-DECORATION: none
+}
+.barcenter {
+	PADDING-RIGHT: 10%; MARGIN: 0px auto; WORD-SPACING: 4px; LETTER-SPACING: 1px
+}
+.comment {
+	BORDER-RIGHT: silver 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: silver 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: normal; FONT-SIZE: x-small; BACKGROUND: whitesmoke; MARGIN: 0px auto; BORDER-LEFT: silver 1px solid; WIDTH: 395px; BORDER-BOTTOM: silver 1px solid; TEXT-ALIGN: right
+}
+.text {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: black 1px solid; PADDING-LEFT: 10px; FONT-SIZE: small; BACKGROUND: white; PADDING-BOTTOM: 10px; BORDER-LEFT: black 1px solid; LINE-HEIGHT: 140%; PADDING-TOP: 10px; FONT-FAMILY: Georgia,Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+.leftmain {
+	BORDER-RIGHT: silver 1px solid; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 75%; BACKGROUND: #f5f5f5; PADDING-BOTTOM: 10px; BORDER-LEFT: black 1px solid; PADDING-TOP: 10px; BORDER-BOTTOM: silver 1px solid
+}
+.centermain {
+	BORDER-RIGHT: white 1px solid; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 65%; BACKGROUND: white; PADDING-BOTTOM: 10px; BORDER-LEFT: white 1px solid; PADDING-TOP: 10px; BORDER-BOTTOM: silver 1px solid
+}
+.rightmain {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 75%; BACKGROUND: #f5f5f5; PADDING-BOTTOM: 10px; BORDER-LEFT: silver 1px solid; PADDING-TOP: 10px; BORDER-BOTTOM: silver 1px solid
+}
+.tinytable {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-SIZE: x-small; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: sans-serif
+}
+.tinytable TD {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-SIZE: x-small; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: sans-serif
+}
+.tinytableopacity {
+	FONT-SIZE: xx-small; BACKGROUND: none transparent scroll repeat 0% 0%; FONT-FAMILY: sans-serif
+}
+.tinytableopacity TD {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-SIZE: xx-small; FILTER: alpha(opacity=40); BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: sans-serif; moz-opacity: .40; opacity: .40
+}
+.tinytableopacity25 TD {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-SIZE: xx-small; FILTER: alpha(opacity=25); BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: sans-serif; moz-opacity: .25; opacity: .25
+}
+.tinytableopacity50 TD {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-SIZE: xx-small; FILTER: alpha(opacity=50); BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: sans-serif; moz-opacity: .50; opacity: .50
+}
+.tinytableopacity75 TD {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; FONT-SIZE: xx-small; FILTER: alpha(opacity=75); BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: sans-serif; moz-opacity: .75; opacity: .75
+}
+.rname {
+	BACKGROUND: none transparent scroll repeat 0% 0%; LINE-HEIGHT: 155%
+}
+.shadow {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FILTER: shadow(color:gray); PADDING-BOTTOM: 10px; WIDTH: 390px; PADDING-TOP: 10px; TEXT-ALIGN: center
+}
+.tipbox {
+	BORDER-RIGHT: #808080 1px solid; PADDING-RIGHT: 15px; BORDER-TOP: #808080 1px solid; PADDING-LEFT: 15px; BACKGROUND: whitesmoke; PADDING-BOTTOM: 15px; MARGIN: 0px auto; BORDER-LEFT: #808080 1px solid; WIDTH: 290px; COLOR: black; LINE-HEIGHT: 160%; PADDING-TOP: 15px; BORDER-BOTTOM: #808080 1px solid; TEXT-ALIGN: left
+}
+TEXTAREA {
+	BORDER-RIGHT: silver 1px solid; BORDER-TOP: silver 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 0.91em; BACKGROUND: #fcfcfc; BORDER-LEFT: silver 1px solid; COLOR: #009; BORDER-BOTTOM: silver 1px solid; FONT-FAMILY: "Courier New", Courier, monospace; TEXT-ALIGN: left
+}
+PRE {
+	FONT-SIZE: 100%; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #009; LINE-HEIGHT: 150%; FONT-FAMILY: "Courier New", Courier, monospace; TEXT-ALIGN: left
+}
+CODE {
+	FONT-SIZE: 105%; COLOR: #600; FONT-FAMILY: "Courier New", Courier, monospace
+}
+KBD {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #999 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 100%; BACKGROUND: white; BORDER-LEFT: #999 1px solid; COLOR: #600; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: "Courier New", Courier, monospace
+}
+.sidebar {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: black 1px solid; PADDING-LEFT: 10px; FONT-SIZE: 10pt; BACKGROUND: white; PADDING-BOTTOM: 10px; MARGIN: 10px; BORDER-LEFT: black 1px solid; LINE-HEIGHT: 140%; PADDING-TOP: 10px; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.smalltype {
+	FONT-SIZE: 10px; COLOR: #354b62; FONT-FAMILY: Verdana; LETTER-SPACING: 4px; TEXT-ALIGN: center
+}
+H1 {
+	BACKGROUND: none transparent scroll repeat 0% 0%; FONT: 18pt Haettenschweiler, brush script mt,impact,arial,verdana; COLOR: black; LETTER-SPACING: 1px; TEXT-ALIGN: center
+}
+H2 {
+	FONT: 18pt Haettenschweiler, brush script mt,impact,arial,verdana; COLOR: #666; PADDING-TOP: 30px; LETTER-SPACING: normal; TEXT-ALIGN: center
+}
+H2.fronthead {
+	BORDER-RIGHT: medium none; BORDER-TOP: medium none; FONT-SIZE: large; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px; BORDER-LEFT: medium none; WIDTH: auto; COLOR: #ff6600; PADDING-TOP: 0px; BORDER-BOTTOM: medium none; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: auto; TEXT-ALIGN: center
+}
+H3 {
+	MARGIN-TOP: 10px; MARGIN-BOTTOM: 0px; FONT: 18pt Haettenschweiler, brush script mt,impact,arial,verdana; COLOR: #333; LETTER-SPACING: normal; TEXT-ALIGN: center
+}
+H3.fronthead {
+	BACKGROUND: none transparent scroll repeat 0% 0%; FONT: 18pt Haettenschweiler, brush script mt,impact,arial,verdana; MARGIN-LEFT: 30px; COLOR: #ff6600; POSITION: relative; TOP: -290px
+}
+H3.underline {
+	BORDER-RIGHT: silver 1px solid; BORDER-TOP: silver 1px solid; MARGIN-TOP: 70px; MARGIN-BOTTOM: 40px; BORDER-LEFT: silver 1px solid; COLOR: black; BORDER-BOTTOM: black 3px solid
+}
+H3.frontstyle {
+	MARGIN-TOP: 10px; BACKGROUND: none transparent scroll repeat 0% 0%; MARGIN-BOTTOM: 0px; COLOR: black
+}
+H3.oldfrontstyle {
+	MARGIN-TOP: 10px; BACKGROUND: none transparent scroll repeat 0% 0%; MARGIN-BOTTOM: 0px; FONT: 18pt Haettenschweiler, brush script mt,impact,arial,verdana; COLOR: black; LETTER-SPACING: normal; TEXT-ALIGN: center
+}
+H4 {
+	FONT-WEIGHT: bold; FONT-SIZE: large; COLOR: #222; LINE-HEIGHT: 2em; FONT-FAMILY: Arial,Georgia; LETTER-SPACING: -0.04em
+}
+H4 .backcolor {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; PADDING-LEFT: 10px; BACKGROUND: yellowgreen; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid
+}
+.onetime {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; MARGIN-TOP: 3em; PADDING-LEFT: 10px; BACKGROUND: yellowgreen; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid
+}
+.withback {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; MARGIN-TOP: 50px; PADDING-LEFT: 10px; BACKGROUND: url(http://www.mandarindesign.com/images/yellow.jpg) no-repeat; FILTER: alpha(opacity=90); BORDER-LEFT: black 1px solid; COLOR: black; BORDER-BOTTOM: black 1px solid; opacity: .90
+}
+HR {
+	BORDER-TOP-WIDTH: 0px; MARGIN-TOP: 20px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: url(http://www.mandarindesign.com/images/hr.gif); FILTER: alpha(opacity=50); BORDER-BOTTOM-WIDTH: 0px; WIDTH: 100%; HEIGHT: 1px; BORDER-RIGHT-WIDTH: 0px; opacity: .50
+}
+H5 {
+	FONT-WEIGHT: bold; FONT-SIZE: medium; COLOR: #333; LINE-HEIGHT: 1.5em; FONT-FAMILY: Arial,Georgia; LETTER-SPACING: -0.05em
+}
+H6 {
+	FONT-WEIGHT: normal; FONT-SIZE: 12pt; BACKGROUND: none transparent scroll repeat 0% 0%; WORD-SPACING: 4px; COLOR: #c30; FONT-FAMILY: "Trebuchet MS", Verdana, Geneva, Arial, Helvetica, sans-serif; LETTER-SPACING: 2px; TEXT-ALIGN: center
+}
+H6.mandarin {
+	BORDER-RIGHT: #666 1px solid; BORDER-TOP: #666 1px solid; DISPLAY: block; FONT-WEIGHT: bolder; FONT-SIZE: 12px; BACKGROUND: whitesmoke; WORD-SPACING: 4px; TEXT-TRANSFORM: uppercase; BORDER-LEFT: #666 1px solid; WIDTH: 100%; COLOR: black; LINE-HEIGHT: 125%; BORDER-BOTTOM: #666 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; LETTER-SPACING: 2px; HEIGHT: 16px; TEXT-ALIGN: center
+}
+.nearlybold {
+	MARGIN-TOP: 25px; FONT-WEIGHT: 600; FONT-SIZE: 105%; MARGIN-BOTTOM: 30px; PADDING-BOTTOM: 5px; COLOR: #333; PADDING-TOP: 5px
+}
+.front {
+	BACKGROUND: none transparent scroll repeat 0% 0%; POSITION: relative; TOP: -50px
+}
+.navbutton {
+	BORDER-RIGHT: #000000 thin outset; BORDER-TOP: #cccccc thin outset; BACKGROUND: #fff; BORDER-LEFT: #cccccc thin outset; BORDER-BOTTOM: #000000 thin outset
+}
+.example {
+	BORDER-RIGHT: #960 1px dashed; PADDING-RIGHT: 10px; BORDER-TOP: #960 1px dashed; PADDING-LEFT: 25px; BACKGROUND: white; PADDING-BOTTOM: 20px; BORDER-LEFT: #960 1px dashed; WIDTH: 90%; PADDING-TOP: 20px; BORDER-BOTTOM: #960 1px dashed
+}
+P.first {
+	MARGIN-TOP: 5px
+}
+SPAN.mandnav {
+	FONT-WEIGHT: bold; FONT-SIZE: 14pt; BACKGROUND: #333333; COLOR: #000000
+}
+P.thelist {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; FONT-SIZE: large; BACKGROUND: white; COLOR: silver
+}
+P.pulltrans {
+	BORDER-RIGHT: black 2px dotted; BORDER-TOP: black 2px dotted; MARGIN-TOP: 10px; FONT-SIZE: 28px; BACKGROUND: white; FILTER: alpha(opacity=50); FLOAT: right; MARGIN-BOTTOM: 10px; MARGIN-LEFT: 10px; BORDER-LEFT: black 2px dotted; WIDTH: 150px; COLOR: black; LINE-HEIGHT: 26px; BORDER-BOTTOM: black 2px dotted; FONT-FAMILY: Verdana, Arial, Helvetica,Georgia; TEXT-ALIGN: right; moz-opacity: .50; opacity: .50; khtml-opacity: 0.50
+}
+.pullquote {
+	BORDER-RIGHT: maroon 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: maroon 1px solid; MARGIN-TOP: 10px; PADDING-LEFT: 5px; FONT-WEIGHT: bold; BACKGROUND: #ffcc00; FLOAT: right; PADDING-BOTTOM: 5px; MARGIN-LEFT: 10px; BORDER-LEFT: maroon 1px solid; WIDTH: 145px; COLOR: black; LINE-HEIGHT: 140%; PADDING-TOP: 5px; BORDER-BOTTOM: maroon 1px solid
+}
+BLOCKQUOTE {
+	BACKGROUND: none transparent scroll repeat 0% 0%; LINE-HEIGHT: 1em; FONT-FAMILY: "Courier New", Courier, monospace; TEXT-ALIGN: justify
+}
+BLOCKQUOTE.withquote {
+	PADDING-LEFT: 20px; BACKGROUND: url(http://www.mandarindesign.com/images/quote.gif) no-repeat left top; TEXT-ALIGN: justify
+}
+P.withunquote {
+	PADDING-RIGHT: 5px; BACKGROUND: url(http://www.mandarindesign.com/images/unquote.gif) no-repeat right bottom
+}
+.leftside {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 85%; BACKGROUND: white; PADDING-BOTTOM: 10px; PADDING-TOP: 0px; FONT-FAMILY: Georgia,Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+.centerside {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; FONT-SIZE: 85%; BACKGROUND: white; PADDING-BOTTOM: 10px; PADDING-TOP: 0px; FONT-FAMILY: Georgia,Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+.rightside {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 10px; FONT-SIZE: 85%; BACKGROUND: white; PADDING-BOTTOM: 10px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: Georgia,Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+.box1 {
+	BORDER-RIGHT: white 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: white 1px solid; PADDING-LEFT: 10px; BACKGROUND: white; PADDING-BOTTOM: 10px; BORDER-LEFT: white 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: white 1px solid
+}
+.backcolor {
+	BACKGROUND: white
+}
+.backcolor2 {
+	BACKGROUND: black
+}
+.linecolor1 {
+	BACKGROUND: #ff6600
+}
+.linecolor2 {
+	BACKGROUND: firebrick
+}
+.accentcolor {
+	COLOR: firebrick
+}
+.background1 {
+	BACKGROUND: pink
+}
+.lightercolor {
+	BACKGROUND: white
+}
+.darkercolor {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BACKGROUND: silver; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid
+}
+.blogrightside {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: black 1px solid; PADDING-LEFT: 10px; FONT-SIZE: 85%; BACKGROUND: white; PADDING-BOTTOM: 10px; MARGIN: 3px; BORDER-LEFT: black 1px solid; LINE-HEIGHT: 140%; PADDING-TOP: 10px; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: Georgia,Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+.oldtextbox1 {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 5px; BACKGROUND: white
+}
+.textbox1 {
+	BACKGROUND: white
+}
+.kindayellow {
+	BACKGROUND: #fefef6
+}
+.divcenter300 {
+	MARGIN: 0px auto; WIDTH: 300px; TEXT-ALIGN: left
+}
+.divcenter325 {
+	MARGIN: 0px auto; WIDTH: 325px; TEXT-ALIGN: left
+}
+.divcenter350 {
+	MARGIN: 0px auto; WIDTH: 350px; TEXT-ALIGN: left
+}
+.divcenter375 {
+	MARGIN: 0px auto; WIDTH: 375px; TEXT-ALIGN: left
+}
+.divcenter400 {
+	MARGIN: 0px auto; WIDTH: 400px; TEXT-ALIGN: left
+}
+.divcenter425 {
+	MARGIN: 0px auto; WIDTH: 425px; TEXT-ALIGN: left
+}
+.divcenter450 {
+	MARGIN: 0px auto; WIDTH: 450px; TEXT-ALIGN: left
+}
+.divcenter475 {
+	MARGIN: 0px auto; WIDTH: 475px; TEXT-ALIGN: left
+}
+OL.downarrow {
+	LIST-STYLE-IMAGE: url(http://www.mandarindesign.com/images/downArrow.gif); LIST-STYLE-TYPE: square
+}
+UL {
+	PADDING-LEFT: 0.5em; MARGIN-LEFT: 1.5em; LIST-STYLE-TYPE: square
+}
+UL.maglist {
+	MARGIN-LEFT: 0.5em; COLOR: gray
+}
+.magheadbig {
+	MARGIN-TOP: 15px; FONT-SIZE: 32pt; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: black; LINE-HEIGHT: 0.8em; TEXT-DECORATION: none
+}
+.magheadbigblog {
+	FONT-SIZE: 28pt; BACKGROUND: none transparent scroll repeat 0% 0%; WORD-SPACING: -2px; COLOR: black; LINE-HEIGHT: 0.8em; LETTER-SPACING: -1px; TEXT-DECORATION: none
+}
+.magheadbigunder {
+	FONT-SIZE: 32pt; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: black; LINE-HEIGHT: 0.8em; BORDER-BOTTOM: #d4d4c7 5px solid; TEXT-DECORATION: none
+}
+.magtextunder {
+	FONT-SIZE: large; COLOR: black; BORDER-BOTTOM: #d4d4c7 3px solid; TEXT-DECORATION: none
+}
+.magtextsmall {
+	FONT-WEIGHT: bold; FONT-SIZE: small; COLOR: black; LINE-HEIGHT: 1.2em; FONT-FAMILY: Arial,Georgia; LETTER-SPACING: -1px
+}
+.magtext {
+	FONT-WEIGHT: bold; FONT-SIZE: medium; COLOR: #333; LINE-HEIGHT: 1.2em; FONT-FAMILY: Arial,Georgia; LETTER-SPACING: -1px
+}
+.magnumber {
+	FONT-SIZE: 36pt; FLOAT: left; COLOR: #923914; LINE-HEIGHT: 1.1em
+}
+.magheadred {
+	FONT-WEIGHT: normal; FONT-SIZE: large; COLOR: #923914; LINE-HEIGHT: 1.1em; FONT-FAMILY: sans-serif; LETTER-SPACING: -1px; TEXT-DECORATION: none
+}
+.magfirstletter {
+	FONT-SIZE: 150%; FONT-FAMILY: "times","times new roman"
+}
+.magstyletop {
+	FONT-WEIGHT: bold; FONT-SIZE: 28pt; BACKGROUND: white; PADDING-BOTTOM: 5px; COLOR: silver; LINE-HEIGHT: 1em; PADDING-TOP: 3px; FONT-FAMILY: Georgia,Times
+}
+A.boldtext {
+	FONT-WEIGHT: bold; FONT-SIZE: 1.1em; FONT-FAMILY: Arial,Georgia; TEXT-DECORATION: none
+}
+A.boldtext1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 1.1em; TEXT-DECORATION: none
+}
+.magtitle {
+	FONT-WEIGHT: bold; FONT-SIZE: 42px; BACKGROUND: white; WIDTH: 100%; COLOR: black; LINE-HEIGHT: 1em; PADDING-TOP: 3px; FONT-FAMILY: Georgia,Times; TEXT-ALIGN: left
+}
+.magtitlesmaller {
+	MARGIN-TOP: 10px; FONT-WEIGHT: bold; FONT-SIZE: 34px; BACKGROUND: white; PADDING-BOTTOM: 5px; WIDTH: 100%; COLOR: black; LINE-HEIGHT: 1em; PADDING-TOP: 3px; FONT-FAMILY: Georgia,Times; LETTER-SPACING: -1px; TEXT-ALIGN: left
+}
+.magline {
+	FONT-WEIGHT: bold; FONT-SIZE: small; BACKGROUND: #960; WIDTH: 100%; COLOR: black; FONT-FAMILY: system,geneva; TEXT-ALIGN: center
+}
+.authorname {
+	FONT-SIZE: x-small; COLOR: #666
+}
+.box2 {
+	BORDER-RIGHT: white 1px solid; PADDING-RIGHT: 5px; PADDING-LEFT: 5px; BACKGROUND: white; PADDING-BOTTOM: 0px; BORDER-LEFT: white 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: white 1px solid
+}
+.faqtext {
+	PADDING-RIGHT: 10px; BORDER-TOP: silver 1px dashed; MARGIN-TOP: 100px; PADDING-LEFT: 10px; FONT-SIZE: smaller; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 10px; COLOR: #666; LINE-HEIGHT: 150%; PADDING-TOP: 10px; FONT-FAMILY: Georgia,Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+.oldtext {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: black 1px solid; PADDING-LEFT: 10px; FONT-SIZE: small; BACKGROUND: white; PADDING-BOTTOM: 10px; MARGIN: 3px 3px 10px; BORDER-LEFT: black 1px solid; LINE-HEIGHT: 150%; PADDING-TOP: 10px; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: Georgia,Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+.tighttitle {
+	FONT-SIZE: 22px; MARGIN-BOTTOM: 2px; PADDING-BOTTOM: 2px; COLOR: #993300; LINE-HEIGHT: 105%; FONT-FAMILY: georgia, verdana, arial, helvetica
+}
+.textnarrow {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 50px; BORDER-TOP: black 1px solid; PADDING-LEFT: 50px; FONT-SIZE: small; BACKGROUND: white; PADDING-BOTTOM: 50px; MARGIN: 3px 3px 10px; BORDER-LEFT: black 1px solid; LINE-HEIGHT: 150%; PADDING-TOP: 20px; BORDER-BOTTOM: black 1px solid; FONT-FAMILY: Georgia,Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-ALIGN: left
+}
+.polaroid {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 15px; BORDER-TOP: black 1px solid; PADDING-LEFT: 15px; BACKGROUND: white; PADDING-BOTTOM: 55px; BORDER-LEFT: black 1px solid; PADDING-TOP: 15px; BORDER-BOTTOM: black 1px solid; TEXT-ALIGN: center
+}
+.polaroidtext {
+	COLOR: black; POSITION: relative; TOP: -50px
+}
+.overlay {
+	BACKGROUND: blue; FILTER: alpha(opacity=20); WIDTH: 100%; COLOR: white; HEIGHT: 100%; moz-opacity: .20; opacity: .20
+}
+.magopacity {
+	MARGIN-TOP: 5px; BACKGROUND: white; FILTER: alpha(opacity=85); MARGIN-BOTTOM: 2px; WIDTH: 100%; COLOR: #930; FONT-FAMILY: Haettenschweiler, Verdana, Arial, Helvetica; LETTER-SPACING: normal; TEXT-ALIGN: left; moz-opacity: .85; opacity: .85; khtml-opacity: 0.85
+}
+.maglineclear {
+	FONT-WEIGHT: bold; FONT-SIZE: small; BACKGROUND: #930; FILTER: alpha(opacity=15); WIDTH: 100%; COLOR: #930; FONT-FAMILY: system,geneva; TEXT-ALIGN: center; moz-opacity: .15; opacity: .15; khtml-opacity: 0.15
+}
+DIV.transOFF {
+	WIDTH: 100%
+}
+DIV.transON {
+	FILTER: alpha(opacity=50); WIDTH: 100%; moz-opacity: 0.5; opacity: .50; khtml-opacity: 0.5
+}
+.transOFF {
+	WIDTH: 100%
+}
+.transON {
+	BACKGROUND: none transparent scroll repeat 0% 0%; FILTER: alpha(opacity=50); WIDTH: 100%; moz-opacity: 0.5; opacity: .50; khtml-opacity: 0.5
+}
+A.linkopacity IMG {
+	FILTER: alpha(opacity=50); moz-opacity: 0.5; opacity: 0.5; khtml-opacity: 0.5
+}
+A.linkopacity:hover IMG {
+	FILTER: alpha(opacity=100); moz-opacity: 1.0; opacity: 1.0; khtml-opacity: 1.0
+}
+A.linkopacity25 IMG {
+	FILTER: alpha(opacity=25); moz-opacity: 0.25; opacity: 0.25; khtml-opacity: 0.25
+}
+A.linkopacity25:hover IMG {
+	FILTER: alpha(opacity=100); moz-opacity: 1.0; opacity: 1.0; khtml-opacity: 1.0
+}
+A.linkopacity75 IMG {
+	FILTER: alpha(opacity=75); moz-opacity: 0.75; opacity: 0.75; khtml-opacity: 0.75
+}
+A.linkopacity75:hover IMG {
+	FILTER: alpha(opacity=100); moz-opacity: 1.0; opacity: 1.0; khtml-opacity: 1.0
+}
+A.linkopacity85 IMG {
+	FILTER: alpha(opacity=85); moz-opacity: 0.85; opacity: 0.85; khtml-opacity: 0.85
+}
+A.linkopacity85:hover IMG {
+	FILTER: alpha(opacity=100); moz-opacity: 1.0; opacity: 1.0; khtml-opacity: 1.0
+}
+A.linkopacity90 IMG {
+	FILTER: alpha(opacity=90); moz-opacity: 0.90; opacity: 0.90; khtml-opacity: 0.90
+}
+A.linkopacity90:hover IMG {
+	FILTER: alpha(opacity=100); moz-opacity: 1.0; opacity: 1.0; khtml-opacity: 1.0
+}
+A.textopacity:link {
+	FILTER: alpha(opacity=75); moz-opacity: 0.75; opacity: 0.75; khtml-opacity: 0.75
+}
+A.textopacity:visited {
+	FILTER: alpha(opacity=50); moz-opacity: 0.50; opacity: 0.50; khtml-opacity: 0.50
+}
+A.oldtextopacity:hover {
+	BACKGROUND: url(http://www.mandarindesign.com/images/ivan.jpg); FILTER: alpha(opacity=100); moz-opacity: 1.0; opacity: 1.0; khtml-opacity: .99
+}
+A.textopacity:hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%; FILTER: alpha(opacity=100); moz-opacity: 1.0; opacity: 1.0; khtml-opacity: .99
+}
+.footerleft {
+	MARGIN-TOP: 50px; FONT-SIZE: 85%; FLOAT: left; WIDTH: 65%
+}
+.footerright {
+	MARGIN-TOP: 50px; FONT-SIZE: 85%; FLOAT: right; WIDTH: 33%; TEXT-ALIGN: right
+}
+.floatleft {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; FLOAT: left; PADDING-BOTTOM: 15px; PADDING-TOP: 15px
+}
+.box {
+	BORDER-RIGHT: black 1px solid; PADDING-RIGHT: 15px; BORDER-TOP: black 1px solid; PADDING-LEFT: 15px; PADDING-BOTTOM: 15px; BORDER-LEFT: black 1px solid; WIDTH: 50%; PADDING-TOP: 15px; BORDER-BOTTOM: black 1px solid
+}
+.blue {
+	BACKGROUND: #354b62
+}
+.orange {
+	BACKGROUND: #f60
+}
+.white {
+	BACKGROUND: white
+}
+.left {
+	MARGIN: 0px auto 0px 0px
+}
+.right {
+	MARGIN: 0px 0px 0px auto
+}
+.center {
+	MARGIN: 0px auto
+}
+.archives {
+	BORDER-RIGHT: whitesmoke 1px solid; BORDER-TOP: whitesmoke 1px solid; BACKGROUND: white; BORDER-LEFT: whitesmoke 1px solid; BORDER-BOTTOM: whitesmoke 1px solid
+}
+.archives TD {
+	WIDTH: 140px; HEIGHT: 140px
+}
+.archives A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: small; MARGIN-LEFT: 20px; COLOR: black; FONT-FAMILY: Arial,Georgia; LETTER-SPACING: -1px
+}
+.archives A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: small; MARGIN-LEFT: 20px; COLOR: gray; FONT-FAMILY: Arial,Georgia; LETTER-SPACING: -1px
+}

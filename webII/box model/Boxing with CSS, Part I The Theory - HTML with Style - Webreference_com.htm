@@ -1,0 +1,571 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0043)http://www.webreference.com/html/tutorial9/ -->
+<HTML><HEAD><TITLE>Boxing with CSS, Part I: The Theory - HTML with Style - Webreference.com</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<STYLE type=text/css>FORM.tb {
+	DISPLAY: inline
+}
+.twidth {
+	WIDTH: 100%
+}
+.include {
+	FONT-SIZE: 75%; FONT-FAMILY: verdana, arial, helvetica
+}
+.includebig {
+	FONT-FAMILY: verdana, arial, helvetica
+}
+.includebig A:link {
+	COLOR: blue
+}
+.includebig A:visited {
+	COLOR: purple
+}
+.include A:link {
+	COLOR: blue
+}
+.include A:visited {
+	COLOR: purple
+}
+.submitter {
+	FONT-SIZE: 75%; FONT-FAMILY: verdana, arial, helvetica
+}
+.codehighlight {
+	BACKGROUND: #eee
+}
+.WRy1 {
+	BACKGROUND: #fc0
+}
+.WRy2 {
+	BACKGROUND: #fff3ac
+}
+PRE.code {
+	MARGIN-LEFT: 5%; COLOR: #660099
+}
+ADDRESS {
+	TEXT-ALIGN: right
+}
+BODY {
+	BACKGROUND: #ffffff; MARGIN-LEFT: 5%; MARGIN-RIGHT: 5%
+}
+.WRBannerCenter {
+	MARGIN: 8px -5%; TEXT-ALIGN: center
+}
+</STYLE>
+
+<META 
+content="A tutorial that describes the CSS box model and the use of margins, padding and borders in CSS style sheets, containing simple instructions and practical examples." 
+name=Description>
+<META 
+content="HTML CSS stylesheets style world wide web page tutorial column Thursday beginner expert" 
+name=Keywords><LINK title="HTML with Style Defalt Stylesheet" 
+href="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/article.css" 
+rel=Stylesheet>
+<META content="MSHTML 6.00.2900.3020" name=GENERATOR></HEAD>
+<BODY text=#000000 vLink=#007000 aLink=#ff0000 link=#00a000 bgColor=#ffffff>
+<DIV id=wrHead align=center>
+<P class=wrAd>
+<DIV class=WRBannerCenter align=center>
+<TABLE 
+style="BORDER-RIGHT: #003399 1px solid; BORDER-TOP: #003399 1px solid; BORDER-LEFT: #003399 1px solid; BORDER-BOTTOM: #003399 1px solid" 
+height=25 cellSpacing=0 cellPadding=0 width=750 bgColor=#ffffff>
+  <TBODY>
+  <TR>
+    <TD align=middle width=97><A 
+      href="http://www.webreference.com/RealMedia/ads/click_lx.ads/intm/webdev/www.webreference.com/html/tutorial9/857980809/house_ribbon/OasDefault/Swsoft_NW_5_01_WC_GEMS_2d/5.01_on_demand_SWSoft_WC_ribbon.html/39666661313730323436333232626130?index.php/3516_default"><IMG 
+      height=12 alt=" width=" 
+      src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/earthweb_foot2.gif" 
+      border=0 93?></A> </TD>
+    <TD 
+    style="PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px" 
+    align=middle bgColor=#ffffff><SPAN 
+      style="FONT-SIZE: 12px; COLOR: #000000; FONT-FAMILY: Arial,Helvetica,sans-serif"><A 
+      href="http://www.webreference.com/RealMedia/ads/click_lx.ads/intm/webdev/www.webreference.com/html/tutorial9/857980809/house_ribbon/OasDefault/Swsoft_NW_5_01_WC_GEMS_2d/5.01_on_demand_SWSoft_WC_ribbon.html/39666661313730323436333232626130?index.php/3516_default"><FONT 
+      color=#003399><B>On Demand Webcast- Two Roads to Mainstream 
+      Virtualization. Learn What Changes to Expect as They 
+      Evolve.</B></A></FONT></SPAN> </TD></TR></TBODY></TABLE><IMG height=1 
+src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/39666661313730323436333232626130.gif" 
+width=1><BR><IMG height=4 alt=spacer 
+src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/t.gif" 
+width=1><BR>
+<SCRIPT language=JavaScript1.1>
+<!--
+var TFSMFlash_VERSION=6;
+var TFSMFlash_WMODE="window";
+var TFSMFlash_OASCLICK="http://www.webreference.com/RealMedia/ads/click_lx.ads/intm/webdev/www.webreference.com/html/tutorial9/99785768/468x60-1/OasDefault/Microsoft_Protocols_FY07Q4_1e/protocols_banner_728_90.html/39666661313730323436333232626130";
+var TFSMFlash_SWFCLICKVARIABLE="?clickTAG=http://www.webreference.com/RealMedia/ads/click_lx.ads/intm/webdev/www.webreference.com/html/tutorial9/99785768/468x60-1/OasDefault/Microsoft_Protocols_FY07Q4_1e/protocols_banner_728_90.html/39666661313730323436333232626130?";
+var TFSMFlash_SWFFILE="http://www.webreference.com/RealMedia/ads/Creatives/OasDefault/Microsoft_Protocols_FY07Q4_1e/protocols_banner_728_90.swf"+TFSMFlash_SWFCLICKVARIABLE;
+var TFSMFlash_IMAGEALTERNATE="http://www.webreference.com/RealMedia/ads/Creatives/OasDefault/Microsoft_Protocols_FY07Q4_1e/728_90banner.gif";
+var TFSMFlash_OASALTTEXT="Click Here";
+var TFSMFlash_OASTARGET="_blank";
+var TFSMFlash_OASPROTOCOL="http://";
+var TFSMFlash_OASDIM="WIDTH='728' HEIGHT='90'";
+var TFSMFlash_OASADID="ad_banner";
+
+document.write('<scr'+'ipt src="http://www.webreference.com/RealMedia/ads/Creatives/OasDefault/Microsoft_Protocols_FY07Q4_1e/TFSMFlashWrapper201.js"></scr'+'ipt>');
+-->
+</SCRIPT>
+<NOSCRIPT><A 
+href="http://www.webreference.com/RealMedia/ads/click_lx.ads/intm/webdev/www.webreference.com/html/tutorial9/99785768/468x60-1/OasDefault/Microsoft_Protocols_FY07Q4_1e/protocols_banner_728_90.html/39666661313730323436333232626130?" 
+target=_blank><IMG height=90 alt="Click Here" 
+src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/728_90banner.gif" 
+width=728 border=0></A> </NOSCRIPT><IMG height=1 
+src="W:\USERS\HS\moriartm\webII\box model\Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files\39666661313730323436333232626130(1).gif" 
+width=1></DIV>
+<P></P>
+<P class=wrNav>
+<CENTER>
+<FORM action=/cgi-bin/search.cgi method=get>
+<TABLE class=twidth cellSpacing=0 cellPadding=2 width="100%" bgColor=black 
+border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=2 width="100%" bgColor=#ffcc00 
+        border=0><TBODY>
+        <TR vAlign=center>
+          <TD width=32><A href="http://www.webreference.com/"><IMG height=16 
+            alt=Webref 
+            src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/l_webref32x16.gif" 
+            width=32 border=0></A></TD>
+          <TD class=include vAlign=center><B><A 
+            href="http://www.webreference.com/">WebRef</A>&nbsp;</B></TD>
+          <TD class=include width="70%" bgColor=#ffffff>&nbsp;<A 
+            href="http://www.webreference.com/index2.html">Sitemap</A> · <A 
+            href="http://www.webreference.com/experts/">Experts</A> · <A 
+            href="http://www.webreference.com/tools/">Tools</A> · <A 
+            href="http://www.webreference.com/services/">Services</A> · <A 
+            href="http://www.webreference.com/new/">Newsletters</A> · <A 
+            href="http://www.webreference.com/about.html">About</A></TD>
+          <TD align=right width="1%" bgColor=#ffffff><INPUT size=15 
+          name=query></TD>
+          <TD align=right width="1%" bgColor=#ffffff><INPUT class=SUBMITTER type=submit value=Search></TD>
+          <TD align=right bgColor=#ffffff><A href="http://internet.com/"><IMG 
+            height=11 alt=i.com 
+            src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/i.gif" 
+            width=72 
+border=0></A></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></FORM></CENTER>
+<P></P>
+<DIV class=navigation>
+<DIV class=wrPath><A href="http://www.webreference.com/">home</A> / <A 
+href="http://www.webreference.com/experts/">experts</A> / <A 
+href="http://www.webreference.com/html/">html</A> / tutorial9 </DIV>
+<P class=buttons align=right><IMG alt="Front Page" 
+src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/b_center.gif"><A 
+href="http://www.webreference.com/html/tutorial9/1.html"><IMG alt=1 
+src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/b_right.gif" 
+border=0></A><A href="http://www.webreference.com/html/tutorial9/2.html"><IMG 
+alt=2 
+src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/b_right.gif" 
+border=0></A><A href="http://www.webreference.com/html/tutorial9/3.html"><IMG 
+alt=3 
+src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/b_right.gif" 
+border=0></A><A href="http://www.webreference.com/html/tutorial9/4.html"><IMG 
+alt=4 
+src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/b_right.gif" 
+border=0></A><A href="http://www.webreference.com/html/tutorial9/5.html"><IMG 
+alt=5 
+src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/b_right.gif" 
+border=0></A></P></DIV></DIV>
+<DIV id=main>
+<DIV id=title><IMG height=100 alt="" 
+src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/hwslogo_small.jpg" 
+width=100 align=left> 
+<H1>Boxing with CSS, Part I: The Theory</H1><BR clear=all></DIV>
+<DIV class=leftad>
+<STYLE type=text/css>#WDinclude {
+	FONT-SIZE: 75%; FONT-FAMILY: verdana, arial, helvetica
+}
+.WDi {
+	FONT-FAMILY: verdana, arial, helvetica
+}
+#WDinclude A:link {
+	COLOR: blue
+}
+.WDi A:link {
+	COLOR: blue
+}
+#WDinclude A:visited {
+	COLOR: purple
+}
+.WDi A:visited {
+	COLOR: purple
+}
+.WRy1 {
+	BACKGROUND: #fc0
+}
+.WRy2 {
+	BACKGROUND: #fff3ac
+}
+</STYLE>
+
+<TABLE class=WRy1 cellSpacing=0 cellPadding=1 width=120 align=center border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=bottom align=middle><A 
+      href="http://www.conference-bridge.net/"><IMG height=60 
+      src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/conference-bridge-logo.gif" 
+      width=120 border=0></A> <IMG height=1 
+      src="W:\USERS\HS\moriartm\webII\box model\Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files\39666661313730323436333232626130(2).gif" 
+      width=1></TD></TR>
+  <TR>
+    <TD>
+      <TABLE class=WRy2 id=WDinclude cellSpacing=0 cellPadding=3 border=0>
+        <TBODY>
+        <TR class=WRy1>
+          <TD class=WDi align=middle><A 
+            href="http://www.internetnews.com/dev-news/"><B>Developer 
+            News</B></A></TD></TR>
+        <TR>
+          <TD class=WDi align=left><A 
+            href="http://redir.internet.com/rss/click/www.internetnews.com/dev-news/article.php/3675271">Silverlight 
+            Does Not Mean Full .Net Support</A></TD></TR>
+        <TR>
+          <TD class=WDi align=left><A 
+            href="http://redir.internet.com/rss/click/www.internetnews.com/dev-news/article.php/3675211">The 
+            Future of Open Source VoIP is Asterisk 1.6</A></TD></TR>
+        <TR>
+          <TD class=WDi align=left><A 
+            href="http://redir.internet.com/rss/click/www.internetnews.com/dev-news/article.php/3674996">Dell 
+            Set to Sell Ubuntu Linux</A></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD align=middle><IFRAME marginWidth=0 marginHeight=0 
+      src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/search.htm" 
+      frameBorder=0 width=125 scrolling=no height=800></IFRAME><IMG height=1 
+      src="W:\USERS\HS\moriartm\webII\box model\Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files\39666661313730323436333232626130(3).gif" 
+      width=1></TD></TR></TBODY></TABLE></DIV>
+<P style="MARGIN-BOTTOM: 0px; align: middle">Forward he cried from the 
+rear<BR>and the front rank died<BR>And the General sat, and the lines on the 
+map<BR>moved from side to side</P>
+<P style="MARGIN-TOP: 0px; align: middle">- <B>Pink Floyd</B>, <I>Us and 
+Them</I></P>
+<P>War is ugly. Take, for instance, World War I, which ended eighty years ago 
+around this time of year. The highlight of the conflict consisted of untold 
+numbers of men killed over a borderline that moved on an average pace of a few 
+inches a year in a random direction, while historians are still arguing about 
+why the whole business ever happened in the first place. Generally speaking, not 
+one of humankind's brightest moments.</P>
+<P>So, generally speaking, there are far worse things in the world than the CSS 
+visual formatting model, which also concerns itself with lines moving, albeit 
+not an a map.</P>
+<P>The CSS visual formatting model is a way of laying out documents on visual 
+media (such as a computer screen or a printed page). By all accounts, it is a 
+very simple formatting model, and the publishing world has seen much more 
+complicated ones. Still, it is not something that is simple to explain or grasp 
+in a few words.</P>
+<P>Various CSS properties are used to control how a document will appear in the 
+context of this formatting model. You have seen most of them in the examples 
+used so far, but I haven't explained their usage because I have to explain the 
+formatting model first.</P>
+<P>As I said, the formatting model is a pretty complicated affair. As if that 
+wasn't enough, though, the implementations that exist, most notably in Microsoft 
+Internet Explorer and Netscape Navigator, are respectably problematic and 
+horrible. Explorer does a pretty good job of sticking to the model, and will 
+behave sensibly with a few exceptions that can be dealt with simply. Navigator, 
+on the other hand, has its own concept of what the various properties should 
+do.</P>
+<P>Instead of going through the theory and observing the bugs in Explorer and 
+Navigator along the way, as I have done in the tutorials so far, I will explain 
+the theory, that is how the CSS specification explains formatting 
+<EM>should</EM> be done, in this tutorial, and deal with the implementations in 
+the next one. I hope this makes the whole process easier to understand.</P>
+<TABLE cellSpacing=0 cellPadding=2 width="60%" align=center border=0>
+  <TBODY>
+  <TR>
+    <TH class=toctit colSpan=2>Contents of this Tutorial</TH>
+    <TH class=tocpg align=right>Page</TD></TR>
+  <TR>
+    <TD class=tocsno>1.</TD>
+    <TD class=tocsto><A 
+      href="http://www.webreference.com/html/tutorial9/1.html">Boxing</A></TD>
+    <TD class=tocpno align=right><A 
+      href="http://www.webreference.com/html/tutorial9/1.html">1</A></TD></TR>
+  <TR>
+    <TD class=tochte colSpan=2><A 
+      href="http://www.webreference.com/html/tutorial9/1.html#sec1-0">Dissecting 
+      a Box<A></A></TD>
+    <TD class=tocpne align=right><A 
+      href="http://www.webreference.com/html/tutorial9/1.html#sec1-0">1</A></TD></TR>
+  <TR>
+    <TD class=tochto colSpan=2><A 
+      href="http://www.webreference.com/html/tutorial9/1.html#sec1-1">Displaying 
+      a Box<A></A></TD>
+    <TD class=tocpno align=right><A 
+      href="http://www.webreference.com/html/tutorial9/1.html#sec1-1">1</A></TD></TR>
+  <TR>
+    <TD class=tocsne>2.</TD>
+    <TD class=tocste><A 
+      href="http://www.webreference.com/html/tutorial9/2.html">What Boxes Do 
+      when they Come Together</A></TD>
+    <TD class=tocpne align=right><A 
+      href="http://www.webreference.com/html/tutorial9/2.html">2</A></TD></TR>
+  <TR>
+    <TD class=tochto colSpan=2><A 
+      href="http://www.webreference.com/html/tutorial9/2.html#sec2-0">Where 
+      Little Boxes Come From<A></A></TD>
+    <TD class=tocpno align=right><A 
+      href="http://www.webreference.com/html/tutorial9/2.html#sec2-0">2</A></TD></TR>
+  <TR>
+    <TD class=tochte colSpan=2><A 
+      href="http://www.webreference.com/html/tutorial9/2.html#sec2-1">Containing 
+      blocks<A></A></TD>
+    <TD class=tocpne align=right><A 
+      href="http://www.webreference.com/html/tutorial9/2.html#sec2-1">2</A></TD></TR>
+  <TR>
+    <TD class=tocsno>3.</TD>
+    <TD class=tocsto><A 
+      href="http://www.webreference.com/html/tutorial9/3.html">When Boxes Have 
+      Little Boxes of their Own</A></TD>
+    <TD class=tocpno align=right><A 
+      href="http://www.webreference.com/html/tutorial9/3.html">3</A></TD></TR>
+  <TR>
+    <TD class=tocsne>4.</TD>
+    <TD class=tocste><A 
+      href="http://www.webreference.com/html/tutorial9/4.html">The Margin and 
+      Padding Properties</A></TD>
+    <TD class=tocpne align=right><A 
+      href="http://www.webreference.com/html/tutorial9/4.html">4</A></TD></TR>
+  <TR>
+    <TD class=tochto colSpan=2><A 
+      href="http://www.webreference.com/html/tutorial9/4.html#sec4-0">Margin 
+      Properties<A></A></TD>
+    <TD class=tocpno align=right><A 
+      href="http://www.webreference.com/html/tutorial9/4.html#sec4-0">4</A></TD></TR>
+  <TR>
+    <TD class=tochte colSpan=2><A 
+      href="http://www.webreference.com/html/tutorial9/4.html#sec4-1">Padding 
+      Properties<A></A></TD>
+    <TD class=tocpne align=right><A 
+      href="http://www.webreference.com/html/tutorial9/4.html#sec4-1">4</A></TD></TR>
+  <TR>
+    <TD class=tochto colSpan=2><A 
+      href="http://www.webreference.com/html/tutorial9/4.html#sec4-2">The 
+      <CODE><SPAN class=property>margin</SPAN></CODE> and <CODE><SPAN 
+      class=property>padding</SPAN></CODE> shorthand properties<A></A></TD>
+    <TD class=tocpno align=right><A 
+      href="http://www.webreference.com/html/tutorial9/4.html#sec4-2">4</A></TD></TR>
+  <TR>
+    <TD class=tocsne>5.</TD>
+    <TD class=tocste><A 
+      href="http://www.webreference.com/html/tutorial9/5.html">Background 
+      Properties</A></TD>
+    <TD class=tocpne align=right><A 
+      href="http://www.webreference.com/html/tutorial9/5.html">5</A></TD></TR></TBODY></TABLE></DIV>
+<DIV id=wrFoot align=center>
+<P class=buttons align=right><IMG alt="Front Page" 
+src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/b_center.gif"><A 
+href="http://www.webreference.com/html/tutorial9/1.html"><IMG alt=1 
+src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/b_right.gif" 
+border=0></A><A href="http://www.webreference.com/html/tutorial9/2.html"><IMG 
+alt=2 
+src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/b_right.gif" 
+border=0></A><A href="http://www.webreference.com/html/tutorial9/3.html"><IMG 
+alt=3 
+src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/b_right.gif" 
+border=0></A><A href="http://www.webreference.com/html/tutorial9/4.html"><IMG 
+alt=4 
+src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/b_right.gif" 
+border=0></A><A href="http://www.webreference.com/html/tutorial9/5.html"><IMG 
+alt=5 
+src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/b_right.gif" 
+border=0></A></P>
+<P class=wrAd><!-- START AD -->
+<DIV class=WRBannerCenter align=center><IFRAME marginWidth=0 marginHeight=0 
+src="W:\USERS\HS\moriartm\webII\box model\Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files\search(1).htm" 
+frameBorder=0 width=750 scrolling=no height=100></IFRAME><IMG height=1 
+src="W:\USERS\HS\moriartm\webII\box model\Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files\39666661313730323436333232626130(4).gif" 
+width=1></DIV>
+<SCRIPT type=text/javascript>
+var dc_UnitID = 14;
+var dc_PublisherID = 7857;
+var dc_AdLinkColor = 'blue';
+var dc_adprod='ADL';
+var dc_open_new_win = 'yes'; 
+</SCRIPT>
+
+<SCRIPT 
+src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/KonaLibInline.js" 
+type=text/javascript></SCRIPT>
+<!-- END AD -->
+<P></P>
+<P id=wrInternet><A href="http://www.internet.com/" target=_top><IMG height=18 
+alt=http://www.internet.com 
+src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/URL.gif" 
+width=161 border=0></A> </P>
+<P id=wrCopy>Produced by <A 
+href="http://www.webreference.com/cgi-bin/suggest.cgi">Stephanos 
+Piperoglou</A><BR><BR clear=all>
+<CENTER>
+<TABLE cellSpacing=0 cellPadding=5 border=0>
+  <TBODY>
+  <TR>
+    <FORM action=http://search.internet.com/www.jupiterweb.com method=post 
+    target=_top>
+    <TD align=middle><FONT face="verdana, arial, helvetica" 
+      size=-2><B>JupiterWeb networks:</B></FONT> 
+      <P align=center>
+      <TABLE class=mgfoot border=0>
+        <TBODY>
+        <TR>
+          <TD class=foot_alt align=middle><A class=foot 
+            href="http://www.internet.com/" target=_top><IMG height=15 
+            alt=internet.com hspace=0 
+            src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/icom_foot.gif" 
+            width=97 align=absMiddle border=0></A><IMG height=25 alt="" 
+            hspace=10 
+            src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/ruledivide_foot.gif" 
+            width=1 align=absMiddle border=0><A href="http://www.earthweb.com/" 
+            target=_top><IMG height=12 alt=earthweb.com hspace=5 
+            src="W:\USERS\HS\moriartm\webII\box model\Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files\earthweb_foot2(1).gif" 
+            width=93 align=absMiddle border=0></A><IMG height=25 alt="" 
+            hspace=10 
+            src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/ruledivide_foot.gif" 
+            width=1 align=absMiddle border=0><A href="http://www.devx.com/" 
+            target=_top><IMG height=30 alt=Devx.com hspace=0 
+            src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/devx_foot2.gif" 
+            width=35 align=absMiddle border=0></A><IMG height=25 alt="" 
+            hspace=10 
+            src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/ruledivide_foot.gif" 
+            width=1 align=absMiddle border=0><A href="http://www.graphics.com/" 
+            target=_top><IMG height=18 alt=Graphics.com hspace=0 
+            src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/grcom_foot.gif" 
+            width=97 align=absMiddle border=0></A></TD></TR></TBODY></TABLE>
+      <P><FONT face="verdana, arial, helvetica" size=-2><B>Search 
+      JupiterWeb:</B> <INPUT type=hidden value=1 name=IC_Summary> <INPUT 
+      type=hidden value=0 name=IC_StartNumber> <INPUT type=hidden value=10 
+      name=IC_BatchSize> <INPUT type=hidden value=50 name=IC_RelevanceThreshold> 
+      <INPUT type=hidden value=all name=IC_QueryDatabase> <INPUT size=45 
+      name=IC_QueryText> <INPUT type=image height=20 width=41 
+      src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/but_find.gif" 
+      align=absMiddle value=Find border=0 name=SUBMIT> </FONT>
+      <P><FONT face="verdana, arial, helvetica" size=-2><A class=foot 
+      href="http://www.jupitermedia.com/">Jupitermedia Corporation</A> has two 
+      divisions: <A class=foot 
+      href="http://www.jupiterimages.com/">Jupiterimages</A> and <A class=foot 
+      href="http://www.jupiterweb.com/">JupiterWeb</A>
+      <P><FONT face="verdana, arial, helvetica" size=-2><A class=foot 
+      href="http://www.jupitermedia.com/corporate/" target=_top>Jupitermedia 
+      Corporate Info</A> 
+      <P>
+      <DIV class=foot><!--Copyright 2005-2006-->
+      <SCRIPT type=text/javascript>
+document.write(' Copyright ');
+var now = new Date();
+document.write(  + now.getFullYear());
+document.write(' Jupitermedia Corporation All Rights Reserved.');
+</SCRIPT>
+      <NOSCRIPT>Copyright 2007 Jupitermedia Corporation All Rights 
+      Reserved.</NOSCRIPT> <BR><A class=foot 
+      href="http://www.jupitermedia.com/corporate/legal.html" target=_top>Legal 
+      Notices</A>, <A class=foot 
+      href="http://www.jupitermedia.com/corporate/reprints.html#Licensing1" 
+      target=_top>Licensing</A>, <A class=foot 
+      href="http://www.jupitermedia.com/corporate/reprints.html#Reprints1" 
+      target=_top>Reprints</A>, &amp; <A class=foot 
+      href="http://www.jupitermedia.com/corporate/reprints.html#Permissions" 
+      target=_top>Permissions</A>, <A class=foot 
+      href="http://www.jupitermedia.com/corporate/privacy/privacypolicy.html" 
+      target=_top>Privacy Policy</A>. </FONT>
+      <P><FONT face="verdana, arial, helvetica" size=-2><A class=foot 
+      href="http://www.webhost.thelist.com/" target=_top>Web Hosting</A> | <A 
+      class=foot href="http://e-newsletters.internet.com/">Newsletters</A> | <A 
+      class=foot href="http://jobs.internet.com/" target=_top>Tech Jobs</A> | <A 
+      class=foot href="http://www.internetshopper.com/" target=_top>Shopping</A> 
+      | <A class=foot 
+      href="http://e-newsletters.internet.com/cgi-bin/al-manage/subscribe.cgi?brand=icom" 
+      target=_top>E-mail 
+Offers</A></P></DIV></FONT></FONT></TD></FORM></TR></TBODY></TABLE></CENTER>
+<CENTER>
+<TABLE class=twidth cellSpacing=0 cellPadding=2 width="100%" bgColor=#000000 
+border=0>
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=2 width="100%" bgColor=#ffcc00 
+        border=0><TBODY>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD class=includebig align=left width="60%" colSpan=2><A 
+            href="http://www.webreference.com/"><IMG height=16 alt=webref 
+            src="Boxing with CSS, Part I The Theory - HTML with Style - Webreference_com_files/l_webref32x16.gif" 
+            width=32 border=0></A>&nbsp;<B>The latest from <A 
+            href="http://www.webreference.com/">WebReference.com</A></B> </TD>
+          <TD class=include align=right bgColor=#ffffff><SPAN 
+            style="COLOR: blue"><A 
+            href="http://www.webreference.com/index2.html">Browse</A>&nbsp;&gt;</SPAN></TD>
+          <TD width="1%" bgColor=#ffffff>
+            <FORM class=tb name=WRmenu onsubmit="return false" 
+            action=/cgi-bin/redirect.cgi method=post>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD><SELECT class=SUBMITTER 
+                  onchange="if(this.form.elements[0].options[this.form.elements[0].selectedIndex].value !='#') {window.location.href=this.form.elements[0].options[this.form.elements[0].selectedIndex].value};" 
+                  name=WRm> <OPTION value=/index2.html selected>Site 
+                    Contents<OPTION value=#>- - - - -<OPTION 
+                    value=/experts/>Experts<OPTION value=/3d/>* 3D 
+                    Animation<OPTION value=/dlab/>* Design<OPTION 
+                    value=/dhtml/>* DHTML<OPTION value=/graphics/>* 
+                    Graphics<OPTION value=/html/>* HTML<OPTION value=/js/>* 
+                    JavaScript<OPTION value=/perl/>* Perl<OPTION value=/xml/>* 
+                    XML<OPTION value=#>- - - - -<OPTION value=/index2.html>Web 
+                    Resources<OPTION value=/authoring/>* Authoring<OPTION 
+                    value=/authoring/design/>* Design<OPTION value=/internet/>* 
+                    Internet<OPTION value=/multimedia/>* Multimedia<OPTION 
+                    value=/programming/>* Programming<OPTION value=/promotion/>* 
+                    Promotion<OPTION value=#>- - - - -<OPTION 
+                    value=/services/>Services<OPTION value=/interviews/>* 
+                    Interviews<OPTION value=/new/>* Newsletters<OPTION 
+                    value=/reviews/>* Reviews<OPTION value=/cgi-bin/search.cgi>* 
+                    Search<OPTION value=/tools/>* Tools</OPTION></SELECT></TD>
+                <TD><INPUT class=SUBMITTER onclick="if(this.form.elements[0].options[this.form.elements[0].selectedIndex].value !='#') {window.location.href=this.form.elements[0].options[this.form.elements[0].selectedIndex].value};" type=submit value=Go></TD></TR></TBODY></TABLE></FORM></TD></TR>
+        <TR bgColor=#ffffff>
+          <TD class=include colSpan=4><A 
+            href="http://www.webreference.com/programming/perl/comments/v.930/index.html">Simple 
+            Comments Release Notes: v.930</A> · <A 
+            href="http://www.webreference.com/programming/perl/wicked_cool_perl_scripts/">Wicked 
+            Cool Perl Scripts</A> · <A 
+            href="http://www.webreference.com/video/column1/">Camtasia Studio 
+            Video Tutorials: Part 1</A> </TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD class=include colSpan=2><A 
+            href="http://www.webreference.com/index2.html">Sitemap</A> · <A 
+            href="http://www.webreference.com/experts/">Experts</A> · <A 
+            href="http://www.webreference.com/tools/">Tools</A> · <A 
+            href="http://www.webreference.com/services/">Services</A> · <A 
+            href="http://www.webreference.com/_email/email_a_colleague.html">Email 
+            a Colleague</A> · <A 
+            href="http://www.webreference.com/cgi-bin/suggest.cgi">Contact</A> 
+          </TD>
+          <TD class=include align=right><A 
+            href="http://www.webreference.com/new/"><SPAN 
+            style="COLOR: blue">FREE&nbsp;Newsletters&nbsp;</SPAN></A>&gt;&nbsp;</TD>
+          <TD>
+            <FORM class=tb 
+            action=http://e-newsletters.internet.com/cgi-bin/subscribe 
+            method=post>
+            <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+              <TBODY>
+              <TR>
+                <TD><INPUT type=hidden value=webreference-update-html 
+                  name=List_Name><INPUT type=hidden 
+                  value=webreference-update-text name=List_Name><INPUT 
+                  class=SUBMITTER onfocus=this.select() maxLength=99 size=11 
+                  value="enter e-mail" name=email><INPUT type=hidden 
+                  value=http://e-newsletters.internet.com/thankyou_new.html 
+                  name=redirect_ok></TD>
+                <TD><INPUT class=SUBMITTER type=submit value=Signup name=Submit></TD></TR></TBODY></TABLE></FORM></TD></TR>
+        <TR vAlign=top bgColor=#ffffff>
+          <TD class=includebig align=left colSpan=4>&nbsp;<B>The latest from 
+            <A href="http://www.internet.com/">internet.com</A></B> </TD></TR>
+        <TR bgColor=#ffffff>
+          <TD class=include colSpan=4><A 
+            href="http://www.databasejournal.com/features/oracle/article.php/3675096">Oracle 
+            Extended RAC: Stretching your RAC to the limit</A> · <A 
+            href="http://www.enterpriseitplanet.com/networking/features/article.php/3674936">An 
+            Intelligent Database Marriage</A> · <A 
+            href="http://www.voipplanet.com/solutions/article.php/3675316">Provider 
+            Profile: Smoothstone IP Communications</A> 
+  </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></CENTER>
+<P align=center><BR>All Rights Reserved. <A 
+href="http://www.internet.com/corporate/legal.html">Legal Notices.</A> </P>
+<P id=wrInfo><SMALL>URL: http://www.webreference.com/html//<BR>Created: Nov 18, 
+1998<BR>Revised: Nov 18, 1998</SMALL> </P></DIV></BODY></HTML>
