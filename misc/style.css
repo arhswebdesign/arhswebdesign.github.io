@@ -1,0 +1,42 @@
+body {
+	background-image: url(images/grey.jpg);
+}
+
+body, td, th {font-family: comic sans ms;
+	}
+
+h1, h2 {
+	
+	font-family: comic sans ms;
+}
+
+h3, h4, h5, h6 {
+	
+}
+p{font-family: comic sans ms;
+}
+td{ padding: 10px;}
+
+td.nav {padding: 8px;
+	font-family: comic sans ms;
+	background-color:#CC6666;
+	margin-left: 3 px;}
+	
+
+td.header{padding-left: 20px;
+	font-family: comic sans ms;
+	background-color:#CC6666;}
+td.content {
+	margin-left: 150 px;
+	padding-left: 20px;
+	font-family: comic sans ms;
+	}
+td.image {
+	/*margin-left: 10 px;*/
+	margin-top: 5px;}
+
+
+a:link{ color: blue;}
+a:visited {color: navy;} 
+
+

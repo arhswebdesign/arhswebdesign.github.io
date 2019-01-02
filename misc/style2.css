@@ -1,0 +1,25 @@
+/* CSS Document */
+
+div#logo{margin-left: 2px;
+	margin-top: 10px;
+	border: solid 1px;
+	width: 80px;}
+	}
+	
+div#header{padding-left: 10px;
+	padding-top: 10px;
+	padding-bottom: 10 px;
+	padding-right: 40 px;
+	font-family: comic sans ms, Arial, sans serif;
+	background-color:#CC6666;
+	margin-left: 200px;
+	margin-right: 5px;
+	margin-top: 20px;
+	width: 60%;
+	}
+
+div#nav{
+	}
+
+div#content{
+	}
