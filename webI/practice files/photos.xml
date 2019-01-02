@@ -1,0 +1,91 @@
+<gallery
+base = ""
+background = "#FFFFFF"
+banner = "#F0F0F0"
+text = "#000000"
+link = "#0000FF"
+alink = "#FF0000"
+vlink = "#800080"
+date = "6/13/2012">
+	<sitename>Adobe Web Photo Gallery</sitename>
+	<photographer></photographer>
+	<contactinfo></contactinfo>
+	<email></email>
+	<security><![CDATA[]]> </security>
+
+<banner font = "Arial" fontsize = "3" color =  "#F0F0F0"> </banner>
+<thumbnail base ="thumbnails/" font = "Arial" fontsize = "4" color = "#F0F0F0" border = "0" rows = "3" col = "5"> </thumbnail> 
+<large base ="images/" font = "Arial" fontsize = "3" color = "#F0F0F0" border = "0"> </large>
+<images id = "images">
+
+<image
+path = "2003-Kawasaki-Concoursa.jpg"
+width = "350"
+height = "250"
+thumbpath = "2003-Kawasaki-Concoursa.jpg"
+thumbwidth = "75"
+thumbheight = "53">
+</image>
+
+
+<image
+path = "2003-Kawasaki-Concoursa copy.jpg"
+width = "350"
+height = "250"
+thumbpath = "2003-Kawasaki-Concoursa copy.jpg"
+thumbwidth = "75"
+thumbheight = "53">
+</image>
+
+
+<image
+path = "2003-Kawasaki-ZG1000-A18-Red-1.jpg"
+width = "350"
+height = "248"
+thumbpath = "2003-Kawasaki-ZG1000-A18-Red-1.jpg"
+thumbwidth = "75"
+thumbheight = "53">
+</image>
+
+
+<image
+path = "2003-Kawasaki-ZG1000-Red-1.jpg"
+width = "350"
+height = "248"
+thumbpath = "2003-Kawasaki-ZG1000-Red-1.jpg"
+thumbwidth = "75"
+thumbheight = "53">
+</image>
+
+
+<image
+path = "2003-Kawasaki-ZG1000-Red-2.jpg"
+width = "350"
+height = "248"
+thumbpath = "2003-Kawasaki-ZG1000-Red-2.jpg"
+thumbwidth = "75"
+thumbheight = "53">
+</image>
+
+
+<image
+path = "2003-Kawasaki-ZG1000-Red-5.jpg"
+width = "350"
+height = "248"
+thumbpath = "2003-Kawasaki-ZG1000-Red-5.jpg"
+thumbwidth = "75"
+thumbheight = "53">
+</image>
+
+
+<image
+path = "2003-Kawasaki-ZG1000-Red-small.jpg"
+width = "350"
+height = "247"
+thumbpath = "2003-Kawasaki-ZG1000-Red-small.jpg"
+thumbwidth = "75"
+thumbheight = "53">
+</image>
+
+</images>
+</gallery>
