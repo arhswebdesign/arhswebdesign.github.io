@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="../tutorial.css" />
+
+<title>XHTML Standards</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+</head>
+
+<body>
+
+<div id="header">
+
+<h1>XHTML Standards</h1>
+<div class ="navbar">
+
+
+<script src="../nav.js">
+</script>
+
+
+
+</div>
+</div>
+<div id="content">
+
+
+
+<div id="main-text">
+
+
+<!--ADD CONTENT HERE-->
+<h4>XHTML documents must be well-formed </h4>
+
+<p>
+All XHTML elements must be nested within the &lt;html&gt; root element. All other elements can have sub (children) elements. Sub elements must be in pairs and correctly nested within their parent element. The basic document structure is: </p>
+<p>
+&lt;html&gt; <br />
+&lt;head&gt; ... &lt;/head&gt; <br />
+&lt;body&gt; ... &lt;/body&gt; <br />
+&lt;/html&gt;  <br />
+</p>
+<h4>
+All XHTML elements must be closed </h4>
+<p>
+Non-empty elements must have an end tag. Example: &lt;p&gt;This is a paragraph&lt;/p&gt; </p>
+<p>
+Empty elements must either have an end tag or the start tag must end with /&gt;. Example: </p>
+<p>
+This is a break&lt;br /&gt;  <br />
+Here comes a horizontal rule:&lt;hr /&gt; <br />
+</p>
+<p>
+Here's an image &lt;img src="happy.gif" alt="Happy face" /&gt;
+</p>
+<h4>
+* IMPORTANT Compatibility Note: To make your XHTML compatible with today's browsers, you should add an extra space before the "/" symbol like this: &lt;br /&gt;, and this: &lt;hr /&gt;. 
+</h4>
+<h4>
+Tag names must be in lowercase</h4>
+<p>
+This is because XHTML documents are XML applications. XML is case-sensitive. Tags like &lt;br&gt; and &lt;BR&gt; are interpreted as different tags. </p>
+
+<h4>
+XHTML elements must be properly nested 
+</h4>
+<p>
+In XHTML all elements must be properly nested within each other.
+
+</p>
+
+
+</div>
+
+
+</div>
+<!--code validation seal-->
+<p>
+    <a href="http://validator.w3.org/check?uri=referer"><img
+        src="http://www.w3.org/Icons/valid-xhtml10"
+        alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>
+  </p>
+
+
+<div class="navbar">
+
+<script src="../nav.js">
+</script>
+
+
+
+
+</div>
+
+</body>
+
+</html>

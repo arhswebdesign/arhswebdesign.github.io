@@ -1,0 +1,172 @@
+/*this is the style sheet for my new home page 2 14 07*/
+
+body
+{
+background-image: url(../images/marble.gif);
+color: #8B0000;
+font-family: Verdana, Helvetica, Arial, sans-serif;
+font-size: medium;
+margin: 0;
+
+}
+
+#head
+{
+position: relative;
+width: 800px;
+border: solid 1px #000000;
+margin-right: 5px;
+}
+
+#header {
+margin: 5px 5px 0px 5px;
+padding: 2px 5px;
+background-color: #4682B4;     
+/*border: solid 5px #000000;*/
+}
+
+#content {
+/*position: absolute; top: 5px; left:  220px; width: 675px;*/
+/*border: solid 1px #000000;*/
+margin-right: 0px;
+margin-bottom: 5px;
+
+
+}
+
+.navbar 
+{
+padding: 10px 5px;
+font-size: .8em;
+/*border: solid 1px #000000;*/
+margin: 0px 5px;
+background-color: #4682B4;
+font-weight: normal;
+}
+
+#main-text 
+{
+/*border: solid 1px #000000;*/
+margin: 5px;
+padding: 10px;
+font-size: 1.5em;
+
+}
+
+img.home
+{
+align: center;
+margin-left:150px;
+}
+h3
+{
+font-size: 1.4em;
+text-align: left;
+font-style: italic;
+letter-spacing: 5px;
+padding: 5px 5px 5px 15px;
+background-color: #4682B4;
+margin-right: 65%;
+margin-left: 0px;
+}
+
+h1
+{
+font-size: 1.4em;
+text-align: left;
+font-style: italic;
+letter-spacing: 5px;
+padding: 5px 5px 0px 10px;
+}
+
+h2
+{
+font-size: 1.1em;
+text-decoration: underline;
+padding: 5px;
+}
+
+h4
+{
+font-size: 1em;
+text-align: left;
+font-style: normal;
+letter-spacing: 4px;
+padding: 0px 5px 0px 10px;
+/*font-variant: small-caps;*/
+}
+h4.assign
+{
+font-size: 1em;
+text-align: left;
+font-style: normal;
+letter-spacing: 5px;
+padding: 0px 5px 0px 10px;
+font-variant: small-caps;
+color:  #0000CD; 
+}
+p.header
+{
+text-align: left;
+/*padding-left: 10px;*/
+font-variant: small-caps;
+font-weight: bold;
+color: #000000;
+font-size: .8em;
+margin: 10px;
+/*border: solid 5px #000000;*/
+padding: 5px;
+background-color: #4682B4;  
+}
+p.nav
+{
+text-align: left;
+margin-top: 1px 
+margin-left: 0px;
+}
+p, li, dl
+{
+font-size: .8em;
+text-align: justify;
+line-height: 1.2em;
+margin: 10px 35px 0px 35px;
+
+}
+
+
+p.footer 
+{
+font-size: .8em;
+font-weight: bold;
+/*text-align: center;*/
+}
+hr
+{
+color: #4682B4;
+width: 90%;
+height: 5px;
+}
+
+a:link
+{
+color: #8B0000;
+/*background-color: #95b7cd;*/
+/*text-decoration: none;*/
+}
+a:visited
+{
+color:#8B0000;
+/*text-decoration: none;*/
+/*background-color: #95b7cd;*/
+}
+a:hover
+{
+background-color: #BDB76B;
+padding: 1px
+}
+
+a:active
+{
+/*text-decoration: none;*/
+/*background-color: #3cc7f0;*/
+}
