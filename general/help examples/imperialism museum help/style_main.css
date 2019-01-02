@@ -1,0 +1,182 @@
+body 
+{
+background: white
+}
+
+h1
+{
+text-align: right;
+color: #CC0000;
+font-family: "sans-serif";
+font-variant: small-caps;
+text-decoration: underline
+}
+
+
+h3
+{
+text-align: center;
+color: #990000;
+font-family: "arial";
+font-size: 110%;
+font-weight:500
+}
+
+p 
+{
+color: #103C68;
+font-size: 90%;
+text-indent: 1cm;
+font-family: arial
+}
+
+p.quotation 
+{
+color: #0F0053;
+font-size: 90%;
+text-align: center;
+font-family: arial
+}
+
+
+
+
+p.important
+{
+font-weight: 900;
+color: #990000;
+font-size: 110%;
+font family: arial;
+margin-right: 1cm
+}
+
+p.caption
+{
+font-weight: 600;
+color: #660000;
+font-size: 75%;
+text-align="center";
+font family: arial;
+text-indent: 0cm;
+}
+
+p.credits
+{
+font-weight: 600;
+color: white;
+font-size: 85%;
+text-align="center";
+font family: arial;
+text-indent: 0cm;
+}
+
+a:link 
+{
+color: #003399;
+text-decoration: none;
+font-family: "arial";
+font-size: 90%
+}
+a:visited 
+{
+color: #990000;
+text-decoration: none;
+font-family: "arial";
+font-size: 90%
+}
+a:hover 
+{
+color: #003399;
+text-decoration: underline;
+font-family: "arial";
+font-size: 90%;
+}
+
+a.main:link
+{
+color: #990000;
+text-decoration: none;
+font-family: "arial";
+font-size: 100%;
+font-weight:700
+}
+a.main:visited
+{
+color: #666666;
+text-decoration: none;
+font-family: arial;
+font size: 100%;
+font-weight:700
+}
+a.main:hover
+{
+color: #990000;
+font-famliy: arial;
+text-decoration: underline;
+font-size: 100%;
+font-weight:700
+}
+
+a.bottom:link
+{
+color: #474944;
+text-decoration: none;
+font-family: "arial";
+font-size: 70%;
+font-weight:900
+}
+a.bottom:visited
+{
+color: #474944;
+text-decoration: none;
+font-family: arial;
+font size: 70%;
+font-weight:900
+}
+a.bottom:hover
+{
+color: #474944;
+font-famliy: arial;
+text-decoration: underline;
+font-size: 70%;
+font-weight:900
+}
+
+
+
+
+
+
+
+td.links
+{
+border-right-width: 1px;
+border-left-width: 0px;
+border-top-width: 0px;
+border-bottom-width: 0px;
+border-style: solid;
+border-color: #000000;
+padding-top: .5 cm
+}
+
+td.content 
+{
+padding-left: .5cm;
+padding-right: 2.5 cm;
+padding-top: .5 cm
+}
+
+ul 
+{
+list-style-image: url('images/bullet_small.gif');
+font-family: arial;
+font-size: 90%;
+color: #0F0053;
+}
+
+
+img
+{
+border-style: solid;
+border-color: #576764
+}
