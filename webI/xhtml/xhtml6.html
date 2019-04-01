@@ -47,22 +47,16 @@
           HTML tags were originally designed to define the content of a
           document. They were supposed to say "This is a header", "This
           is a paragraph", "This is a table", by using tags like
-          &lt;h1&gt;, &lt;p&gt;, &lt;table&gt;, and so on. The layout of
-          the document was supposed to be taken care of by the browser,
-          without using any formatting tags.
+          &lt;h1&gt;, &lt;p&gt;, &lt;table&gt;, and so on. 
         </p>
         <p>
-          As the two major browsers - Netscape and Internet Explorer -
-          continued to add new HTML tags and attributes (like the
-          &lt;font&gt; tag and the color attribute) to the original HTML
-          specification, it became more and more difficult to create Web
+          As more attributes (like the
+          &lt;font&gt; tag and the color attribute) were added, it became more and more difficult to create Web
           sites where the content of HTML documents was clearly
           separated from the document's presentation layout.
         </p>
         <p>
-          To solve this problem, the World Wide Web Consortium (W3C) -
-          the non profit, standard setting consortium, responsible for
-          standardizing HTML - created STYLES in addition to HTML 4.0.        </p>
+          The CSS language was designed to solve this problem.        </p>
         <hr>
         <h4>
           Style Sheets Can Save a Lot of Work
@@ -72,17 +66,17 @@
           Styles are normally saved in external .css files. </p>
         <p>
           External style sheets enable you to change the appearance and
-          layout of all the pages in your Web, just by editing one
+          layout of all the pages in your web site, just by editing one
           single CSS document!</p>
         <p>
-          CSS is a breakthrough in Web design because it allows
-          developers to control the style and layout of multiple Web
+          CSS is a breakthrough in web design because it allows
+          developers to control the style and layout of multiple web
           pages all at once.</p>
         <p>
-          As a Web developer you can define a style for each HTML
+          As a web developer you can define a style for each HTML
           element and apply it to as many Web pages as you want. To make
           a global change, simply change the style, and all elements in
-          the Web are updated automatically. </p>
+          the website are updated automatically. </p>
         <br>
         <hr>
         <h4>
@@ -92,17 +86,16 @@
           CSS allows style information to be specified in many
           places. Styles can be specified inside a single HTML element,
           inside the style element of an HTML page, or in an external CSS
-          file. Even multiple external style sheets can be referenced
-          inside a single HTML document. </p>
+          file. </p>
         <h4>
           Cascading Order
         </h4>
         <p>
           What style will be used when there is more than one style
-          specified for an HTML element? </p>
+          specified for a given property of an HTML element? </p>
         <p>
           Generally speaking we can say that all the styles will
-          "cascade" into a new "virtual" style sheet by the following
+          "cascade" into a new "virtual" style sheet. Conflicts will be resolved by the following
           rules, where number four has the highest priority: </p>
         <ol>
           <li> Browser default </li>
@@ -113,7 +106,7 @@
         <p>
           So, an inline style (inside an HTML element) has the highest
           priority, which means that it will override a style declared
-          inside the tag, in an external style sheet, or in a browser (a
+          in the head, in an external style sheet, or in a browser (a
           default value).
         </p>
         <h4> Syntax
