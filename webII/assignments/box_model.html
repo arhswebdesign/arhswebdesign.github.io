@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="../tutorial.css">
     <title>The Box Model</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../tutorial.css">
     <meta http-equiv="Content-Type" content="text/html;
       charset=windows-1252">
+    <script         src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+    </script>
   </head>
   <body>
     <div id="header">
@@ -50,6 +55,15 @@
         <p>
             I'd rather see the rest of the text (I call it the "write-up") placed in the area between the guarantee and the "elixirs" box. See if you can make that happen.
         </p>
+        <button type="button" class="btn btn-primary btn-block" id="first" data-toggle="collapse" data-target="#oss">
+            <span class="glyphicon glyphicon-collapse-down"></span> Hints -> Open
+        </button>
+        <div id="oss" class="collapse">
+            <p>One way to get the three "boxes" to display side-by-side is shown in the GeeksForGeeks link, above. You put all three things in divs or other elements and then give all 3 the style to float left.</p>
+            <p>You might still have to control the width of each of the three elements by styling them with width properties.</p>
+            <p>Be sure to check what happens when the user opens the window wide. In order to prevent You don't want the text at the bottom to come up and fill in; it looks bad. To prevent this, you can put all of that bottom stuff into a single div element and then style it with clear:both.</p>
+        </div>
+        <hr>
         <p>
             Then get the three sections (guarantee, write-up and exilirs box) to line up at their tops.
         </p>
