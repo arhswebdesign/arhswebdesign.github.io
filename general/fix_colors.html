@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="../tutorial.css">
+
+<title>Fixing the color menu in Brackets</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+</head>
+
+<body>
+
+<div id="main-text">
+
+<p> Open the Run Box (Press Win+R)<br>
+Type %appdata% then hit enter<br>
+
+Open the Brackets folder.<br>
+Select the brackets.json file.<br>
+Double-click the file; it should open in Brackets.  
+<br>
+add the line:
+<br><br>
+<pre><code>
+    "maxCodeHints": 148
+
+</code></pre>
+    You can put it after the other things, inside the "}". Then you also have to add a comma at the end of the previous line. You are not allowed to put a comma after the 148, though. Also, bear in mind that if Brackets can't read the json file on start up, autosave will be off and you will have to save manually.
+<br>
+<a href="https://github.com/adobe/brackets/issues/12032">Source of this suggestion.</a>    </p>
+
+
+</div>
+
+</body>
+
+</html>
