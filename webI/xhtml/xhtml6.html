@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html>
   <head>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -47,16 +47,22 @@
           HTML tags were originally designed to define the content of a
           document. They were supposed to say "This is a header", "This
           is a paragraph", "This is a table", by using tags like
-          &lt;h1&gt;, &lt;p&gt;, &lt;table&gt;, and so on. 
+          &lt;h1&gt;, &lt;p&gt;, &lt;table&gt;, and so on. The layout of
+          the document was supposed to be taken care of by the browser,
+          without using any formatting tags.
         </p>
         <p>
-          As more attributes (like the
-         font-size, margin, color, width and background-color attributes) were added, it became more and more difficult to create Web
+          As the two major browsers - Netscape and Internet Explorer -
+          continued to add new HTML tags and attributes (like the
+          &lt;font&gt; tag and the color attribute) to the original HTML
+          specification, it became more and more difficult to create Web
           sites where the content of HTML documents was clearly
           separated from the document's presentation layout.
         </p>
         <p>
-          The CSS language was designed to solve this problem.        </p>
+          To solve this problem, the World Wide Web Consortium (W3C) -
+          the non profit, standard setting consortium, responsible for
+          standardizing HTML - created STYLES in addition to HTML 4.0.        </p>
         <hr>
         <h4>
           Style Sheets Can Save a Lot of Work
@@ -66,17 +72,17 @@
           Styles are normally saved in external .css files. </p>
         <p>
           External style sheets enable you to change the appearance and
-          layout of all the pages in your web site, just by editing one
+          layout of all the pages in your Web, just by editing one
           single CSS document!</p>
         <p>
-          CSS is a breakthrough in web design because it allows
-          developers to control the style and layout of multiple web
+          CSS is a breakthrough in Web design because it allows
+          developers to control the style and layout of multiple Web
           pages all at once.</p>
         <p>
-          As a web developer you can define a style for each HTML
+          As a Web developer you can define a style for each HTML
           element and apply it to as many Web pages as you want. To make
           a global change, simply change the style, and all elements in
-          the website are updated automatically. </p>
+          the Web are updated automatically. </p>
         <br>
         <hr>
         <h4>
@@ -86,16 +92,17 @@
           CSS allows style information to be specified in many
           places. Styles can be specified inside a single HTML element,
           inside the style element of an HTML page, or in an external CSS
-          file. </p>
+          file. Even multiple external style sheets can be referenced
+          inside a single HTML document. </p>
         <h4>
           Cascading Order
         </h4>
         <p>
           What style will be used when there is more than one style
-          specified for a given property of an HTML element? </p>
+          specified for an HTML element? </p>
         <p>
           Generally speaking we can say that all the styles will
-          "cascade" into a new "virtual" style sheet. Conflicts will be resolved by the following
+          "cascade" into a new "virtual" style sheet by the following
           rules, where number four has the highest priority: </p>
         <ol>
           <li> Browser default </li>
@@ -106,7 +113,7 @@
         <p>
           So, an inline style (inside an HTML element) has the highest
           priority, which means that it will override a style declared
-          in the head, in an external style sheet, or in a browser (a
+          inside the tag, in an external style sheet, or in a browser (a
           default value).
         </p>
         <h4> Syntax
@@ -360,7 +367,25 @@
               The browser will now read the style definitions, and format
               the document according to it.
             </p>
-         
+            <p>
+              Note: A browser normally ignores unknown tags. This means that
+              an old browser that does not support styles, will ignore the
+              &lt;style&gt; tag, but the content of the &lt;style&gt; tag
+              will be displayed on the page. It is possible to prevent an
+              old browser from displaying the content by hiding it in the
+              HTML comment element:
+            </p>
+            <p>
+              &lt;head&gt;<br>
+              &lt;style type="text/css"&gt;<br>
+              &lt;!--
+              hr {color: sienna}<br>
+              p {margin-left: 20px}<br>
+              body {background-image: url("images/back40.gif")}<br>
+              --&gt;<br>
+              &lt;/style&gt;<br>
+              &lt;/head&gt;
+            </p>
             <h4>
               Inline Styles: An inline style loses many of the advantages of
               style sheets by mixing content with presentation.</h4>
@@ -457,12 +482,13 @@
           <li>CSS List </li>
           <li>CSS Pseudo-classes</li>
         </ul>
+        <p>Note: when using a graphic as a list-item-marker,it helps if it is small, like 20px. Kleki.com can help with that.
+        </p>
         <h4 class="assign">
-          Assignment 8 Due Date: Wednesday, 11/13/19:</h4>
+          Assignment 8 Due Date: F per: Fri., 4/13/18, G per: Thu., 4/12/18:</h4>
         <p><strong>First page (CSS_with_external.html):</strong></p>
         <p>Create some organizational/layout structure using a <strong>layout
-          table</strong> and different elements on the page. This should be new work.  You may use your table_layout.html as a template, but change the styling and content. </p>
-          <p>Put all of the style  rules listed below into an external
+          table</strong> and different elements on the page. This should be new work.  Put all of the style  rules listed below into an external
           style sheet.</p>
         <p><strong>Second page (CSS_external_internal.html):</strong></p>
         <p>Create a second page. It can initially be the same as the first page. Change the title. It should link to the same external style sheet.</p>
@@ -480,7 +506,7 @@
           <li>Background: image or color</li>
           <li>Text: color, alignment, background-color and line-height</li>
             <li><a href= "https://www.fonts.com/content/learning/fontology/level-1/type-anatomy/type-classifications">Font: </a>
-                <a href="http://www.awayback.com/index.php/2010/02/03/revised-font-stack/"><strong>family</strong></a>, size,  and boldness (font-weight)
+                <a href="http://www.awayback.com/index.php/2010/02/03/revised-font-stack/"><strong>family</strong></a>, size, style, variant and boldness (font-weight)
             </li>
           <li>Border: at least style the bottom
             border</li>
@@ -489,7 +515,7 @@
           <li>Lists: use at least three different lists: one ordered and one unordered list (set the list-item-marker style) and a third list where you
             set an image as the list-item marker (list-style image).</li>
           <li>Pseudo-classes: set the color for these states of
-            hyperlinks: link, visited, hover (You will, therefore, need one or more links on your page.)</li>
+            hyperlinks: link, visited, hover</li>
           <li>Give at least one html element a class and style that class in the style sheet.</li>
         </ul>
         <p></p>
