@@ -1,0 +1,157 @@
+body {
+      background-image: url("lrock004.jpg");
+      /*font-family: 'Oldenburg';*/
+      /*font-size: 22px;*//*7*/
+      /*font-family: 'Germania One';
+      /*font-size: 22px;
+      /*font-weight: 150;/*6*/
+      /*font-family: 'Almendra Display';
+      /*font-size: 22px;/*2*/
+      font-family: 'Milonga';
+      font-size: 22px;/*3*/
+      /*font-family: 'Mirza', "Lucida Blackletter";*/
+      /*font-size: 18px;*//*10*/
+      margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+ul#left {
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    width: 12%;
+}
+
+ul#topnav {
+    float:right;
+    height: 35px;
+    border: 1px solid #555;
+    /*overflow: auto;*/
+}
+
+ul#lownav {
+    /*float:right;
+    margin-left: 183px;
+    margin-right: 10px;
+    height: 43px;
+    overflow: auto;*/
+}
+
+li a {
+    padding: 4px 7px 8px 7px;
+}
+
+ul li a {
+    color: #000;
+    /*padding: 11px 16px 8px 16px;*/
+    text-decoration: none;
+}
+
+ul#left li a {
+    display: block;
+}
+
+ul#topnav li a {
+    display: inline;
+}
+
+ul#lownav li a {
+    display: block;
+}
+
+ul#topnav li {
+    float:left;
+}
+
+ul#topnav li a {
+    border-right: 1px solid #555;
+}
+
+ul#pack {
+    margin-left: 20px;
+    list-style-image: url('edelBulletSm.jpg');
+    font-size: 16px;
+}
+
+ul#pack li {
+    padding-bottom: 4px;
+}
+
+li:last-child {
+    border-right: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+img {
+    border: 10px double #4CAF50;
+    padding: 5px;
+}
+
+h3 {
+    padding: 8px;
+}
+
+h3.np {
+    padding: 0px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 16px;
+}
+
+td, th {
+    padding: 8px;
+}
+
+td.low {
+    vertical-align: bottom;
+}
+
+table.fixed tr th {
+    max-width: 376px
+}
+
+figure {
+    -webkit-margin-start: 15px;
+    -webkit-margin-end: 15px;
+}
+
+figcaption {
+    margin-left:10px;   
+}
+
+figure.gent figcaption {
+    margin-left:10px;
+    font-style: italic;
+}
+
+figure.gent {
+  display: flex;
+  align-items: center;
+  float:right; 
+  margin-right: 0px; 
+  margin-bottom: 0px;
+}
+
+p.gent {
+    text-align: justify;
+}
