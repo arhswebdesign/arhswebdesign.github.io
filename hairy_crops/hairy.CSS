@@ -1,0 +1,113 @@
+body{
+    background-image:url("lgrey082tile.gif")
+}
+h1{
+   font-family: Didot;
+   font-size: 42pt;
+}
+h1, h2{
+   color: #a4c1f1;  
+}
+h2{
+   font-size: 18pt;
+   text-align: center;
+}
+h2, h3, h5, li a{
+   font-family: Helvetica;
+}
+h3{
+   color: #1919b3;
+   /*color: #575452;*/
+}
+h1, h2, h3, h5 {
+   margin-left: 20px;
+}
+h5{
+   font-size: 16px;
+}
+
+p{
+   margin-left: 20px;
+   margin-right: 20px;
+}
+
+img{
+   display: block;
+   margin: auto;
+   padding: 25px;
+}
+
+cite{
+   font-style:normal;
+   font-weight: bold;
+}
+
+main{
+   margin:90px;
+   margin-top:20px;
+   padding: 10px;
+   border-style: solid;
+   border-color: #a4c1f1;
+   background-color:white;
+}
+
+h2#works{
+   margin-left: 38%;
+   margin-right: 38%;
+   padding: 10px;
+   border-style: solid;
+   border-color: #a4c1f1;
+   background-color:white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url(marb_navy.jpg);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  background-image: url(marb_navy.jpg); 
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  /* Add a gray right border to all list items, except the last item (last-child) */
+  border-right: 1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a:hover:not(.active) {
+  background-image: url(marb045.jpg);
+}
+
+.active {
+  background-image: url(marb_black.jpg);
+}
+    
+figure.sidecap {
+  display: flex;
+  align-items: center;
+}
+.quoted {
+    padding-left: 44px;
+    padding-right: 62px;
+}
+
+.item_set {
+  font-family: 'Rosario';
+  font-size: 16px;
+  color: #575452;
+  padding-left: 18px;
+}
