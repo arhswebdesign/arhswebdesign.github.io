@@ -2,13 +2,13 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="../tutorial.css">
-    <title>A7: images</title>
+    <title>P9: images</title>
     <meta http-equiv="Content-Type" content="text/html;
       charset=windows-1252">
   </head>
   <body>
     <div id="header">
-      <h1>Assignment 7: images</h1>
+      <h1>Project 9: images</h1>
       <div class="navbar">
         <script src="../nav.js">
 </script></div>
@@ -18,7 +18,7 @@
         <!--ADD CONTENT HERE-->
         <p>
         </p>
-        <h4> 1. The Image Tag and the Src Attribute </h4>
+        <h4> The Image Tag and the Src Attribute </h4>
         <p>In HTML, images are defined with the &lt;img&gt; tag. </p>
         <p>
           To display an image on a page, you need to use the src
@@ -30,25 +30,24 @@
         </h4>
         <p>
           &lt;img src="url"&gt;</p>
-        <h4>
-          The URL points to the location where the image is stored.</h4>
+        <h4>The URL points to the location where the image is stored.</h4>
+        <p> The url can be either a</p>
+        <ul>
+            <li>file name of file you have placed locally (e.g. oscar.png) or</li>
+            <li>internet location (e.g. <a href="https://i.kym-cdn.com/photos/images/original/001/065/957/dca.jpg">https://i.kym-cdn.com/photos/images/original/001/065/957/dca.jpg</a></li>
+          </ul>
+
         <p> SAVE LOCAL COPIES OF EVERY IMAGE YOU CAN.</p>
-        <p>An image named "boat.gif" located in the directory "images"
-          (that is in the same folder as your html page) has the URL:
-          "images/boat.gif"</p>
-        <p>(if you can't save the image for some reason) An image named
-          "boat.gif" on "www.w3schools.com" has the URL:
-          http://www.w3schools.com/images/boat.gif. </p>
         <p>
-          The browser puts the image where the image tag occurs in the
-          document. If you put an image tag between two paragraphs, the
-          browser shows the first paragraph, then the image, and then
-          the second paragraph.
+            I have placed some more detailed instructions on how to use images found on the internet. They are inside of Project 9 in repl.it.
         </p>
-        <h4>The ALT Attribute </h4>
+        <h4>Reading </h4>
+        <p><a href="http://www.w3schools.com/html/html_images.asp">Study
+            this section of W3Schools to learn about the image tag.</a>
+        </p>
+        <h4>The Alt Attribute </h4>
         <p> The alt attribute is used to define an "alternate text" for
-          an image. The value of the alt attribute is an author-defined
-          text:</p>
+          an image. You should use something brief and informative. For example:</p>
         <p> &lt;img src="boat.gif" alt="sailboat"&gt;</p>
         <p> The "alt" attribute tells the reader what he or she is
           missing on a page if the browser can't load images. The
@@ -59,13 +58,12 @@
           that have text-only browsers.</p>
         <p>Include the "alt" attribute for each image on a page. </p>
         <p>If you don't, it's not considered valid html.</p>
-        <h4>The title Attribute </h4>
+        <h4>The Title Attribute </h4>
         <p> The title attribute is used to provide a tooltip for an
           image. Tooltips are the words that pop-up on screen if you
           position the cursor over the image and wait for a quarter
-          second. The title attribute is also author-defined:</p>
-        <p> &lt;img src=&quot;boat.gif&quot; title=&quot;Big Boat&quot;&gt;</p>
-        <p>&nbsp;</p>
+          second. The title attribute can be the same as the alt attribute:</p>
+        <p> &lt;img src=&quot;boat.gif&quot; alt=&quot;whaleboat&quot; title=&quot;whaleboat&quot;&gt;</p>
         <h4> The Width (or Height) Attribute </h4>
         <p> The width attribute is used to make the image smaller:</p>
         <p> &lt;img src=&quot;boat.gif&quot; width=&quot;100px&quot;&gt;</p>
@@ -77,38 +75,96 @@
         <p>&nbsp;</p>
       
         <h4>Align an Image Relative to a Line of Text</h4>
-        <p>  Float:left and float:right are very effective at positioning, together with moving the &lt;img&gt; element up or down within the &lt;p&gt; element. You will probably want to adjust the margins of the img and perhaps the padding of the td.</p>
-          <h4><a href="paintbrush11.html">Indian paintbrush example</a> </h4>
+        <p>
+          Within the web page you are creating, the browser puts the image where the image tag occurs in the
+          your html document. If you put an image tag between two paragraphs, the
+          browser shows the first paragraph, then the image, and then
+          the second paragraph.
+        </p>
+        <p>
+          If you put the image element in the middle of a bunch of text (which might be inside a &lt;p&gt; element, it will display it there. If you want it higher up, just place it higher within the &lt;p&gt; element.
+        </p>
+        <p>  
+            <a href="https://www.w3schools.com/cssref/pr_class_float.asp" >Float:left and float:right</a> are very effective at positioning an image to the left or to the right. To create a little space around the image, you will probably also want to adjust the margins of the img and perhaps the padding of the td.
+        </p>
+        <p>  
+            This is shown in the example below.
+        </p>
+        <p>  
+            I also use padding of the td, to keep both image and text way from the sides.
+        </p>
+        <p>Please open this <a href="paintbrush11.html">Indian paintbrush example</a> and use &ldquo;Rt-click &rarr; View Page Source&rdquo; to see how it might be done.</p>
         
-        <h4 class="assign">
-          2. ASSIGNMENT 7 Due Date: Monday, 4/27/20:</h4>
-        <p>Decide on a topic; collect some images, write some text.</p>
-        <p>Begin with a copy of a previous template with a full page layout table.  Make it completely new with new styling.  Perhaps put some
-          headings on the page.</p>
-        <p> Display different images in the following ways. You may need
-          to create more than one page to complete this:</p>
-        <p><a href="http://www.w3schools.com/html/html_images.asp">Study
-            this section of W3Schools to learn about the image tag.</a></p>
+        <h4 class="assign">Due Date: Friday, 3/12/21:</h4>
+
+        <p>
+          Tribute Site - create a website that is dedicated as a tribute to some person, place, or thing (such as an album, video game, novel, etc.). The website should contain a background image, images which are pleasingly placed within text, a table of images dedicated to your tribute, and will show proper use of the alt and title attributes. 
+        </p>
+        <p>
+            To save time typing, you will probably want to begin with a copy of a previous template with a layout table. Or not. 
+        </p>
+        <p>But if you do, make it completely new with new content and new styling.</p>
         <ul>
           <li>Background image: set an image as the background for a
             page. <a href="http://www.w3schools.com/css/css_background.asp">Find
               information on this here in W3Schools.</a>
-            
           </li>
           <li>
-            Let an image float. (This controls it's position in the left-right direction): show an image float to the left or
-            right of a paragraph. Use float:right or float:left.</li>
+            Let an image float. (This controls it's position in the left-right direction, relative to other stuff, like text.)  Use float:right or float:left.
+          </li>
           <li>
-            Align images (at least two) within
-            a larger mass of text, using float, margin and padding</li>
+              Adjust images to different sizes 
+          </li>
           <li>
-            Adjust images to different sizes </li>
+              Use at least 4 images in a table layout
+          </li>
           <li>
             Display alternate text for all &lt;img&gt; elements in this assignment.            </li>
           <li>Use the title attribute for all &lt;img&gt; elements in this assignment. </li>
           <li>
             Make at least one image a clickable link to somewhere else.</li>
         </ul>
+               
+        <h3>Rubric</h3>
+        <table>
+          <tr>
+            <th>Category</th>
+            <th>minus 15 points</th>
+            <th>minus 10 points</th>
+            <th>minus 5 points</th>
+            <th>Full points</th>
+          </tr>
+            <tr>
+            <td>Project Requirements</td>
+            <td>Student follows 4 of the bulleted instructions, above.</td>
+            <td>Student follows 5 of the bulleted instructions, above.</td>
+            <td>Student follows 6 of the bulleted instructions, above.</td>
+            <td>Student follows all 7 bulleted instructions, above.</td>
+          </tr>
+          <tr>
+            <td>Code Quality</td>
+            <td>Code doesn't run as expected and shows they did not study or understand the learning resources</td>
+            <td>Code displays somewhat as expected, minimal understanding of learning resources</td>
+            <td>Uses somewhat appropriate syntax and correct features. Well formatted, basic understanding of learning resources</td>
+            <td>Easy to understand. Uses appropriate syntax and features to accomplish the task. Shows they studied and understood the learning resources very well</td>
+          </tr>
+          <tr>
+            <td>Code Style</td>
+            <td>Code is very hard to read and understand, follows almost no styling guidelines, inconsistent and causes errors</td>
+            <td>Code is not very readable or consistent, but follows some styling guidelines, some errors</td>
+            <td>Code is fairly readable and consistent, but does not follow all styling guidelines, minimal errors</td>
+            <td>Code is readable and follows all styling guidelines, no errors</td>
+          </tr>
+          <tr>
+            <td>Creativity</td>
+            <td>Student does not show basic creative effort (i.e. no addition of content, text/headers/etc)</td>
+            <td>Student shows minimal creativity from base requirement (i.e adds a couple things but not much)</td>
+            <td>Student shows some creativity from base requirement (i.e creates some content, text/headings/etc and some nice styling) </td>
+            <td>Student goes above and beyond base requirement and shows understanding of project (i.e. additional content, styling)</td>
+          </tr>
+        </table>
+          
+
       </div>
     </div>
     <div class="navbarfooter">

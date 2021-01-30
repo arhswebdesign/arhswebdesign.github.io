@@ -2,53 +2,104 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="../tutorial.css">
-    <title>HTML Tutorial: Styling</title>
+    <title>Intro. Styling</title>
     <meta http-equiv="Content-Type" content="text/html;
       charset=windows-1252">
   </head>
   <body>
     <div id="header">
-      <h1>Styling html</h1>
+      <h1>Project 3: Styling your web page</h1>
       <div class="navbar">
         <script src="../nav.js">
 </script></div>
     </div>
     <div id="content">
-      <div id="main-text"><br>
-        <h4 class="assign"> Note: Do Evaluating Web Design Assignment
-          Before Intro. Styling- see Due Dates Page. </h4>
-        <p> </p>
-        <p> </p>
-             <h4> 1. Preparing to work:</h4>
-        <p> Open Brackets, this
-          web site, <a href="http://www.w3schools.com/default.asp"
-            target="_blank">and the w3schools web site</a>, and keep these all open throughout each class. You will be writing the html and CSS code
-          in Brackets.</p>
-        <h4> 2. Saving your work:</h4>
-        <p> In order to see the html code as a web page, you must save
-          all html work with a .html file extension. For example, you
-          could save a file as basic_tags.html .</p>
-        <p> Save all of your work to: </p>
-        <p>S:/HS/Student/Web Design/student_folders/yourName/
-            folder. This one and the first assignment
-          should both go in the "early_work" subfolder. After this, you will start putting things in "middle_work."</p>
-        <h4> 3. Viewing your work:</h4>
-          <p> There are two ways to view your html work as a web page,</p>
-          <ol>
-          <li>Use the lightning bolt in Brackets</li>
-          <li>Type Windows-E and browse to your folder. Double click on your page. If it doesn't show the Chrome icon, then you might not
-          have saved the file with a .html file extension. Try saving it again.</li></ol>
+      <div id="main-text">
+        <h4> Preparing to work: (starting with your template)</h4>
+        <ul>
+            <li> Go to repl.it and open your previous work in "Project 1: Basic Tags." Copy the code from html_template.html.</li>
+            <li> Use the browser's "Back" button to go to the Team site and then open "Project 3: Intro. Styling." Click on "index.html" to open the file. Paste the "template" code into the index.html file.</li>
+            <li>You will modify this file as you work.</li>
+        </ul>
+        <h4> Viewing your work:</h4>
+        <p> The "Run" button id repl.it shows you how the web page gets presented to your audience.</p>
 
-        <h4> 4. View your web page often: </h4>
-        <p>Your working
-          rhythm should be to write some html code, then check out the web
-          page to see the new changes. Change and view. Change and view.</p><h4 class="assign">Intro. to Styling ASSIGNMENT- Due
-          Date:&nbsp;Monday, 2/10/20
+        <h4>Here is the general format for creating internal cascading styles</h4>
+
+        <ul>
+        <li>Write the style tags in the head section of the code .</li>
+        </ul>
+
+        <p>
+        &lt;head&gt;
+        </p>
+        <p>
+        &lt;style &gt;
+        </p>
+        <p>
+
+        hr {color: sienna;}
+        </p>
+        <p>
+        p {font-family: Arial, Verdana, sans-serif;
+        color: #00008B;}
+        </p>
+        <p>
+        body {background-color: #5F9EA0;}
+        </p>
+        <p>
+        &lt;/style&gt;
+        </p>
+        <p>
+        &lt;/head&gt;
+        </p>
+
+        <h4> How to write a style rule: CSS Syntax</h4>
+        <ul>
+            <li>The CSS syntax is made up of three parts: a selector, a property and a value
+                <ul style="font-weight: 600;">
+                    <li>selector {property: value}</li>
+                    <li>body {background-color: #5F9EA0;}</li>
+                </ul>
+            </li>
+
+            <li>The selector is normally the HTML element/tag you wish to style. Example: body.</li> 
+            <li>The property is the attribute you wish to change. Example: Background-color:</li>
+            <li>Each property can take a value. Example: #5F9EA0</li>
+            <li>Think about people. hair{color: white;}
+            <li>The property and value are separated by a colon, and surrounded by curly braces. End each style rule with a semi-colon; to keep rules separate from one another.</li>
+        </ul>
+
+        <p><img src="../images/selector.gif" alt="" width="569" height="119" /></p>
+        <h4>I write my style rules like this to help me better organize them. I can easily find a rule to revise it when the rules are written like this:</h4>
+        <p>
+        h4 { <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 18px; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: left; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-style: normal; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;padding: 10px; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-variant: small-caps; <br />
+        }
+        </p>
+
+        <h4>We can group various html elements together to give them the same style</h4>
+
+        <p>
+        p, li, dl { <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;font-size: 12px; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text-align: justify; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;line-height: 1.2em; <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;margin: 35px;<br />
+
+        }
+        </p>
+
+        <h4 class="assign">Project 3 - Due
+          Date:&nbsp;Wednesday, 2/10/21
           : </h4>
-        <h4>Using style rules: </h4>
+
         <ol>
-          <li>Study how to set up <a href="../css/internal.html"> internal CSS style rules</a></li>
-          <li>Learn how to use the style properties listed
+           <li>Learn how to use the style properties listed
             below by studying <a
               href="http://www.w3schools.com/css/css_background.asp">
               W3schools</a>. Look for CSS background, CSS Text and CSS
@@ -57,19 +108,18 @@
               <li>background color</li>
               <li>text color</li>
               <li>text align</li>
-              <li>Font family</li>
+              <li>font family</li>
               <li>font size</li>
               <li>font style</li>
             </ul>
           </li>
 
-          <li>Open your basic_tags.html and save it as first_style.html</li>
-          <li>Remember to change the title of the page in the
-            &lt;title&gt; tags. </li>
-          <li>Create some organizational/layout structure using
-            different headings on the page. (You should use new content in your text elements. You might also choose to delete some and add others.)</li>
-          <li>Use every one of these internal style properties in this
-            assignment to add style to your work.</li>
+          <li>Please remember to change the title of the page in the
+            &lt;title&gt; tags. You should do this for every new project.</li>
+
+          <li>Come up with a creative idea for a web page (Funny quotes? Song lyrics?). Create some organizational/layout structure using different text-containing elements (headings, paragraphs) on the page. You don't need to use all the headings (h1, h2, etc.); choose the ones you like. Please use new content in your elements. </li>
+          <li>Add style, as follows.</li>
+          <li>Use each of these internal style properties at least once.</li>
           <ul>
             <li>background color</li>
             <li>text color </li>
@@ -80,10 +130,48 @@
           </ul>
           <li>Remember, the style rules are written in the internal
             style section which must be inside the &lt;head&gt; tags. </li>
-          <li>Submit your completed assignment as first_style.html. </li>
+          <li>Submit your completed page in repl.it Project 3 as index.html. </li>
         </ol>
 
-        <h4>&nbsp;</h4>
+        <h3>Rubric</h3>
+        <table>
+          <tr>
+            <th>Category</th>
+            <th>minus 15 points</th>
+            <th>minus 10 points</th>
+            <th>minus 5 points</th>
+            <th>Full points</th>
+          </tr>
+            <tr>
+            <td>Project Requirements</td>
+            <td>Student uses 0-1 of the specified style properties and/or does not follow some instructions</td>
+            <td>Student uses 2-3 of the specified style properties and/or does not follow some logistical instructions</td>
+            <td>Student uses 4-5 of the specified style properties and follows all instructions</td>
+            <td>Student uses all 6 specified style properties and follows all instructions</td>
+          </tr>
+          <tr>
+            <td>Code Quality</td>
+            <td>Code doesn't run as expected and shows they did not study or understand the learning resources</td>
+            <td>Code displays somewhat as expected, minimal understanding of learning resources</td>
+            <td>Uses somewhat appropriate syntax and correct features. Well formatted, basic understanding of learning resources</td>
+            <td>Easy to understand. Uses appropriate syntax and features to accomplish the task. Shows they studied and understood the learning resources very well</td>
+          </tr>
+          <tr>
+            <td>Code Style</td>
+            <td>Code is very hard to read and understand, follows almost no styling guidelines, inconsistent and causes errors</td>
+            <td>Code is not very readable or consistent, but follows some styling guidelines, some errors</td>
+            <td>Code is fairly readable and consistent, but does not follow all styling guidelines, minimal errors</td>
+            <td>Code is readable and follows all styling guidelines, no errors</td>
+          </tr>
+          <tr>
+            <td>Creativity</td>
+            <td>Student does not show basic creative effort (i.e. no changes in content, text/headers/etc)</td>
+            <td>Student shows minimal creativity from base requirement (i.e changes a couple parts but not most)</td>
+            <td>Student shows some creativity from base requirement (i.e alters some content, text/headers/etc but not all) </td>
+            <td>Student goes above and beyond base requirement and shows understanding of project (i.e. additional content, styling, text, headers)</td>
+          </tr>
+        </table>
+        
       </div>
     </div>
     <div class="navbarfooter">

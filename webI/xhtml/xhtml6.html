@@ -3,7 +3,7 @@
   <head>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../tutorial.css">
-    <title>A8: CSS</title>
+    <title>P10: CSS</title>
     <meta http-equiv="Content-Type" content="text/html;
       charset=windows-1252">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -13,7 +13,7 @@
   </head>
   <body>
     <div id="header">
-      <h1>Assignment 8: Cascading Style Sheets</h1>
+      <h1>Project 10: Cascading Style Sheets</h1>
       <div class="navbar">
         <script src="../nav.js">
 </script></div>
@@ -26,12 +26,7 @@
         <h4>What is CSS?</h4>
         <ul>
           <li> CSS stands for Cascading Style Sheets </li>
-          <li>Styles define how to display HTML elements </li>
-          <li> Styles are normally stored in Style Sheets </li>
-          <li>Styles were added to HTML 4.0 to solve a problem </li>
-          <li> External Style Sheets can save you a lot of work</li>
-          <li> External Style Sheets are stored in CSS files</li>
-          <li>Multiple style definitions will cascade into one</li>
+          <li>Style rules define how to display HTML elements </li>
         </ul>
         <hr>
         <h4>CSS Demo</h4>
@@ -42,21 +37,39 @@
             how it works</a></p>
         <br>
         <hr>
-        <h4>Styles Solve a Common Problem</h4>
+        <h4>Some History</h4>
+        <p>
+           In the beginning, there was only HTML.
+        </p>
         <p>
           HTML tags were originally designed to define the content of a
           document. They were supposed to say "This is a header", "This
           is a paragraph", "This is a table", by using tags like
-          &lt;h1&gt;, &lt;p&gt;, &lt;table&gt;, and so on. 
+          &lt;h1&gt;, &lt;p&gt;, &lt;table&gt;, and so on.
+        </p>
+        <p>
+          The tags could be styled with attributes.
         </p>
         <p>
           As more attributes (like the
-         font-size, margin, color, width and background-color attributes) were added, it became more and more difficult to create Web
-          sites where the content of HTML documents was clearly
+         font-size, margin, color, width and background-color attributes) were added, it became more and more unwieldy to style the elements. 
+        </p>
+        <p>
+            And it was hard to make a consistent style change across a whole website.
+        </p>
+        <p>
+            To change the color of the h3 headings when you have 50 of them would be a lot of work.
+        </p>
+        <p>
+            So, the CSS language was designed to solve this problem.
+        </p>
+        <p>
+           It is now possible
+            to create Websites where the content of HTML documents was clearly
           separated from the document's presentation layout.
         </p>
         <p>
-          The CSS language was designed to solve this problem.        </p>
+                  </p>
         <hr>
         <h4>
           Style Sheets Can Save a Lot of Work
@@ -79,36 +92,6 @@
           the website are updated automatically. </p>
         <br>
         <hr>
-        <h4>
-          Multiple Styles Will Cascade Into One
-        </h4>
-        <p>
-          CSS allows style information to be specified in many
-          places. Styles can be specified inside a single HTML element,
-          inside the style element of an HTML page, or in an external CSS
-          file. </p>
-        <h4>
-          Cascading Order
-        </h4>
-        <p>
-          What style will be used when there is more than one style
-          specified for a given property of an HTML element? </p>
-        <p>
-          Generally speaking we can say that all the styles will
-          "cascade" into a new "virtual" style sheet. Conflicts will be resolved by the following
-          rules, where number four has the highest priority: </p>
-        <ol>
-          <li> Browser default </li>
-          <li>External style sheet</li>
-          <li> Internal style sheet (inside the &lt;head&gt; tag) </li>
-          <li> Inline style (inside an HTML element) </li>
-        </ol>
-        <p>
-          So, an inline style (inside an HTML element) has the highest
-          priority, which means that it will override a style declared
-          in the head, in an external style sheet, or in a browser (a
-          default value).
-        </p>
         <h4> Syntax
         </h4>
         <p>
@@ -337,6 +320,42 @@
  
         <hr>
    
+          
+          
+        <button type="button" class="btn btn-primary btn-block" id="zeroth" data-toggle="collapse" data-target="#oss">
+            <span class="glyphicon glyphicon-collapse-down"></span> Resolving Conflicts -> Open
+        </button>
+        <div id="oss" class="collapse">  
+            <h4>
+              Multiple Styles Will Cascade Into One
+            </h4>
+            <p>
+              CSS allows style information to be specified in many
+              places. Styles can be specified inside a single HTML element,
+              inside the style element of an HTML page, or in an external CSS
+              file. </p>
+            <h4>
+              Order of Priority
+            </h4>
+            <p>
+              What style will be used when there is more than one style
+              specified for a given property of an HTML element? </p>
+            <p>
+                Conflicts will be resolved by the following priorities,
+              with the highest priority style winning: </p>
+            <ol>
+              <li> External style sheet</li>
+              <li> Internal style sheet (inside the &lt;head&gt; tag) </li>
+              <li> Inline style (inside an HTML element) </li>
+            </ol>
+            <p>
+              So, an inline style (inside an HTML element) has the highest
+              priority, which means that it will override a style declared
+              in the head, or in an external style sheet).
+            </p>
+        </div>
+    
+        <hr>          
 
         <button type="button" class="btn btn-primary btn-block" id="first" data-toggle="collapse" data-target="#oss">
             <span class="glyphicon glyphicon-collapse-down"></span> Other Style Methods -> Open
@@ -444,7 +463,7 @@
         <hr>
         <h4>
           Read and work your way through the following parts of the
-          Cascading Style Sheets tutorial. Be sure to check the
+            <a href="https://www.w3schools.com/css/default.asp">Cascading Style Sheets tutorial.</a> Be sure to check the
           examples.
         </h4>
         <ul>
@@ -457,43 +476,79 @@
           <li>CSS List </li>
           <li>CSS Pseudo-classes</li>
         </ul>
-        <p>Note: when using a graphic as a list-item-marker,it helps if it is small, like 20px. Kleki.com can help with that.</p>
+        <p>Note: when using a graphic as a list-item-marker, it helps if it is small, like 20px. Kleki.com can help with that.</p>
+        <br>
         <h4 class="assign">
-          Assignment 8 Due Date: Tuesday, 5/12/20:</h4>
-        <p><strong>First page (CSS_with_external.html):</strong></p>
+          Due Date: Friday, 3/19/21:</h4>
+        <br>
+        <p><strong>Create a web page about a topic that you enjoy or would like to learn more about</strong></p>
         <p>Create some organizational/layout structure using a <strong>layout
-          table</strong> and different elements on the page. This should be new work.  You may use your table_layout.html as a template, but change the styling and content. </p>
-          <p>Put all of the style  rules listed below into an external
-          style sheet.</p>
-        <p><strong>Second page (CSS_external_internal.html):</strong></p>
-        <p>Create a second page. It can initially be the same as the first page. Change the title. It should link to the same external style sheet.</p>
-        <p></p>
-        <p>Intentionally set up <strong>at least five conflicts</strong>. For example, you could style the background color salmon, even though it might already have been styled yellow in the external style sheet. This is so you can see for yourself how the style rules &quot;cascade&quot;. In other words, which style is applied when 2 or
-          more are giving different style directions?</p>
-        <p><strong>Third page (CSS_all_three.html):</strong></p>
-        <p>The third sheet should start off identical to the second. Then add inline style to change the same two (or more) style rules, yet again. So, for example, instead of yellow or salmon, you could make the background pink. See how the page looks.</p>
-        <p>When finished you should have 3 html pages all linked to one single css file.</p>
+          table</strong> and different elements on the page. This should be new work.  You may use your code from Project 7 (Table Layout) as a template, but change the styling and content. </p>
+          <p>Put all of the style  rules listed below into an <strong><em>external
+          style sheet.</em></strong></p>
         <p>&nbsp;</p>
+          
         <h4>
           In the style sheet, set the code for the following:
         </h4>
         <ul>
           <li>Background: image or color</li>
-          <li>Text: color, alignment, background-color and line-height</li>
-            <li><a href= "https://www.fonts.com/content/learning/fontology/level-1/type-anatomy/type-classifications">Font: </a>
-                <a href="http://www.awayback.com/index.php/2010/02/03/revised-font-stack/"><strong>family</strong></a>, size,  and boldness (font-weight)
-            </li>
-          <li>Border: at least style the bottom
-            border</li>
+          <li>Text color for <em>at least</em> two different types of elements (for example, p and h3)</li>
+          <li><a href= "https://www.fonts.com/content/learning/fontology/level-1/type-anatomy/type-classifications">Font:       </a>
+                <a href="http://www.awayback.com/index.php/2010/02/03/revised-font-stack/"><strong>family</strong></a>
+          </li>
+          <li>Font size</li>
+          <li>Border: at least style the bottom border</li>
           <li>Margin: left, right, top and bottom </li>
           <li>Padding: left, right, top and bottom </li>
-          <li>Lists: use at least three different lists: one ordered and one unordered list (set the list-item-marker style) and a third list where you
-            set an image as the list-item marker (list-style image).</li>
+          <li>Use a list where you set an image as the list-item marker (list-style image).</li>
           <li>Pseudo-classes: set the color for these states of
             hyperlinks: link, visited, hover (You will, therefore, need one or more links on your page.)</li>
           <li>Give at least one html element a class and style that class in the style sheet.</li>
         </ul>
         <p></p>
+        
+                       
+        <h3>Rubric</h3>
+        <table>
+          <tr>
+            <th>Category</th>
+            <th>minus 15 points</th>
+            <th>minus 10 points</th>
+            <th>minus 5 points</th>
+            <th>Full points</th>
+          </tr>
+            <tr>
+            <td>Project Requirements</td>
+            <td>Student follows 7 of the bulleted instructions, above.</td>
+            <td>Student follows 8 of the bulleted instructions, above.</td>
+            <td>Student follows 9 of the bulleted instructions, above.</td>
+            <td>Student follows all 10 bulleted instructions, above.</td>
+          </tr>
+          <tr>
+            <td>Code Quality</td>
+            <td>Code doesn't run as expected and shows they did not study or understand the learning resources</td>
+            <td>Code displays somewhat as expected, minimal understanding of learning resources</td>
+            <td>Uses somewhat appropriate syntax and correct features. Well formatted, basic understanding of learning resources</td>
+            <td>Easy to understand. Uses appropriate syntax and features to accomplish the task. Shows they studied and understood the learning resources very well</td>
+          </tr>
+          <tr>
+            <td>Code Style</td>
+            <td>Code is very hard to read and understand, follows almost no styling guidelines, inconsistent and causes errors</td>
+            <td>Code is not very readable or consistent, but follows some styling guidelines, some errors</td>
+            <td>Code is readable and follows proper style, but is not in an external style sheet</td>
+            <td>Code is in an external style sheet, is readable and follows proper style</td>
+          </tr>
+          <tr>
+            <td>Creativity</td>
+            <td>Student does not show basic creative effort (i.e. no addition of content, text/headers/etc)</td>
+            <td>Student shows minimal creativity from base requirement (i.e adds a couple things but not much)</td>
+            <td>Student shows some creativity from base requirement (i.e creates some content, text/headings/etc and some nice styling) </td>
+            <td>Student goes above and beyond base requirement and shows understanding of project (i.e. additional content, styling)</td>
+          </tr>
+        </table>
+          
+  
       </div>
     </div>
     <div class="navbarfooter">
@@ -504,7 +559,17 @@
     <script>
     $(document).ready(function(){
       $("#oss").on("hide.bs.collapse", function(){
-        $("#first").html('<span class="glyphicon glyphicon-collapse-down"></span>  Other StyleMethods -> Open');
+        $("#zeroth").html('<span class="glyphicon glyphicon-collapse-down"></span>  Resolving Conflicts -> Open');
+      });
+      $("#oss").on("show.bs.collapse", function(){
+        $("#zeroth").html('<span class="glyphicon glyphicon-collapse-up"></span>Close');
+      });
+    });
+    </script>     
+    <script>
+    $(document).ready(function(){
+      $("#oss").on("hide.bs.collapse", function(){
+        $("#first").html('<span class="glyphicon glyphicon-collapse-down"></span>  Other Style Methods -> Open');
       });
       $("#oss").on("show.bs.collapse", function(){
         $("#first").html('<span class="glyphicon glyphicon-collapse-up"></span>Close');
