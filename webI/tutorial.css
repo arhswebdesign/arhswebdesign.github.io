@@ -8,8 +8,6 @@ background-color:#071871; /*#4a60d7;#326D95;*/
 color:#000; /*#8B0000;*/
 font-family: Verdana, Helvetica, Arial, sans-serif;
 font-size:medium;
-
-
 }
 
 #head
@@ -27,9 +25,6 @@ padding-right: 10px;
 border: solid 2px #000000;
 }
 
-
-
-
 #content {
 /*position: absolute; top: 5px; left:  220px; width: 675px;*/
 border: solid 2px #000000;
@@ -46,7 +41,6 @@ background-color: #31438c;/*#4682B4; */
 font-weight: bold;
 /*border: solid 2px #000000;*/
 }
-
 
 .navbarfooter 
 {
@@ -66,8 +60,6 @@ margin: 45px;
 padding: 10px;
 font-size: 1.5em;
 background-color: #91B9EC;
-
-
 }
 
 img.home
@@ -75,7 +67,6 @@ img.home
 align: center;
 margin-left:150px;
 }
-
 
 h1
 {
@@ -140,14 +131,12 @@ margin: 10px 35px 0px 50px;
 
 }
 
-
 p.footer 
 {
 font-size: .8em;
 font-weight: bold;
 /*text-align: center;*/
 }
-
 
 hr
 {
@@ -157,29 +146,41 @@ height: .3em;
 border: solid 2px #000000;
 }
 
-
-
-
-
-
 a:link
 {
-color: #000; /*#8B0000;*/
+color: #666; /*#8B0000;*/
 /*background-color: #95b7cd;*/
 /*text-decoration: none;*/
 }
 a:visited
 {
-color:#000; /*#8B0000;*/
+color:#666; /*#8B0000;*/
 /*text-decoration: none;*/
 /*background-color: #95b7cd;*/
 }
-
-
 
 a:hover
 {
 
 background-color: #038cff; /*#91B9EC; #B0C4DE;*/
 padding: 1px 1px
+}
+
+table {
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #4682B4; 
+  border: solid 2px #000000;
+}
+
+td, th {
+  border: 1px solid #888888;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
