@@ -107,6 +107,17 @@ color:  #91B9EC;
 background-color: #326D95;
 border: solid 2px #000000;
 }
+
+h5.explain
+{
+letter-spacing: 5px;
+padding: 5px 5px 5px 10px;
+font-variant: small-caps;
+color:  #91B9EC;
+background-color: #326D95;
+border: solid 2px #000000;
+}
+
 p.header
 {
 text-align: left;
