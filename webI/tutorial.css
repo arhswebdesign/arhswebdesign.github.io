@@ -116,6 +116,12 @@ font-variant: small-caps;
 color:  #91B9EC;
 background-color: #326D95;
 border: solid 2px #000000;
+text-decoration: none;
+}
+
+.explain
+{
+color:#91B9EC; 
 }
 
 p.header
