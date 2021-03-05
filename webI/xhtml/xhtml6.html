@@ -152,6 +152,16 @@
         <br>
         <hr>
         <h4>
+          A space matters
+        </h4>
+        <p>
+          Do NOT leave spaces between the property value and the units!
+          If you use "margin-left: 20 px" instead of "margin-left: 20px"
+          it will not work properly.
+        </p>
+        <br>
+        <hr>
+        <h4>
           The class Selector
         </h4>
         <p>
@@ -279,47 +289,40 @@
 
         <hr>
         <h4>
-          How to Insert a Style Sheet
+          How to Insert an External Style Sheet
         </h4>
-        <p>
-          When a browser reads a style sheet, it will format the
-          document according to it. There are three ways of applying style to elements: </p>
-        <h4>
-          External Style Sheet:
-          An external style sheet is ideal when the style is applied to
-          many pages.</h4>
-        <p> With an external style sheet, you can change the look of an
+        <p> An external style sheet is ideal when the style is applied to
+          many pages. With an external style sheet, you can change the look of an
           entire Web site by changing one file. Each page must link to
           the style sheet using the &lt;link&gt; tag. The &lt;link&gt;
           tag goes inside the head section: </p>
         <p>
           &lt;head&gt;<br>
           &lt;link rel="stylesheet" type="text/css"
-          href="mystyle.css" /&gt;<br>
+          href="style.css" /&gt;<br>
           &lt;/head&gt;
         </p>
         <p>
           The browser will read the style definitions from the file
-          mystyle.css, and format the document according to it. </p>
+          style.css, and format the document according to it. Repl.it already has a style.css file, so you just have to link to it, by adding the link element in the head.</p>
         <h4>
-          An external style sheet can be written in any text editor. The
-          file should not contain any html tags. Your style sheet should
-          be saved with a .css extension.</h4>
+          CSS is a different language
+        </h4>
+        <p>Inside the style sheet, the language is CSS. So, the
+          file should not contain any html tags. Your style sheet's name should
+          have a .css extension.
+        </p>
         <p> An example of a style sheet file is shown below: </p>
         <p>
           hr {color: sienna}<br>
           p {margin-left: 20px}<br>
           body {background-image: url("images/back40.gif")}<br>
         </p>
-        <p>
-          Do NOT leave spaces between the property value and the units!
-          If you use "margin-left: 20 px" instead of "margin-left: 20px"
-          it will only work properly in IE6 but it will not work in
-          Mozilla/Firefox or Netscape.
-        </p>
  
         <hr>
-   
+        <h4>
+          Optional Readings
+        </h4>
           
           
         <button type="button" class="btn btn-primary btn-block" id="zeroth" data-toggle="collapse" data-target="#oss">
@@ -472,11 +475,9 @@
           <li>CSS Font </li>
           <li>CSS Border </li>
           <li>CSS Margin </li>
-          <li>CSS Padding </li>
-          <li>CSS List </li>
           <li>CSS Pseudo-classes</li>
         </ul>
-        <p>Note: when using a graphic as a list-item-marker, it helps if it is small, like 20px. Kleki.com can help with that.</p>
+
         <br>
         <h4 class="assign">
           Due Date: Friday, 3/19/21:</h4>
@@ -484,7 +485,7 @@
         <p><strong>Create a web page about a topic that you enjoy or would like to learn more about</strong></p>
         <p>Create some organizational/layout structure using a <strong>layout
           table</strong> and different elements on the page. This should be new work.  You may use your code from Project 7 (Table Layout) as a template, but change the styling and content. </p>
-          <p>Put all of the style  rules listed below into an <strong><em>external
+          <p>Create an <strong><em>external
           style sheet.</em></strong></p>
         <p>&nbsp;</p>
           
@@ -497,14 +498,12 @@
           <li><a href= "https://www.fonts.com/content/learning/fontology/level-1/type-anatomy/type-classifications">Font:       </a>
                 <a href="http://www.awayback.com/index.php/2010/02/03/revised-font-stack/"><strong>family</strong></a>
           </li>
-          <li>Font size</li>
-          <li>Border: at least style the bottom border</li>
-          <li>Margin: left, right, top and bottom </li>
-          <li>Padding: left, right, top and bottom </li>
           <li>Use a list where you set an image as the list-item marker (list-style image).</li>
           <li>Pseudo-classes: set the color for these states of
             hyperlinks: link, visited, hover (You will, therefore, need one or more links on your page.)</li>
           <li>Give at least one html element a class and style that class in the style sheet.</li>
+          <li>Border</li>
+          <li>Padding</li>
         </ul>
         <p></p>
         
