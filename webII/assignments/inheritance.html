@@ -1,37 +1,93 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="../tutorial.css">
-    <title>CSS Inheritance</title>
-    <meta http-equiv="Content-Type" content="text/html;
-      charset=windows-1252">
-  </head>
-  <body>
-    <div id="header">
-      <h1>Project 3: Inheritance of Style Rules</h1>
-      <div class="navbar">
-        <script src="../nav.js">
-</script></div>
-    </div>
-    <div id="content">
-      <div id="main-text">
-        <!--ADD CONTENT HERE-->
-        <h4 class="assign"> Due Date: Friday, 5/7/21</h4>
-        <h4>To really understand the value of CSS, one must first
-          understand how inheritance works.</h4>
-        <p>Here are some suggestions of places to start reading, but feel free to read others:</p>
-          <ul><li><p style="font-size: 14pt"> (simple version)</p> <a href="https://blueprintdigital.com/css-specificity-and-inheritance-the-cascade/" target="_blank" >https://blueprintdigital.com/css-specificity-and-inheritance-the-cascade/</a></li>
-            
-            <li><p style="font-size: 14pt">(a more thorough treatment)</p> <a href="https://www.w3.org/wiki/Inheritance_and_cascade" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.w3.org/wiki/Inheritance_and_cascade&amp;source=gmail&amp;ust=1474381062446000&amp;usg=AFQjCNExg6ltLnYnhd7vsoav7MjC9NPLmw">https://www.w3.org/wiki/Inheritance_and_cascade</a></li></ul>
-          <p> Make sure that you understand the difference between <strong>inheritance,</strong>  <strong>specificity</strong> and <strong>source order.</strong></p>
-        <h4>From the previous assignment, copy the "index.html" file and the CSS file.  Revise them (if needed) so that your web page contains 3 examples showing the idea of inheritance.</h4>
-        <p>For each of the three examples, use a code comment to explain how
-          inheritance is shown in your coding.</p>
-        <p>When everyone has finished the assignment, I will ask each of you to share your 3 example with the class.</p>
-      </div>
-    </div>
-    <div class="navbarfooter">
-      <script src="../nav.js">
-</script></div>
-  </body>
+
+<head>
+
+<link rel="stylesheet" type="text/css" href="../tutorial.css" />
+
+<title>Inheritance in CSS</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+</head>
+
+<body>
+
+<div id="header">
+
+<h1>Inheritance in CSS</h1>
+
+<div class ="navbar">
+
+
+<script src="../nav.js">
+</script>
+
+
+
+</div>
+</div>
+<div id="content">
+
+
+
+<div id="main-text">
+
+<!--ADD CONTENT HERE-->
+<h4>Understanding how inheritance works in CSS</h4><ul>
+<li>Just like we can inherit eye color, hair color and many other traits from our parents, xhtml  elements can inherit styles from their parents.</li>
+<li> Child elements inherit style from their parents</li><li>A child element is contained in the parent element</li></ul>
+
+<h4>An example of inheritance</h4>
+
+<ul>
+<li><a href="inheritance/lounge/lounge.html">The Head First Lounge</a></li>
+<li>Look at the code</li>
+</ul>
+
+<h4>Seeing Selectors Visually</h4>
+
+<ul>
+<li> Picture on the board</li>
+<li>What are some child elements?</li>
+</ul>
+<h4>Study the Code</h4>
+<ul><li>Notice the &lt;p&gt; text is displayed as a default font family, in this case a serif font</li>
+<li> Add a sans serif font family rule to &lt;p&gt; and notice what happens to the &lt;a&gt; and &lt;em&gt; elements. (Hint: Inheritance)</li>
+</ul>
+
+<h4>Visual demonstration of inheritance</h4>
+<ul><li>Moving up the family tree</li><li>Remove the font family rule from all elements, and add a &lt;body&gt; element in the external style sheet with the font family  (Hint: More Inheritance)</li></ul>
+ <h4>Overriding the inheritance</h4>
+<ul><li>What if we do not want the same font family for every element in the body?</li><li>Write a new rule for the &lt;em&gt; element to have a serif font family (Times, Georigia, serif;)</li></ul>
+<h4>Question: How do I know which CSS properties are inherited and which are not?</h4>
+<p> In general, all styles that affect the way text looks are inherited</p>
+<ul>
+<li>color</li>
+<li>Font-family</li>
+<li>Font-size</li>
+<li>Font-weight</li>
+<li>Font-style</li>
+</ul><p>Experiment to discover which CSS properties are inherited and which are not.</p><p>Use resources:books, the internet</p><p>    <a href="http://validator.w3.org/check?uri=referer"><img        src="http://www.w3.org/Icons/valid-xhtml10"        alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>  </p>
+
+
+</div>
+
+
+</div>
+
+<div class ="navbar">
+
+
+<script src="../nav.js">
+</script>
+
+
+
+
+</div>
+
+</body>
+
 </html>
