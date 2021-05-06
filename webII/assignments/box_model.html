@@ -3,6 +3,7 @@
   <head>
     <title>The Box Model</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
     <link rel="stylesheet" type="text/css" href="../tutorial.css">
     <meta http-equiv="Content-Type" content="text/html;
       charset=windows-1252">
@@ -36,52 +37,66 @@
         <p>View the <a href="https://docs.google.com/presentation/d/1irc334m1vB8R7apR-gxRoPNBupLT6S_DWLJ2CwRm--8">slideshow</a>.
             After viewing the slides, Go to Project 5: The Box Model in repl.it.  Run it.
         </p>
-        <p>See the boxes "Our guarantee" and "Weekly elixir specials?"
+        <p>Please do the following exercises to gain an understanding of how a page's layout can be controlled.
+        </p>
+        <ul>
+          <li>See the boxes "Our guarantee" and "Weekly elixir specials?"
           Where are these styled? What kind of padding, borders and
           margins are used? What controls the position of the guarantee?
           Open the CSS page "lounge.css". Remove the
           id="guarantee" from the html of the p element containing the
           guarantee. Save and view the result. Put it back the way it
-          was. Down in the place where #elixirs is styled, comment out the
+          was. 
+          </li>
+          <li>
+            Down in the place where #elixirs is styled, comment out the
           float like this: /*float: right;*/. Save and view the result.
           Put it back the way it was.
-        </p>
-        <p>
+          </li>
+          <li>
             Make sure the words of the guarantee fit within the blue-green area. If not, fix things so that they do fit.
-        </p>
-        <p>
-            The black text on white background (I call it the "write-up") is below the guarantee and above the "elixirs" box. Style it so there are three columns, with the write-up in the center.
-        </p>
-        <button type="button" class="btn btn-primary btn-block" id="first" data-toggle="collapse" data-target="#oss">
-            <span class="glyphicon glyphicon-collapse-down"></span> Hints -> Open
-        </button>
-        <div id="oss" class="collapse">
-            <p>One way to get the three "boxes" to display side-by-side is shown in the GeeksForGeeks link, above. You put all three things in divs or other elements and then give all 3 the style to float left.</p>
-            <p>You might still have to control the width of each of the three elements by styling them with width properties.</p>
-            <p>Be sure to check what happens when the user opens the window wide. You don't want the text at the bottom to come up and fill in; it looks bad. To prevent this, you can put all of that bottom stuff into a single div element and then style it with clear:both.</p>
-        </div>
-        <hr>
-        <p>
-            Then get the three sections (guarantee, write-up and exilirs box) to line up at their tops.
-        </p>
+          </li>
+          <li>
+            The black text on white background (I call it the "write-up") is below the guarantee and above the "elixirs" box. I want you to style it so there are three columns, with the write-up in the center. Start with making the "elixirs" be on the right side of the rest, rather than below it. 
+          </li>
+            <button type="button" class="btn btn-primary btn-block" id="first" data-toggle="collapse" data-target="#cols">
+                <span class="glyphicon glyphicon-collapse-down"></span> Hint for making it look like 3 columns -> Open
+            </button>
+            <div id="cols" class="collapse">
+                <p>One way to get the three "boxes" to display side-by-side is shown in the GeeksForGeeks link, above. You put all three things in divs or other elements and then give all 3 the style to float left.</p>
+                <p>You will still have to control the width of each of the three elements by styling them with width properties.</p>
+            </div>
+          <li>Next, get the guarantee to look like a left column.</li>
+          <li>Then get the three sections (guarantee, write-up and exilirs box) to line up at their tops.</li>
+          <li>Be sure to check what happens when the user opens the window wide. You don't want the text at the bottom to come up and fill in; it looks bad. Style it so it stays at the bottom. </li>
+            <button type="button" class="btn btn-primary btn-block" id="first" data-toggle="collapse" data-target="#foot">
+                <span class="glyphicon glyphicon-collapse-down"></span> Hint for keeping the element at the very bottom -> Open
+            </button>
+            <div id="foot" class="collapse">
+                <p>You can put all of that bottom stuff into a single div element with an id and then style it with clear:both.</p>
+            </div>
+
+        </ul>
+
         <hr> 
           <p>Still confused? I find <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model">Mozilla's Box Model Page</a> to be a nice, clear, explanation.</p>
         <hr>
         <ul>
           <h4 class="assign">Due
           Date: Monday, 5/17/21</h4> <!--revising here-->
-          <h4>The assignment: you will be making a page similar to the Head First Lounge page</h4>
+          <h4>The assignment: you will be making a page similar to the Head First Lounge page, with left and right sidebar boxes</h4>
           <li> Choose your own topic and content. </li>
           <li>For this project, do your coding in the html and css files of the repl.it Project 5.</li>
           <li>Think about each html element as a box, as presented in
             the <a href="https://docs.google.com/presentation/d/1irc334m1vB8R7apR-gxRoPNBupLT6S_DWLJ2CwRm--8">slideshow</a></li>
           <li> Make a right-hand sidebar using a div element which contains an h2 and three sets of (h3, img, p) similar to what was done in the Head First Lounge</li>
           <li>Give the div an id and style it with width, border, padding, margin, text-align, background and anything else you want. Position it at the right.</li>
-          <li>Have several paragraphs (p elements) of text, as was done in th "black-and-white" section of the Head First Lounge, as well as one special p element whose text begins with "our guarantee" or something like that.</li>
+          <li>Have several paragraphs (p elements) of text, as was done in the "write-up" section of the Head First Lounge, as well as one special p element whose text begins with "our guarantee" or something like that.</li>
           <li>Give that p element an id, similar to what was done with #guarantee in Head First Lounge.</li>
           <li>Then style #guarantee with background, a fancy-looking border, padding, margins, font-family and line-height. Position it at the left.</li>
           <li>As before, make sure the "write-up" text fills in the area between the two side panels.</li>
           <li>As before, make sure the tops of the side panels and "write-up" text line up nice.</li>
+          <li>As before, use a footer with some text in it and make sure it stay at the bottom, below everything else.</li>
           <li>Put all of the style in an external style sheet, if you haven't already.
           </li>
         </ul>
@@ -106,8 +121,8 @@
             <td>Lists</td>
             <td>Six or seven of the eleven items above were done.</td>
             <td>Eight or nine of the eleven items above were done.</td>
-            <td>Ten of the eleven items above were done.</td>
-            <td>All eleven items bulleted above above were done.</td>
+            <td>Ten or eleven of the twelve items above were done.</td>
+            <td>All twelve items bulleted above above were done.</td>
           </tr>
           <tr>
             <td>Code Quality</td>
