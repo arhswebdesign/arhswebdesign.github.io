@@ -5,6 +5,36 @@
     <title>JS, pt. 1</title>
     <meta http-equiv="Content-Type" content="text/html;
       charset=windows-1252">
+    <style>
+        .snip {
+            margin-left: 52px;
+            margin-right; 120px;
+            margin-top: 11px;
+            width: 91%;
+        }
+        .disp {
+            margin-left: 52px;
+            margin-right; 120px;
+            margin-top: 11px;
+            border: solid rebeccaPurple 4px;
+        }
+        .insent {
+            background-color: lightgray;
+            font-family: monospace;
+            font-size: 20px;
+        }
+        .note {
+            background-color: aliceblue;
+            border-style: solid;
+            border-color: darkblue;
+            margin-left: 68px;
+            margin-right: 68px;
+            padding: 10px;
+        }
+        li {
+            font-size: 19px;
+        }
+    </style>
   </head>
   <body>
     <div id="header">
@@ -20,39 +50,223 @@
         <p>Alongside HTML and CSS, JavaScript is one of the three core technologies of the World Wide Web. It is used to make dynamic webpages interactive and provide online programs, including video games. The majority of websites employ it, and all modern web browsers support it by means of a built-in JavaScript engine.</p>
         <p>JavaScript is more difficult to learn than other Web Fundamentals such as HTML and CSS, because it is truly a programming language, but your understanding of HTML and CSS will sure help.</p>
         <p>Click on the link below and read the page. Work the example in replit, using index.html and, when asked to script.js</p>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript"><em>Assignment 1</em></a></p>
-        <p>Following the instructions provided within the link...</p>
+        <h3>Challenge One - A Working Button
+        </h3>
+        <p>I'm adapting this lesson from mozilla. The original is <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript">here,</a> if you want it.</p>
+        <p>JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved.</p>
+        <p>Let's take a simple text label as an example. We can mark it up using HTML to give it structure and purpose:
+        </p>
+        <img class="snip" src="snip1.png" alt="Player 1: Chris">
+        <p>On the web page it looks like:</p>
+        <img class="disp" src="disp1.png" height=60px alt="Player 1: Chris">
+        <p>Then we can add some CSS into the mix to get it looking nice:</p>
+        <img class="snip" src="snip2.png" alt="lots of CSS code- see original link above">
+        <p>Now the page looks like:</p>
+        <img class="disp" src="disp2.png" height=90px alt="Player 1: Chris">
+        <p>And finally, we can add some JavaScript to implement dynamic behavior:</p>
+        <img class="snip" src="snip3.png" alt="JavaScript code">
+        <p>Here we are selecting a text paragraph (line 1), then attaching an event listener to it (line 3) so that when the paragraph is clicked, the updateName() code block (lines 5–8) is run. The updateName() code block (these types of reusable code blocks are called "functions") asks the user for a new name, and then inserts that name into the paragraph to update the display.</p>
+        <p><a href="https://mdn.github.io/learning-area/javascript/introduction-to-js-1/what-is-js/javascript-label.html">Try it out</a></p>
+        <h3>So why learn it?</h3>
+        <p>JavaScript allows you to do things like:</p>
+        <ul>
+            <li>Store useful values inside variables. In the above example for instance, we ask for a new name to be entered and then store that name in a variable called <em><strong>name.</strong></em></li>
+            <li>Operations on pieces of text (known as "strings" in programming). In the above example we take the string "Player 1: " and join it to the <em><strong>name.</strong></em> variable to create the complete text label, e.g. ''Player 1: Chris".</li>
+            <li>Running code in response to certain events occurring on a web page. We used a <u style="background-color:lightskyblue; padding:3px;">click</u> event in our example above to detect when the button is clicked and then run the code that updates the text label.</li>
+            <li>And much more!</li>
+        </ul>
+        <h3>How do you add JavaScript to your page?</h3>
+        <p>JavaScript is applied to your HTML page in a similar manner to CSS. Whereas CSS uses <span class="insent">&lt;link&gt;</span> elements to apply external stylesheets and <span class="insent">&lt;style&gt;</span> elements to apply internal stylesheets to HTML, JavaScript only needs one friend in the world of HTML — the <span class="insent">&lt;script&gt;</span> element. Let's learn how this works.</p>
+        <h4>Internal JavaScript</h4>  
+        <ul>
+          <li>Go to Project 12 in replit. The index.html file already has some starter code for you to edit. Add the  
+              following in your head — just before your closing <span class="insent">&lt;/head&gt;</span> tag:<br>
+              <img class="snip" src="snip4.png" alt="script code element">
+          </li>
+          <li>Now we'll add some JavaScript inside our <span class="insent">&lt;script&gt;</span> element to make the page do 
+            something more interesting — add the following code just below the "// JavaScript goes here" line:<br>
+            <img class="snip" src="snip5.png" alt="JavaScript code">
+          </li>
+          <li>
+            Save your file and refresh the browser — now you should see that when you click the button, a new paragraph is generated and placed below.
+          </li>
+        </ul>
+        <p class="note"><strong>Note:</strong> If your example doesn't seem to work, go through the steps again and check that you did everything right. Did you add your <span class="insent">&lt;script&gt;</span> element just before the <span class="insent">&lt;/head&gt;</span> tag? Did you enter the JavaScript exactly as shown? JavaScript is case sensitive, and very fussy, so you need to enter the syntax exactly as shown, otherwise it may not work.</p>
+        <h4>External JavaScript</h4>
+        <p>This works great, but what if we wanted to put our JavaScript in an external file? Let's explore this now.
+        </p>
+        <ul>
+            <li>Use the script.js file that is already there in the repl.</li>
+            <li>Replace your current <span class="insent">&lt;script&gt;</span> element with the following:<br>
+                <img class="snip" src="snip6.png" alt="script element">
+            </li>
+            <li>Inside script.js, add the following script:<br>
+                <img class="snip" src="snip7.png" alt="script element">
+            </li>
+            <li>Run it and you should see the same thing! It works just the same, but now we've got our JavaScript in an external file. This is generally a good thing in terms of organizing your code and making it reusable across multiple HTML files. Plus, the HTML is easier to read without huge chunks of script dumped in it.</li>
+        </ul>
+        <h3>Make your own version</h3>
         <ol style="list-style-type: decimal">
-        <li>Please create an html page with a button showing text saying some text other than what is provided.</li>
-        <li>Make it so that when you click this button, a heading appears underneath the button saying some other text other than what was added above.</li>
-        <li>Please add a comment to explain what is happening in your own words.</li>
+        <li>Modify the html page so the button text says something other than "Click me.".</li>
+        <li>Make it so that when you click this button, a heading appears underneath the button, as before, but have it say something other than "You clicked the button!."</li>
+        <li>Please add at least one <a href="https://www.w3schools.com/js/js_comments.asp">JS code comment</a> to explain what is happening in your own words.</li>
         </ol>
-        <p>Note: This should be similar to the example code, just with some simple modifications and the comments put in your own words.</p>
+        <p>Note: This should be similar to the example code, just with some simple modifications and the reply put in your own words.</p>
         <p>When you've done that, copy the index.html file to a new file, '1_1.html' and copy the javascript file to a new file, '1_1.js'. </p>
         <p>Then delete the contents of index.html and script.js, to get ready for assignment 2.</p>
         <p>After you complete both assignments, you will submit the repl.</p>
         <hr />
-        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/A_first_splash"><em>Assignment 2</em></a></p>
-        <p>By this time you should have a good understanding of JS theory as well as simple idea of how it can interact with html.</p>
-        <p>In this next step, we will be learning about:</p>
-        <ul>
-        <li>More examples of JS code</li>
-        <li>How to think about problems</li>
-        <li>Events</li>
-        <li>Loops</li>
-        </ul>
-        <p>This page may seem somewhat long, but it provides really essential content to learn javascript. When you have finished you will have a good grasp on the simple technical aspects of JS necessary to start building more feature-filled applications.</p>
-        <p>Following the instructions provided within the link...</p>
-        <ol style="list-style-type: decimal">
-        <li>Please build the game that the instructions provide.</li>
-        <li>Style the paragraph in whatever capacity you like</li>
-        <li>Change the values to display what you would like.</li>
-        <li>Please add a comment to explain what is happening in your own words.</li>
+        <h3>Challenge Two - A Small Game
+        </h3>
+        <p>Now you've learned something about the theory of JavaScript and what you can do with it, we are going to give you an idea of what the process of creating a simple JavaScript program is like, by guiding you through a practical tutorial. Here you'll build up a simple "Guess the number" game, step by step.</p> 
+        <p>We want to set really clear expectations here: You won't be expected to learn JavaScript by the end of this article, or even understand all the code we are asking you to write. Instead, we want to give you an idea of how JavaScript's features work together, and what writing JavaScript feels like.</p>
+        <h3>Guess the number game</h3>
+        <p>We'll show you how to build up a simple game. <a href="https://mdn.github.io/learning-area/javascript/introduction-to-js-1/first-splash/number-guessing-game-start.html">Play the game</a> to get an understanding of how it works.
+        </p> 
+        <p>Let's imagine your boss has given you the following brief for creating this game:<br>
+          <img class="snip" src="snip11.png" alt="game description">
+        </p>
+        <p>Upon looking at this brief, the first thing we can do is to start breaking it down into simple tasks:</p>
+        <ol>
+         <li>Generate a random number between 1 and 100.</li>
+         <li>Record the turn number the player is on. Start it on 1.</li>
+         <li>Provide the player with a way to guess what the number is.</li>
+         <li>Once a guess has been submitted, first record it somewhere so the user can see their previous guesses.</li>
+         <li>Next, check whether it is the correct number.</li>
+         <li>If it is correct:
+          <ol>
+           <li>Display congratulations message.</li>
+           <li>Stop the player from being able to enter more guesses (this would mess the game up).</li>
+           <li>Display control allowing the player to restart the game.</li>
+          </ol>
+         </li>
+         <li>If it is wrong and the player has turns left:
+          <ol>
+           <li>Tell the player they are wrong and whether their guess was too high or too low.</li>
+           <li>Allow them to enter another guess.</li>
+           <li>Increment the turn number by 1.</li>
+          </ol>
+         </li>
+         <li>If it is wrong and the player has no turns left:
+          <ol>
+           <li>Tell the player it is game over.</li>
+           <li>Stop the player from being able to enter more guesses (this would mess the game up).</li>
+           <li>Display control allowing the player to restart the game.</li>
+          </ol>
+         </li>
+         <li>Once the game restarts, make sure the game logic and UI are completely reset, then go back to step 1.</li>
         </ol>
-        <p>Note: <a href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">Developer Tools</a> are useful here. In short, developer tools allow you to inspect the DOM provided by whichever webpage you are accessing the content of. They also have an integrated console that responds with errors if the code that you provide to it is incorrect, and a debugger to step through your code to understand where it is proceeding incorrectly. It also provides an integrated javascript shell to interact with to test small functions.<br />To access this feature, you can "open in a new tab", then right click on the webpage and select 'inspect'. You can also type 'Ctrl+Shift+I' on windows, or 'Command+Option+I' on Mac to immediately open the tools.</p>
-        <p>When done, you can leave your finished work in index.html. Then submit.</p>
-        
-        <br>
+          
+        <h3>Coding the game</h3>
+        <p>Put a copy of the <a href="https://github.com/mdn/learning-area/blob/master/javascript/introduction-to-js-1/first-splash/number-guessing-game-start.html">number-guessing-game-start.html</a> file into yout index.html file in replit.</p>
+        <p>Run it. At the moment you'll see a simple heading, paragraph of instructions and a form for entering a guess, but the form won't currently do anything.</p>
+        <p>The place where we'll be adding all our code is inside a <span class="insent">&lt;script&gt;</span> element. Add this code at the bottom of the HTML (just before the body ending tag):<br>
+          <img class="snip" src="snip12.png" alt="game description"></p>
+        <h4>Adding variables to store our data
+        </h4>
+        <p>Let's get started. First of all, add the following lines inside your <span class="insent">&lt;script&gt;</span> element<br>
+          <img class="snip" src="snip14.png" alt="game code">:
+        </p>
+        <p>This section of the code sets up the variables and constants we need to store the data our program will use. Variables are basically containers for values (such as numbers, or strings of text). You create a variable with the keyword <span class="insent">let</span> (or <span class="insent">var</span>) followed by a name for your variable. Constants are used to store values that are immutable or can't be changed and are created with the keyword <span class="insent">const</span>. In this case, we are using constants to store references to parts of our user interface; the text inside some of them might change, but the HTML elements referenced stay the same.</p>
+
+        <p>You can assign a value to your variable or constant with an equals sign (=) followed by the value you want to give it.</p>
+        <p>In our example:</p>
+        <ul>
+        <li>The first variable — <span class="insent">randomNumber</span> — is assigned a random number between 1 and 100, calculated using a mathematical algorithm.</li>
+        <li>The first three constants are each made to store a reference to the results paragraphs in our HTML, and are used to insert values into the paragraphs later on in the code (note how they are inside a <span class="insent">&lt;div&gt;</span> element, which is itself used to select all three later on for resetting, when we restart the game):<br>
+          <img class="snip" src="snip15.png" alt="html code"><br>(this is already in your index.html)</li> 
+        <li>The next two constants store references to the form text input and submit button and are used to control submitting the guess later on.<br>
+          <img class="snip" src="snip16.png" alt="html code"><br>(this is also already in your index.html)</li>
+        <li>Our final two variables store a guess count of 1 (used to keep track of how many guesses the player has had), and a reference to a reset button that doesn't exist yet (but will later).</li>
+        </ul>
+        <h4>Functions</h4>
+        <p>Next, add the following below your previous JavaScript:<br>
+          <img class="snip" src="snip17.png" alt="game code"></p>
+          
+        <p>Functions are reusable blocks of code that you can write once and run again and again, saving the need to keep repeating code all the time. This is really useful. Here we have defined a function by using the keyword function, followed by a name, with parentheses put after it. After that we put two curly braces ({ }). Inside the curly braces goes all the code that we want to run whenever we call the function.</p>
+        <p>When we want to run the code, we type the name of the function followed by the parentheses.</p>
+        <p>Let's try that now. Run the code and display the page full-screen in the browser. Then use rt-click-Inspect to go into the console (at the bottom, click "Console," and enter the following line:<br>
+            <img class="snip" src="snip18.png" alt="what to type"></p>
+        <p>After pressing Enter, you should see an alert come up that says <span class="insent">I am a placeholder</span>; we have defined a function in our code that creates an alert whenever we call it.</p>
+        <h4>Conditionals</h4>
+        <p>I think it's safe to say that we don't want <span class="insent">checkGuess()</span> to just spit out a placeholder message. We want it to check whether a player's guess is correct or not, and respond appropriately.</p>
+        <p>At this point, replace your current <span class="insent">checkGuess()</span> function with this version instead:     <br>
+            <img class="snip" src="snip19.png" alt="function code"></p>
+        <p>This is a lot of code — phew! Let's go through each section and explain what it does.</p>  
+        <ul>
+            <li>The first line (line 2 above) declares a variable called <span class="insent">userGuess</span> and sets its value to the current value entered inside the text field. We also run this value through the built-in <span class="insent">Number()</span> constructor, just to make sure the value is definitely a number.</li>
+            <li>Next, we encounter our first conditional code block (lines 3–5 above). A conditional code block allows you to run code selectively, depending on whether a certain condition is true or not. It looks a bit like a function, but it isn't. The simplest form of conditional block starts with the keyword <span class="insent">if</span>, then some parentheses, then some curly braces. Inside the parentheses we include a test. If the test returns <span class="insent">true</span>, we run the code inside the curly braces. If not, we don't, and move on to the next bit of code. In this case the test is testing whether the <span class="insent">guessCount</span> variable is equal to <span class="insent">1</span> (i.e. whether this is the player's first go or not) (the <span class="insent">===</span> is JavaScript's operator for "equals.")<br>
+            <img class="snip" src="snip20.png" alt="function code"><br>
+              If it is, we make the guesses paragraph's text content equal to <span class="insent">Previous guesses: </span>. If not, we don't.</li>
+            <li>Line 6 appends the current <span class="insent">userGuess</span> value onto the end of the <span class="insent">guesses</span> paragraph, plus a blank space so there will be a space between each guess shown.</li>
+            <li>The next block (lines 8–24 above) does a few checks:
+              <ul>
+                <li>The first <span class="insent">if(){ }</span> checks whether the user's guess is equal to the <span class="insent">randomNumber</span> set at the top of our JavaScript. If it is, the player has guessed correctly and the game is won, so we show the player a congratulations message with a nice green color, clear the contents of the Low/High guess information box, and run a function called <span class="insent">setGameOver()</span>, which we'll discuss later.</li>
+                <li>Now we've chained another test onto the end of the last one using an <span class="insent">else if(){ }</span> structure. This one checks whether this turn is the user's last turn. If it is, the program does the same thing as in the previous block, except with a game over message instead of a congratulations message.</li>
+                <li>The final block chained onto the end of this code (the <span class="insent">else { }</span>) contains code that is only run if neither of the other two tests returns true (i.e. the player didn't guess right, but they have more guesses left). In this case we tell them they are wrong, then we perform another conditional test to check whether the guess was higher or lower than the answer, displaying a further message as appropriate to tell them higher or lower.</li>
+              </ul>
+            </li>
+            <li>The last three lines in the function (lines 26–28 above) get us ready for the next guess to be submitted. We add 1 to the <span class="insent">guessCount</span> variable so the player uses up their turn (<span class="insent">++</span> is an incrementation operation — increment by 1), and empty the value out of the form text field and focus it again, ready for the next guess to be entered.</li>
+          </ul>
+          <h4>Events</h4>
+          <p>At this point we have a nicely implemented <span class="insent">checkGuess()</span> function, but it won't do anything because we haven't called it yet. Ideally we want to call it when the "Submit guess" button is pressed, and to do this we need to use an <strong>event</strong>. Events are things that happen in the browser — a button being clicked, a page loading, a video playing, etc. — in response to which we can run blocks of code. The constructs that listen out for the event happening are called <strong>event listeners</strong>, and the blocks of code that run in response to the event firing are called <strong>event handlers</strong>.</p>
+          <p>Add the following line below your <span class="insent">checkGuess()</span> function:<br>
+            <img class="snip" src="snip21.png" alt="event handling code"></p>
+          <p>Here we are adding an event listener to the <span class="insent">guessSubmit</span> button. This is a method that takes two input values (called arguments) — the type of event we are listening out for (in this case <span class="insent">click</span>) as a string, and the code we want to run when the event occurs (in this case the <span class="insent">checkGuess()</span> function). Note that we don't need to specify the parentheses when writing it inside <span class="insent">addEventListener()</span>.</p>
+          <p>Try saving and refreshing your code now, and your example should work — to a point. The only problem now is that if you guess the correct answer or run out of guesses, the game will break because we've not yet defined the <span class="insent">setGameOver()</span> function that is supposed to be run once the game is over. Let's add our missing code now and complete the example functionality.</p>
+          <h4>Finishing the game functionality</h4>
+          <p>Let's add that <span class="insent">setGameOver()</span> function to the bottom of our code and then walk through it. Add this now, below the rest of your JavaScript:<br>
+            <img class="snip" src="snip22.png" alt="event handling code"></p>
+          <ul>
+            <li>The first two lines disable the form text input and button by setting their disabled properties to <span class="insent">true</span>. This is necessary, because if we didn't, the user could submit more guesses after the game is over, which would mess things up.</li>
+            <li>The next three lines generate a new <span class="insent">&lt;button&gt;</span> element, set its text label to "Start new game", and add it to the bottom of our existing HTML.</li>
+            <li>The final line sets an event listener on our new button so that when it is clicked, a function called <span class="insent">resetGame()</span> is run.</li>
+          </ul>
+          <p>Now we need to define this function too! Add the following code, again to the bottom of your JavaScript:<br>
+            <img class="snip" src="snip23.png" alt="block of code"></p>
+          <p>This rather long block of code completely resets everything to how it was at the start of the game, so the player can have another go. It:</p>
+          <ul>
+             <li>Puts the <span class="insent">guessCount</span> back down to 1.</li>
+             <li>Empties all the text out of the information paragraphs. We select all paragraphs inside <span class="insent">&lt;div class="resultParas"&gt;&lt;/div&gt;</span>, then loop through each one, setting their <span class="insent">textContent</span> to <span class="insent">''</span> (an empty string).</li>
+             <li>Removes the reset button from our code.</li>
+             <li>Enables the form elements, and empties and focuses the text field, ready for a new guess to be entered.</li>
+             <li>Removes the background color from the <span class="insent">lastResult</span> paragraph.</li>
+             <li>Generates a new random number so that you are not just guessing the same number again!</li>
+          </ul>
+          <p><strong>At this point you should have a fully working (simple) game — congratulations!</strong></p>
+
+        <h4>What to submit</h4> 
+
+        <ol style="list-style-type: decimal">
+        <li>Please build the game according to the above instructions.</li>
+        <li>Add some style to give it your own look and feel.</li>
+        <li>Add several (at least 4) <a href="https://www.w3schools.com/js/js_comments.asp">JS code comments</a> to explain what is happening, in your own words.</li>
+        </ol>
+          
+        <h3>Rubric</h3>
+        <table>
+          <tr>
+            <th>Category</th>
+            <th>minus 15 points</th>
+            <th>minus 10 points</th>
+            <th>minus 5 points</th>
+            <th>Full points</th>
+          </tr>
+          <tr>
+            <td>Challenge One</td>
+            <td>Three of the six things at the right were done.</td>
+            <td>Four of the six things at the right were done.</td>
+            <td>Five of the six things at the right were done.</td>
+              <td>files 1_1.html and 1_1.js provide a button that says something other than "Click me!" and, when you click it, a heading appears underneath the button, but says something other than "You clicked the button!" At least one JS code comment is used.</td>
+          </tr>
+          <tr>
+            <td>Challenge Two</td>
+            <td>Some of the instructions were followed.</td>
+            <td>Most of the instructions were followed.</td>
+            <td>Nearly all of the instructions were followed.</td>
+            <td>files index.html and script.js provide a working guessing game, as described in the "bosses instructions." It has been uniquely styled. At least four JS code comments were used.</td>
+          </tr>
+        </table>
             
       </div>
     </div> <!-- this can stay -->
