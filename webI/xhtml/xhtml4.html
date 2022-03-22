@@ -54,7 +54,55 @@
         <p> You can also use other alphabets, such as hebrew, greek, etc. <a href="http://www.w3schools.com/cssref/pr_list-style-type.asp">See here.</a></p>
         <p>Inside a list item you can put paragraphs, line breaks,
           images, links, other lists, etc. </p>
-        <h4> 4. Description Lists: </h4>
+
+          
+          
+        <h4> 4. Nested lists: </h4>
+        <p>You can use lists to make a sort of outline. Whenever you put lists inside of list items, that is called "nesting."</p>
+        <p>Here's an example:
+        </p>
+        <code>
+        <pre>
+        &lt;h5&gt;Beaches near Wellfleet, MA&lt;/h5&gt;
+        &lt;ul&gt;
+          &lt;li&gt;National Seashore
+            &lt;ul&gt;
+                 &lt;li&gt;Coast Guard&lt;/li&gt;
+                 &lt;li&gt;Marconi&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+          &lt;li&gt;Town
+            &lt;ul&gt;
+                &lt;li&gt;Newcomb Hollow&lt;/li&gt;
+                &lt;li&gt;White Crest&lt;/li&gt;
+                &lt;li&gt;Cahoon Hollow&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+        </pre>
+        </code>
+        <h4> Here is how it looks in a browser:
+        </h4>
+        <h5>Beaches near Wellfleet, MA</h5>
+        <ul>
+          <li>National Seashore
+            <ul>
+                 <li>Coast Guard</li>
+                 <li>Marconi</li>
+             
+            </ul>
+          </li>
+          <li>Town
+            <ul>
+                <li>Newcomb Hollow</li>
+                <li>White Crest</li>
+                <li>Cahoon Hollow</li>
+            </ul>
+          </li>
+        </ul>
+          
+          
+        <h4> 5. Description Lists: </h4>
         <p>A description list is not a list of items. This is a list of
           terms and explanation of the terms.</p>
         <p> A description list starts with the &lt;dl&gt; tag. Each
