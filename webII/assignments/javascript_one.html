@@ -57,57 +57,35 @@
         </h3>
         <p>I'm adapting this lesson from mozilla. The original is <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript">here,</a> if you want it.</p>
         <p>JavaScript is a scripting or programming language that allows you to implement complex features on web pages — every time a web page does more than just sit there and display static information for you to look at — displaying timely content updates, interactive maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably involved.</p>
-        <p>Let's take a simple text label as an example. We can mark it up using HTML to give it structure and purpose:
-        </p>
-        <img class="snip" src="snip1.png" alt="Player 1: Chris">
-        <p>On the web page it looks like:</p>
-        <img class="disp" src="disp1.png" height=60px alt="Player 1: Chris">
-        <p>Then we can add some CSS into the mix to get it looking nice:</p>
-        <img class="snip" src="snip2.png" alt="lots of CSS code- see original link above">
-        <p>Now the page looks like:</p>
-        <img class="disp" src="disp2.png" height=90px alt="Player 1: Chris">
-        <p>And finally, we can add some JavaScript to implement dynamic behavior:</p>
-        <img class="snip" src="snip3.png" alt="JavaScript code">
-        <p>Here we are selecting a text paragraph (line 1), then attaching an event listener to it (line 3) so that when the paragraph is clicked, the updateName() code block (lines 5–8) is run. The updateName() code block (these types of reusable code blocks are called "functions") asks the user for a new name, and then inserts that name into the paragraph to update the display.</p>
-        <p><a href="https://mdn.github.io/learning-area/javascript/introduction-to-js-1/what-is-js/javascript-label.html">Try it out</a></p>
-        <h3>So why learn it?</h3>
-        <p>JavaScript allows you to do things like:</p>
-        <ul>
-            <li>Store useful values inside variables. In the above example for instance, we ask for a new name to be entered and then store that name in a variable called <em><strong>name.</strong></em></li>
-            <li>Operations on pieces of text (known as "strings" in programming). In the above example we take the string "Player 1: " and join it to the <em><strong>name.</strong></em> variable to create the complete text label, e.g. ''Player 1: Chris".</li>
-            <li>Running code in response to certain events occurring on a web page. We used a <u style="background-color:lightskyblue; padding:3px;">click</u> event in our example above to detect when the button is clicked and then run the code that updates the text label.</li>
-            <li>And much more!</li>
-        </ul>
+
+          
         <h3>How do you add JavaScript to your page?</h3>
-        <p>JavaScript is applied to your HTML page in a similar manner to CSS. Whereas CSS uses <span class="insent">&lt;link&gt;</span> elements to apply external stylesheets and <span class="insent">&lt;style&gt;</span> elements to apply internal stylesheets to HTML, JavaScript only needs one friend in the world of HTML — the <span class="insent">&lt;script&gt;</span> element. Let's learn how this works.</p>
-        <h4>Internal JavaScript</h4>  
+          
+        <p>You can use internal or external scripts. Let's use an external script for this project.</p>
+        <h4>External JavaScript</h4>  
         <ul>
-          <li>Go to Project 12 in replit. The index.html file already has some starter code for you to edit. Add the  
-              following in your head — just before your closing <span class="insent">&lt;/head&gt;</span> tag:<br>
-              <img class="snip" src="snip4.png" alt="script code element">
+          <li>Go to Project 12 in replit. The index.html file already has some starter code for you to edit, including the script element that works like a link to the "script.js" file.
           </li>
-          <li>Now we'll add some JavaScript inside our <span class="insent">&lt;script&gt;</span> element to make the page do 
-            something more interesting — add the following code just below the "// JavaScript goes here" line:<br>
-            <img class="snip" src="snip5.png" alt="JavaScript code">
-          </li>
-          <li>
-            Save your file and refresh the browser — now you should see that when you click the button, a new paragraph is generated and placed below.
-          </li>
-        </ul>
-        <p class="note"><strong>Note:</strong> If your example doesn't seem to work, go through the steps again and check that you did everything right. Did you add your <span class="insent">&lt;script&gt;</span> element just before the <span class="insent">&lt;/head&gt;</span> tag? Did you enter the JavaScript exactly as shown? JavaScript is case sensitive, and very fussy, so you need to enter the syntax exactly as shown, otherwise it may not work.</p>
-        <h4>External JavaScript</h4>
-        <p>This works great, but what if we wanted to put our JavaScript in an external file? Let's explore this now.
-        </p>
-        <ul>
+     
             <li>Use the script.js file that is already there in the repl.</li>
-            <li>Replace your current <span class="insent">&lt;script&gt;</span> element with the following:<br>
-                <img class="snip" src="snip6.png" alt="script element">
+            <li>Type the following:<br>
+                <img class="snip" src="snip11.png" alt="script element">
             </li>
-            <li>Inside script.js, add the following script:<br>
-                <img class="snip" src="snip7.png" alt="script element">
+            <li>This will have the script look for buttons on the page and, if it finds some, collect references to them into a list called “buttons.”<br>
+            Now, let’s make a function that will run if a user clicks on a button. We want it to create a &lt;p&gt; element on the dynamic version of the web page that is being displayed.<br>
+            Type this: 
+                <img class="snip" src="snip12.png" alt="script code element">
+            This new p element is called para and we are putting some words inside it. Then we are making it a part of the dynamic version of the html document.<br>
+            Put this new function at the very top of the script.js file, so Chrome will read it first.<br>
+            Now to set it up so that function runs when the button is clicked.<br>
+            Type this:
+                <img class="snip" src="sn1p13.png" alt="script element">
             </li>
-            <li>Run it and you should see the same thing! It works just the same, but now we've got our JavaScript in an external file. This is generally a good thing in terms of organizing your code and making it reusable across multiple HTML files. Plus, the HTML is easier to read without huge chunks of script dumped in it.</li>
+            <li>Save your file and refresh the browser — now you should see that when you click the button, a new paragraph is generated and placed below.
+            </li>
         </ul>
+        <p class="note"><strong>Note:</strong> If your example doesn't seem to work, go through the steps again and check that you did everything right. Did you enter the JavaScript exactly as shown? JavaScript is case sensitive, and very fussy, so you need to enter the syntax exactly as shown, otherwise it may not work.</p>
+ 
         <h3>Make your own version</h3>
         <ol style="list-style-type: decimal">
         <li>Modify the html page so the button text says something other than "Click me.".</li>
